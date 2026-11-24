@@ -1,4 +1,4 @@
-# Whiskey course
+# Heart of the Cut
 
 A self-paced, multi-level whiskey education course that runs entirely in the
 browser: no server, no accounts, no build step needed to use it.
@@ -25,7 +25,6 @@ Beyond the lessons the app has:
 Any static file server works, because the source uses ES modules:
 
 ```sh
-cd whiskey-course
 npm run serve          # python3 -m http.server 8080, then open http://localhost:8080
 ```
 
@@ -33,7 +32,7 @@ Or build a single self-contained HTML file that opens straight from disk:
 
 ```sh
 npm install            # installs esbuild (the only dependency, used for the build)
-npm run build          # writes dist/whiskey-course.html and dist/artifact/
+npm run build          # writes dist/whisky-course.html and dist/artifact/
 ```
 
 ## Checking it

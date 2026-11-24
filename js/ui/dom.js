@@ -77,9 +77,9 @@ export function md1(text) {
 }
 
 /** Block markdown as a fragment. */
-export function md(text) {
+export function md(text, opts) {
   const frag = document.createDocumentFragment();
-  for (const b of parseMarkdown(text)) {
+  for (const b of parseMarkdown(text, opts)) {
     switch (b.t) {
       case 'p':
         frag.appendChild(h('p', null, inlineNodes(b.c)));

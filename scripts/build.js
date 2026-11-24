@@ -1,5 +1,5 @@
 // Build two distributables from the ES-module source:
-//   dist/whiskey-course.html   one self-contained file (open it straight from disk)
+//   dist/whisky-course.html   one self-contained file (open it straight from disk)
 //   dist/artifact/index.html   page body for publishing as a claude.ai Artifact,
 //   dist/artifact/app.js       with its script beside it
 // The build refuses to run if the content fails validation.
@@ -76,7 +76,7 @@ ${fontLinks}
 </body>
 </html>
 `;
-await writeFile(path.join(dist, 'whiskey-course.html'), standalone);
+await writeFile(path.join(dist, 'whisky-course.html'), standalone);
 
 // Artifact pages are wrapped in their own document skeleton at publish time,
 // so this file holds only the page content.
@@ -93,7 +93,7 @@ await writeFile(path.join(dist, 'artifact', 'app.js'), js);
 const c = courseCounts(course);
 const kb = (s) => `${Math.round(Buffer.byteLength(s) / 1024)} KB`;
 console.log(`Built ${title}: ${c.levels} levels, ${c.lessons} lessons, ${c.quizQuestions + c.examQuestions} questions`);
-console.log(`  ${path.relative(root, dist)}/whiskey-course.html  ${kb(standalone)}`);
+console.log(`  ${path.relative(root, dist)}/whisky-course.html  ${kb(standalone)}`);
 console.log(`  ${path.relative(root, dist)}/artifact/index.html  ${kb(artifact)} + app.js ${kb(js)}`);
 
 function escapeHtml(s) {

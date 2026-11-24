@@ -85,7 +85,7 @@ export function parseInline(src) {
   return out;
 }
 
-export function parseMarkdown(src) {
+export function parseMarkdown(src, { breaks = false } = {}) {
   const lines = String(src ?? '').replace(/\r\n?/g, '\n').split('\n');
   const blocks = [];
   let para = [];
@@ -93,7 +93,11 @@ export function parseMarkdown(src) {
   let quote = [];
 
   const endPara = () => {
-    if (para.length) blocks.push({ t: 'p', c: parseInline(para.join('\n')) });
+    if (para.length) {
+      // breaks: keep each source line on its own line (mock labels, spec sheets).
+      const c = breaks ? para.flatMap((line, i) => (i ? [{ t: 'br' }, ...parseInline(line)] : parseInline(line))) : parseInline(para.join('\n'));
+      blocks.push({ t: 'p', c });
+    }
     para = [];
   };
   const endList = () => {

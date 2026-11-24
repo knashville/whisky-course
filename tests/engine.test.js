@@ -303,3 +303,12 @@ test('standard drinks, discrimination tests and trade maths', () => {
   assert.ok(Math.abs(calc.priceFromMargin(24, 30) - 34.2857) < 0.001);
   assert.ok(Math.abs(mm.markupPct - 42.857) < 0.01 && Math.abs(mm.marginPct - 30) < 1e-9);
 });
+
+test('markdown breaks mode keeps label lines apart', () => {
+  const label = '**OLD HARBOR RESERVE**\nKentucky Straight Bourbon Whisky\nAged 3 Years';
+  const [p] = parseMarkdown(label, { breaks: true });
+  assert.equal(p.c.filter((n) => n.t === 'br').length, 2);
+  assert.equal(p.c[0].t, 'strong');
+  const [joined] = parseMarkdown(label);
+  assert.equal(joined.c.filter((n) => n.t === 'br').length, 0, 'prose still reflows by default');
+});

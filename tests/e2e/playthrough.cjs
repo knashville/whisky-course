@@ -2,7 +2,7 @@
 // the real UI using the answer keys, then checks the certificate. Proves that
 // every question is answerable as rendered and that progression works.
 //
-//   npm run build && node tests/e2e/playthrough.cjs [dist/whiskey-course.html]
+//   npm run build && node tests/e2e/playthrough.cjs [dist/whisky-course.html]
 //
 // Needs Playwright with Chromium (npm i -D playwright && npx playwright install chromium).
 const path = require('path');
@@ -15,7 +15,7 @@ try {
 }
 
 const root = path.resolve(__dirname, '../..');
-const file = path.resolve(process.argv[2] || path.join(root, 'dist/whiskey-course.html'));
+const file = path.resolve(process.argv[2] || path.join(root, 'dist/whisky-course.html'));
 
 (async () => {
   const coursePath = file.includes('dist-fixture') ? 'tests/fixtures/sample-course.js' : 'js/content/course.js';

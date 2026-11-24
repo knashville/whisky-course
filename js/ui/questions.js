@@ -25,7 +25,7 @@ export function renderQuestion(prepared, opts = {}) {
     h('span', { class: 'q-type' }, TYPE_LABELS[prepared.type]),
     number ? h('span', { class: 'q-number' }, number) : null,
   );
-  const context = prepared.context ? h('div', { class: 'q-context' }, md(prepared.context)) : null;
+  const context = prepared.context ? h('div', { class: 'q-context' }, md(prepared.context, { breaks: true })) : null;
   const prompt = h('p', { class: 'q-prompt', id: `${id}-prompt` }, md1(prepared.prompt));
 
   let body;
