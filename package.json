@@ -1,0 +1,20 @@
+{
+  "name": "whiskey-course",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A self-paced, multi-level whiskey education course that runs entirely in the browser.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "validate": "node scripts/validate.js",
+    "build": "node scripts/build.js",
+    "serve": "python3 -m http.server 8080",
+    "e2e": "node tests/e2e/playthrough.cjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
