@@ -315,6 +315,9 @@ p {
 .page > * {
   min-width: 0;
 }
+.page > .btn {
+  justify-self: start;
+}
 .page-head {
   max-width: var(--measure);
 }
@@ -539,7 +542,7 @@ p {
 .rickhouse-wrap .section-head + .rickhouse::before {
   content: '';
   display: block;
-  height: 34px;
+  height: 56px;
   margin-inline: -6px;
   background: var(--char);
   clip-path: polygon(0 100%, 50% 0, 100% 100%);

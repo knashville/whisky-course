@@ -122,6 +122,13 @@ const file = path.resolve(process.argv[2] || path.join(root, 'dist/whiskey-cours
     }
     await page.evaluate((n) => (location.hash = `exam-${n}`), level.number);
     await page.getByRole('button', { name: 'Begin the exam' }).click();
+    if (level.exam.timeLimitMinutes) {
+      // The countdown must be running: it shows time left and decreases.
+      const t1 = await page.locator('.timer').innerText();
+      await page.waitForTimeout(2100);
+      const t2 = await page.locator('.timer').innerText();
+      if (!/left$/.test(t2) || t1 === t2) throw new Error(`Level ${level.number}: exam timer is not counting down ("${t1}" then "${t2}")`);
+    }
     for (let i = 0; i < level.exam.draw; i++) {
       const qid = await page.locator('.question').getAttribute('data-qid');
       await answer(byId.get(qid));
@@ -147,6 +154,23 @@ const file = path.resolve(process.argv[2] || path.join(root, 'dist/whiskey-cours
   await page.evaluate(() => (location.hash = 'certificate'));
   const name = await page.locator('.cert-name').innerText();
   if (name !== 'Test Taster') throw new Error(`certificate shows "${name}"`);
+  // A timed exam submits itself when the clock runs out.
+  const timed = course.levels.find((lv) => lv.exam.timeLimitMinutes);
+  if (timed) {
+    const clockPage = await browser.newPage();
+    clockPage.on('pageerror', (e) => errors.push(e.message));
+    await clockPage.clock.install();
+    await clockPage.addInitScript(() => localStorage.setItem('whiskey-course:progress:v1', JSON.stringify({ unlockAll: true, ageConfirmed: true })));
+    await clockPage.goto('file://' + file + `#exam-${timed.number}`);
+    await clockPage.getByRole('button', { name: 'Begin the exam' }).click();
+    await clockPage.clock.runFor((timed.exam.timeLimitMinutes * 60 + 2) * 1000);
+    await clockPage.locator('.result-card').waitFor({ timeout: 5000 });
+    const note = await clockPage.locator('.result-card').innerText();
+    if (!/Time ran out/.test(note)) throw new Error('timed exam did not auto-submit when time ran out');
+    await clockPage.close();
+    console.log(`Level ${timed.number}: timed exam auto-submitted after ${timed.exam.timeLimitMinutes} minutes`);
+  }
+
   if (errors.length) throw new Error('Page errors:\n' + errors.join('\n'));
   console.log(`OK: ${checked} questions answered through the UI, ${byId.size} answer keys verified, certificate issued.`);
   await browser.close();

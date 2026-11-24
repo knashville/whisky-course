@@ -203,13 +203,17 @@ function examRunner(ctx, level, s, root) {
   }
   const timer = h('span', { class: 'timer', role: 'timer', 'aria-live': 'off' });
   let interval = null;
+  // The view is built before it is attached to the page, so "not connected" only
+  // means the learner left once it has been connected at least once.
+  let mounted = false;
   const tick = () => {
-    if (!root.isConnected && interval) {
+    if (root.isConnected) mounted = true;
+    else if (mounted) {
       // Left the page: stop updating, keep the exam (and its deadline) in the session.
       clearInterval(interval);
       return;
     }
-    if (!s.deadline) return;
+    if (!s.deadline || s.submitted) return;
     const left = (s.deadline - Date.now()) / 1000;
     timer.textContent = `${formatDuration(left)} left`;
     timer.classList.toggle('is-low', left < 60);
