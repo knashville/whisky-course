@@ -57,6 +57,7 @@ export function validateCourse(course, opts = {}) {
       });
     });
 
+    if (opts.lessonsOnly) return;
     const ew = `${lw}.exam`;
     const exam = level.exam;
     if (!exam || !Array.isArray(exam.questions)) {

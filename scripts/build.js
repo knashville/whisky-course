@@ -8,11 +8,15 @@ import { build } from 'esbuild';
 import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import course from '../js/content/course.js';
 import { validateCourse, courseCounts } from '../js/engine/validate.js';
 
+// --fixture builds the small test course into dist-fixture/ (for testing the app
+// independently of the real content).
+const fixture = process.argv.includes('--fixture');
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const dist = path.join(root, 'dist');
+const dist = path.join(root, fixture ? 'dist-fixture' : 'dist');
+const coursePath = path.join(root, fixture ? 'tests/fixtures/sample-course.js' : 'js/content/course.js');
+const { default: course } = await import(coursePath);
 
 const { errors } = validateCourse(course);
 if (errors.length) {
@@ -29,6 +33,16 @@ const result = await build({
   target: ['es2020'],
   write: false,
   legalComments: 'none',
+  plugins: fixture
+    ? [
+        {
+          name: 'fixture-course',
+          setup(b) {
+            b.onResolve({ filter: /content\/course\.js$/ }, () => ({ path: coursePath }));
+          },
+        },
+      ]
+    : [],
 });
 const js = result.outputFiles[0].text;
 const css = await readFile(path.join(root, 'css/app.css'), 'utf8');
@@ -79,8 +93,8 @@ await writeFile(path.join(dist, 'artifact', 'app.js'), js);
 const c = courseCounts(course);
 const kb = (s) => `${Math.round(Buffer.byteLength(s) / 1024)} KB`;
 console.log(`Built ${title}: ${c.levels} levels, ${c.lessons} lessons, ${c.quizQuestions + c.examQuestions} questions`);
-console.log(`  dist/whiskey-course.html  ${kb(standalone)}`);
-console.log(`  dist/artifact/index.html  ${kb(artifact)} + app.js ${kb(js)}`);
+console.log(`  ${path.relative(root, dist)}/whiskey-course.html  ${kb(standalone)}`);
+console.log(`  ${path.relative(root, dist)}/artifact/index.html  ${kb(artifact)} + app.js ${kb(js)}`);
 
 function escapeHtml(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

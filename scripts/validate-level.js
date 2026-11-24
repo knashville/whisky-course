@@ -1,4 +1,4 @@
-// Validate one level folder on its own: node scripts/validate-level.js 3
+// Validate one level folder on its own: node scripts/validate-level.js 3 [--lessons-only]
 import { validateCourse, courseCounts } from '../js/engine/validate.js';
 
 const n = Number(process.argv[2]);
@@ -8,9 +8,10 @@ if (!Number.isInteger(n)) {
 }
 const { default: level } = await import(`../js/content/levels/level-${n}/index.js`);
 if (level.number !== n) console.error(`ERROR: level.number is ${level.number}, expected ${n}`);
-const { errors, warnings } = validateCourse({ title: 'partial', levels: [level] }, { partial: true });
+const lessonsOnly = process.argv.includes('--lessons-only');
+const { errors, warnings } = validateCourse({ title: 'partial', levels: [level] }, { partial: true, lessonsOnly });
 if (!errors.length) {
-  const c = courseCounts({ levels: [level] });
+  const c = courseCounts({ levels: [lessonsOnly ? { ...level, exam: { questions: [] } } : level] });
   console.log(`Level ${n} "${level.title}": ${c.lessons} lessons, ${c.quizQuestions} quiz + ${c.examQuestions} exam questions, ${c.keyTerms} key terms`);
   console.log('Question types:', JSON.stringify(c.byType));
 }

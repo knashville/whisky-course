@@ -18,7 +18,8 @@ const root = path.resolve(__dirname, '../..');
 const file = path.resolve(process.argv[2] || path.join(root, 'dist/whiskey-course.html'));
 
 (async () => {
-  const { default: course } = await import(path.join(root, 'js/content/course.js'));
+  const coursePath = file.includes('dist-fixture') ? 'tests/fixtures/sample-course.js' : 'js/content/course.js';
+  const { default: course } = await import(path.join(root, coursePath));
   const { plainText } = await import(path.join(root, 'js/engine/markdown.js'));
   const byId = new Map();
   for (const lv of course.levels) {

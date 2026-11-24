@@ -149,3 +149,32 @@ regulations that spell it that way (US federal regulations use "whisky").
   do an exercise.
 - Responsible drinking: tasting is always optional; recommend small pours,
   water, and spitting.
+
+## Exercises and tools
+
+The app has no drag-and-drop maps, simulators or hotspot labels. Turn an
+exercise idea into what the app does support:
+
+- a `tasting` block (a style-based flight with what to look for);
+- a worked example in a `steps` or `table` block (show every step of the arithmetic);
+- quiz questions (`order` for sequences and timelines, `match` for sorting,
+  `numeric` for calculations, `context` blocks for mock labels and scenarios).
+
+Point learners to the app's Tools page where it helps. The tools are:
+**Proof and ABV**, **Adding water** (dilution), **Blending** (blend strength and
+Pearson square), **Angel's share** (compounding cask loss), **Cask yield**
+(bottles, LPA, proof gallons), **Is it bourbon?** (US category checker),
+**Standard drinks** (US drinks and UK units), **Triangle test** (binomial
+significance and critical values) and **Pour cost** (cost per pour, menu price,
+markup vs margin). Refer to them by these names, e.g. "Check your answer with
+the Adding water tool."
+
+Mock labels in `context` blocks must be invented brands (no real brand names),
+laid out as short Markdown lines, for example:
+
+```
+**OLD HARBOR RESERVE**
+Kentucky Straight Bourbon Whisky
+Aged 3 Years · 45% Alc./Vol. (90 Proof) · 750 mL
+Distilled and bottled by Old Harbor Distilling Co., Bardstown, KY
+```

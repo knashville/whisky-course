@@ -280,3 +280,26 @@ test('validator accepts the sample course and catches broken content', () => {
   assert.match(text, /exceeds pool size/);
   assert.match(text, /diagram name/);
 });
+
+test('standard drinks, discrimination tests and trade maths', () => {
+  const one = calc.standardDrinks(1.5 * calc.ML_PER_US_FL_OZ, 40);
+  assert.ok(Math.abs(one.usDrinks - 1) < 0.01, 'a 1.5 fl oz pour at 40% is one US drink');
+  assert.ok(Math.abs(calc.standardDrinks(25, 40).ukUnits - 1) < 1e-9, '25 ml at 40% is one UK unit');
+  const sixty = calc.standardDrinks(60, 40);
+  assert.ok(Math.abs(sixty.grams - 18.94) < 0.01 && Math.abs(sixty.ukUnits - 2.4) < 1e-9);
+  // Published minimum-correct tables for the triangle test at alpha = 0.05.
+  const table = { 12: 8, 18: 10, 24: 13, 30: 15, 36: 18 };
+  for (const [n, k] of Object.entries(table)) assert.equal(calc.discriminationTest(Number(n), 0).critical, k, `n=${n}`);
+  const r = calc.discriminationTest(30, 15);
+  assert.ok(r.significant && Math.abs(r.pValue - 0.0435) < 0.0005);
+  assert.equal(calc.discriminationTest(30, 14).significant, false);
+  assert.ok(Math.abs(calc.binomialTail(10, 0, 0.5) - 1) < 1e-12);
+  assert.ok(Math.abs(calc.binomialTail(10, 10, 0.5) - 1 / 1024) < 1e-12);
+  const p = calc.pourCost({ bottleCost: 30, bottleMl: 750, pourMl: 1.5 * calc.ML_PER_US_FL_OZ, menuPrice: 9, targetPct: 20 });
+  assert.ok(Math.abs(p.pours - 16.9) < 0.01);
+  assert.ok(Math.abs(p.costPerPour - 1.7744) < 0.001);
+  assert.ok(Math.abs(p.priceForTarget - 8.872) < 0.01);
+  const mm = calc.markupAndMargin(24, calc.priceFromMargin(24, 30));
+  assert.ok(Math.abs(calc.priceFromMargin(24, 30) - 34.2857) < 0.001);
+  assert.ok(Math.abs(mm.markupPct - 42.857) < 0.01 && Math.abs(mm.marginPct - 30) < 1e-9);
+});

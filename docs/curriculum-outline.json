@@ -1,0 +1,850 @@
+{
+ "note": "Design brief produced by three independent curriculum proposals and a judge synthesis. Facts here are a brief for authors, not verified content; the lesson files are the source of truth after fact-checking. appParams are the assessment settings the app uses.",
+ "courseName": "Heart of the Cut",
+ "tagline": "Six runs through the still: from your first careful nosing to the blender's bench and the trade desk.",
+ "philosophy": "A spiral curriculum built around the flow of a spirit run. Every major subject (grain, fermentation, distillation, wood, law, sensory science, business, service) comes back at a higher level, and each pass goes one layer deeper and asks for a harder task.\n\nWhat each level adds:\n- L1 says what whiskey is.\n- L2 attaches the headline legal numbers to each style.\n- L3 explains how it is made, with enzyme windows, cut points and cask physics.\n- L4 makes it a compliance problem, with clause-level citations and near-miss thresholds.\n- L5 explains it at the molecular and perceptual level.\n- L6 puts it into quantitative, commercial and ethical models.\n\nDifficulty rises on five axes at once:\n(1) Depth.\n(2) Vocabulary: about 30 plain terms in L1, a glossary of about 400 entries by L6.\n(3) Regulatory precision: 'Scotch is aged 3 years' in L1; citations, exceptions and near-miss distractors in L4 (125 vs 160 proof, 94.8 vs 95% ABV, 51 vs 80% corn, 2/3/4 years).\n(4) Numbers: proof and standard drinks, then LPA, dilution and recovery, then proof-gallon thresholds, then odor activity values, SA/V and binomial statistics, then yield, inventory, excise and pricing models.\n(5) Assessment format: untimed recall, then label application, then timed rule analysis, then diagnosis from data, then judgment scenarios.\n\nEvery lesson takes 8-15 minutes and ends with a 5-8 item retrieval quiz with instant explanations. From L3 on, 15% of each level exam comes from earlier levels, and missed items go into a Leitner spaced-repetition deck (1/3/7/21 days). Exam pools are 3-4x the draw, and a failed exam has a 24-hour cooldown.\n\nTasting uses styles, not brands, with 10-25 mL pours, spitting encouraged and no session above about 2 US standard drinks. Every exercise has a nose-only or kitchen-aroma alternative, so no one ever has to drink to progress. Responsible enjoyment starts in L1 and ends with responsible-service leadership in L6.",
+ "levels": [
+  {
+   "number": 1,
+   "title": "First Pour: What Whiskey Is",
+   "rank": "Grist",
+   "difficulty": "Baseline with no prior knowledge assumed. Plain language and about 30 core terms. Only simple numbers (proof = 2 x ABV, standard drinks). Recall questions on an untimed exam.",
+   "lessons": [
+    {
+     "title": "What Makes Whiskey Whiskey",
+     "objectives": [
+      "Define whiskey and tell it apart from brandy, rum, tequila, vodka and gin",
+      "Convert between ABV and US proof",
+      "Explain the whisky/whiskey spelling and the origin of the word"
+     ],
+     "topics": [
+      "Whiskey: a spirit distilled from a fermented mash of cereal grain and almost always matured in wood. US corn whisky is the main category that need not be aged",
+      "Fermentation alone stalls around 15% ABV; distillation concentrates the alcohol. Beer is to whiskey as wine is to brandy",
+      "Base materials: grain (whiskey, grain vodka); grapes or other fruit (brandy); cane or molasses (rum); agave (tequila, mezcal). Gin is neutral spirit flavored with juniper",
+      "US vodka is distilled at 190 proof (95% ABV) or more so it is neutral. US whisky must come off the still below 190 proof and be stored in oak (corn whisky excepted)",
+      "US proof = 2 x ABV (40% = 80 proof; 50% = 100 proof). Historic UK proof: 100 degrees is about 57.1% ABV",
+      "Typical strengths: wash 7-10%, new make 60-80%, bottled 40-46%, cask strength often 50-65%. The minimum bottling strength is 40% ABV in the US, Scotland, Ireland, Canada, the EU and the Japanese industry standard",
+      "Spelling: 'whisky' in Scotland, Canada and Japan; 'whiskey' in Ireland and at most US brands. US regulations write 'whisky' but allow either spelling. The word comes from Gaelic uisce/uisge beatha, from Latin aqua vitae ('water of life'), via 'usquebaugh'",
+      "Myths: darker does not mean older (cask type, climate and permitted caramel color all matter); older is not automatically better; 'legs' reflect alcohol and viscosity, not quality"
+     ],
+     "exercise": "Shelf-scan drill: convert 40, 43, 46, 50 and 62.5% ABV to US proof. Then sort 10 spirit cards into whiskey and not whiskey, giving the base material or process that decides each one."
+    },
+    {
+     "title": "Grain, Yeast, Fire and Wood: Six Steps in Plain Words",
+     "objectives": [
+      "Name the main grains and the flavor each tends to give",
+      "Put the six production steps in order",
+      "Tell pot stills and column stills apart"
+     ],
+     "topics": [
+      "Grains: malted barley (in nearly every whiskey, supplies the enzymes); corn (sweet, round); rye (spicy, peppery, herbal); wheat (soft, bready). Minor grains: oats, millet, sorghum, rice",
+      "Malting: soak, sprout and kiln-dry barley so its enzymes can later turn starch into sugar. Most distilleries buy malt from specialist maltsters",
+      "Peat smoke during kilning leaves phenols that taste smoky and medicinal. Peating is a producer's choice, not a regional rule: Laphroaig is a heavily peated Islay single malt, while most Speyside malts are unpeated",
+      "The six steps: milling; mashing (wort or mash); fermentation (wash or distiller's beer, about 7-10% ABV, 2-5 days); distillation (heads, heart, tails); maturation; bottling (reduce, often filter, fill)",
+      "Ethanol boils at about 78 C and water at 100 C, which is why distillation concentrates alcohol",
+      "Pot still: copper, batch, usually run twice, heavier spirit. Column still: continuous, with plates, lighter and stronger spirit at volume",
+      "Spirit leaves the still clear ('new make', 'white dog'). Oak gives color, vanilla, caramel, coconut, spice and tannin. Bourbon uses new charred oak; most Scotch, Irish, Canadian and Japanese whisky uses reused casks",
+      "Angel's share: about 2% of volume a year in Scotland, more in hot climates. Whiskey does not age in the bottle",
+      "Kentucky's limestone water is calcium-rich and iron-poor. It helps fermentation, but its effect on flavor is often overstated"
+     ],
+     "exercise": "Kitchen nosing set (malted-milk biscuit, cornbread, rye bread, white roll, vanilla pod, charred toast): match each to a grain or wood card. Then drag the six steps into order and match five liquids to their ABV bands."
+    },
+    {
+     "title": "A World Map of Whiskey",
+     "objectives": [
+      "Name the major producing nations and their signature styles",
+      "State the single most important rule for each",
+      "Correct common myths about national styles"
+     ],
+     "topics": [
+      "Scotch: made in Scotland and aged at least 3 years in oak there. Single malt vs blended Scotch; blends dominate volume; most Scotch is not smoky",
+      "Irish: distilled and aged at least 3 years anywhere on the island of Ireland, Republic and Northern Ireland alike. Known for blends and for pot still whiskey (malted plus unmalted barley). Triple distillation is common, not required",
+      "Bourbon: made in the USA from at least 51% corn and aged in new charred oak. No minimum age (straight bourbon needs 2 years). Most is made in Kentucky, but it does not have to be",
+      "Rye whiskey: at least 51% rye. Tennessee whiskey: bourbon-style whiskey filtered through sugar-maple charcoal before aging",
+      "Canadian: at least 3 years in small wood in Canada, usually blended from components made separately. Often called 'rye' whatever its actual rye content",
+      "Japanese: the industry began at Yamazaki in 1923. Since 2021 a voluntary industry standard governs the 'Japanese whisky' label (made, aged at least 3 years and bottled in Japan)",
+      "World whisky: India (the largest whisky market by volume), Taiwan, Australia, England, Wales, France and the Nordic countries. Hot climates extract from wood faster",
+      "'Single' means one distillery, not one cask. 'Blended' means whiskies from more than one source or type. 'Blended malt' means malts from several distilleries"
+     ],
+     "exercise": "Interactive map: drop 8 style cards onto their countries and pick each one's defining rule. Then match 8 simple tasting notes to their likely origin."
+    },
+    {
+     "title": "How to Taste",
+     "objectives": [
+      "Follow a repeatable five-step tasting method",
+      "Use a starter flavor vocabulary",
+      "Use water, ice and flight order deliberately"
+     ],
+     "topics": [
+      "Glassware: a tulip or copita nosing glass concentrates aroma; a rocks glass is for ice and cocktails",
+      "Five steps. Look: color, clarity and tears (the Marangoni effect). Nose: lips parted, gentle sniffs from the rim downward. Sip: coat the mouth. Finish: short, medium or long. Reflect",
+      "Most 'flavor' is retronasal smell. The tongue gives five tastes: sweet, sour, salty, bitter and umami. Ethanol burn and astringency are touch sensations",
+      "Starter vocabulary: vanilla, caramel, honey, orchard fruit, citrus, dried fruit, baking spice, pepper, cereal, floral, smoke/medicinal, oak",
+      "A few drops of water often open the aroma and soften the heat. Ice chills the whisky and mutes aroma",
+      "Flight order: lighter before heavier, lower ABV before higher, unpeated before peated. No more than 4-5 samples, with water and plain crackers between them",
+      "Tasting pours are 15-25 mL (0.5-0.75 oz). Spitting is normal professional practice, and every exercise has a nose-only option"
+     ],
+     "exercise": "Four-style flight of 15 mL each: bourbon, blended Irish, an unpeated ex-bourbon-cask single malt, and a peated Islay single malt such as Laphroaig. Use the note card with 1-5 sliders for sweetness, smoke, body and finish. Add water to one glass and record what changes. The nose-only path uses aroma jars."
+    },
+    {
+     "title": "Serving, Storing and Drinking Responsibly",
+     "objectives": [
+      "Choose a serve for the occasion",
+      "Calculate standard drinks and UK units",
+      "State the course's safe-enjoyment practices and the basic health facts"
+     ],
+     "topics": [
+      "Serves: neat, with water, over one large cube, or as a highball (about 1 part whisky to 3-4 parts chilled soda). A first cocktail: the Old Fashioned (whiskey, sugar, bitters, orange peel)",
+      "US standard drink = 14 g of ethanol = 1.5 fl oz (44 mL) at 40% ABV. UK unit = 10 mL (8 g) of ethanol = 25 mL at 40%",
+      "Formula: grams of ethanol = mL x ABV x 0.789. Example: 60 mL at 40% = 24 mL ethanol, about 19 g, about 1.4 US drinks or 2.4 UK units",
+      "Legal drinking age: 21 in the US, 18 in the UK and most of the EU, 20 in Japan. The course is for adults of legal age only",
+      "Never drink and drive. No alcohol in pregnancy or with interacting medication. Eat, hydrate and pace yourself. Not drinking is always a valid choice",
+      "Alcohol is an IARC Group 1 carcinogen, so drinking less means lower risk. Follow current national guidance, for example the UK Chief Medical Officers' limit of no more than 14 units a week spread over 3 or more days",
+      "Storage: keep bottles upright (high-strength spirit degrades cork), cool and dark. Opened bottles oxidize slowly as the headspace grows"
+     ],
+     "exercise": "Standard-drink calculator: work out 6 serves (pour size x ABV) in US drinks and UK units. Then plan a 3-glass session that stays under 1.5 US drinks."
+    }
+   ],
+   "assessment": {
+    "questionTypeMix": "40% single, 25% truefalse, 20% match, 10% order, 5% numeric (proof/ABV, standard drinks). Recall only; context blocks limited to short descriptions.",
+    "passPercent": 70,
+    "examQuestionsDrawn": 15,
+    "examPoolSize": 50,
+    "timeLimitMinutes": 0,
+    "sampleHardQuestion": "(numeric) A guest pours 2 fl oz of a 50% ABV whiskey. How many US standard drinks is that? (1 standard drink = 14 g of ethanol = 1.5 fl oz at 40% ABV.) Answer: 1.67, tolerance +/-0.05 (1.0 fl oz of ethanol / 0.6 fl oz)."
+   },
+   "appParams": {
+    "proof": 80,
+    "lessonQuizPass": 70,
+    "quizPerLesson": 5,
+    "passPercent": 70,
+    "draw": 15,
+    "pool": 28,
+    "timeLimitMinutes": 0,
+    "mix": "Mostly single choice, true/false and match; a few multi-select; 1-2 simple numeric (ABV to proof, standard drinks). Recall and simple recognition. Context blocks rare."
+   }
+  },
+  {
+   "number": 2,
+   "title": "The Style Atlas: Styles, Labels and Stories",
+   "rank": "Wash",
+   "difficulty": "Adds the legal numbers behind each style and about 60 new terms. First mock-label context blocks, first multi-select and numeric items. Learners classify a described product instead of only recalling definitions. Clause-level law, citations and edge cases are kept for L4.",
+   "lessons": [
+    {
+     "title": "American Whiskey by the Numbers",
+     "objectives": [
+      "State the headline specs of each US whiskey type",
+      "Explain straight, bottled-in-bond, blended and Tennessee whiskey",
+      "Classify a product from its mashbill and process"
+     ],
+     "topics": [
+      "US whisky baseline: from a grain mash, distilled below 190 proof (95% ABV), stored in oak (corn whisky excepted), bottled at 80 proof or more",
+      "Bourbon: at least 51% corn; distilled at 160 proof or less; entered into new charred oak at 125 proof or less; bottled at 80 proof or more; made in the US; no added coloring or flavoring; no minimum age",
+      "Rye, wheat, malt and rye malt whisky: the same proof and barrel rules, with at least 51% of the named grain",
+      "Corn whisky: at least 80% corn. If stored, it goes into used or uncharred new oak at 125 proof or less, with no charred-wood treatment",
+      "Straight: at least 2 years in the containers its type requires; an age statement if under 4 years; may combine straights of the same type from the same state",
+      "Bottled-in-bond (Act of 1897): one season (January-June or July-December), one distiller, one distillery, at least 4 years in a bonded warehouse, exactly 100 proof",
+      "Tennessee whiskey (Tennessee law, 2013): made in Tennessee, at least 51% corn, new charred oak, maple-charcoal filtering before aging, the same proof limits. One producer is grandfathered out of the charcoal rule",
+      "Blended whiskey: at least 20% straight whiskey on a proof-gallon basis. Blended bourbon: at least 51% straight bourbon",
+      "American Single Malt (TTB, effective 19 January 2025): 100% malted barley, one US distillery, 160 proof or less, oak casks of 700 L or less (new or used, charred or not), bottled at 80 proof or more",
+      "Mashbills: traditional bourbon about 70-80% corn, 10-15% rye, 5-12% malt; high-rye about 20-35% rye; wheated (wheat replaces rye; Maker's Mark is a well-known example); 95% rye / 5% malt ryes",
+      "Sour mash is a process using backset; it does not taste sour"
+     ],
+     "exercise": "Mashbill classifier: 8 recipe-and-process cards. Example: 60% rye / 35% corn / 5% malt, 150 proof off the still, 115 proof into new charred oak, 3 years = straight rye whisky that must carry an age statement. Assign every designation each card qualifies for."
+    },
+    {
+     "title": "Scotch: Five Categories, Five Places",
+     "objectives": [
+      "State the core definition of Scotch",
+      "Tell the five legal categories apart",
+      "Name the protected regions and localities, and treat regional style as a tendency, not a rule"
+     ],
+     "topics": [
+      "Headline definition: distilled and matured in Scotland for at least 3 years in oak casks; distilled below 94.8% ABV; only water and plain caramel (E150a) added; bottled at 40% ABV or more",
+      "Five categories. Single Malt: one distillery, malted barley only, pot stills. Single Grain: one distillery, other cereals allowed, usually column stills. Blended Malt. Blended Grain. Blended Scotch Whisky",
+      "Blended Scotch is the large majority of exports by volume. Grain whisky is the light 'canvas' of a blend; malts add character",
+      "An age statement gives the age of the youngest whisky. No-age-statement bottles are still at least 3 years old",
+      "Protected regions: Highland, Lowland and Speyside. Protected localities: Islay and Campbeltown. 'Islands' is an informal grouping inside the Highland region",
+      "Speyside has the densest cluster (roughly half of Scotland's malt distilleries); typically fruity and floral, often from sherry casks. Islay: Laphroaig, Lagavulin and Ardbeg are heavily peated, but Bunnahabhain and Bruichladdich also make unpeated spirit",
+      "Campbeltown once had about 30 distilleries and now has 3 (Springbank, Glen Scotia, Glengyle). Lowland: lighter, with a triple-distillation tradition (Auchentoshan). Highland: very diverse, including island producers Talisker (Skye) and Highland Park (Orkney)",
+      "Producer choices (peat, fermentation, still shape, cuts, casks) shape style more than geography does"
+     ],
+     "exercise": "Category sorter: assign 10 product descriptions to their category. Then compare two glasses, an unpeated Speyside-style malt and a peated Islay malt, and note where cereal, fruit, cask and smoke appear."
+    },
+    {
+     "title": "Irish, Canadian, Japanese and World Whisky",
+     "objectives": [
+      "Describe the four Irish categories",
+      "Explain Canadian blending and the 'rye' label",
+      "Summarize the Japanese standard and the main world-whisky producers"
+     ],
+     "topics": [
+      "Irish whiskey (Technical File 2014): distilled on the island below 94.8% ABV; at least 3 years in wooden casks of 700 L or less on the island; 40% ABV or more; only water and E150a added",
+      "Irish categories. Malt: 100% malted barley, pot stills. Pot Still: at least 30% malted and at least 30% unmalted barley, up to 5% other cereals, pot stills. Grain: no more than 30% malted barley, column stills. Blended: two or more of these",
+      "Triple distillation is traditional (for example Bushmills malt and Midleton pot still) but not required. Cooley double-distills and makes peated malt",
+      "Canadian (Food and Drug Regulations B.02.020): mashed, distilled and aged in Canada; at least 3 years in small wood (700 L or less); 40% ABV or more; may contain caramel and flavouring. 'Canadian rye whisky' is a legal synonym whatever the rye content",
+      "Canadian method: grains are usually distilled and aged separately. A high-strength base whisky (often corn) and a lower-strength flavouring whisky (often rye) are blended after maturation",
+      "Japan: Shinjiro Torii's Yamazaki (1923). Masataka Taketsuru studied in Scotland 1918-1920 and founded Yoichi (1934). The JSLMA 'Japanese whisky' standard (effective April 2021, full compliance by 31 March 2024) requires malted grain, Japanese water, mashing, fermentation and distillation in Japan, at least 3 years in wooden casks of 700 L or less in Japan, and bottling in Japan at 40% ABV or more. Caramel is allowed",
+      "Japanese houses make many spirit styles in-house because rival companies rarely trade stock. Highball culture drives domestic drinking",
+      "World: India is the largest market by volume, but much domestic 'whisky' is molasses-based and would not count as whisky under UK, EU or US law. Taiwan: fast subtropical maturation. Australia: at least 2 years in wood. Wales, England, France and the Nordic countries are growing"
+     ],
+     "exercise": "Passport check: 10 scenarios. Examples: distilled in Belfast and aged in County Cork = Irish whiskey. Bottled in Japan but containing imported Scotch = not 'Japanese whisky' under the standard."
+    },
+    {
+     "title": "Five Centuries in Fifteen Minutes",
+     "objectives": [
+      "Order 15 milestones",
+      "Connect historical events to today's rules",
+      "Separate the documented record from marketing legend"
+     ],
+     "topics": [
+      "1494 Scottish Exchequer Rolls: 'eight bolls of malt to Friar John Cor wherewith to make aqua vitae'",
+      "1608 Antrim distilling licence (it does not prove continuous distilling at any modern site). 1644: first Scottish excise duty on spirits. 1725: the Malt Tax drives illicit distilling",
+      "1791: US federal excise tax on whiskey, leading to the Whiskey Rebellion of 1794",
+      "1823 UK Excise Act. Continuous stills: Stein in the 1820s, Coffey's patent in 1830. 1860 Spirits Act allows blending in bond. Phylloxera hits cognac from the 1860s. 1898: the Pattison crash",
+      "1897 Bottled-in-Bond Act; 1906 Pure Food and Drug Act; 1909 Taft Decision (straight, blended and imitation whiskey)",
+      "1915-16 Immature Spirits Act (2 years, then 3), the origin of the 3-year minimum",
+      "Prohibition from 17 January 1920 to 5 December 1933, with medicinal permits. 1935 FAA Act. 1964: Congress names bourbon a 'distinctive product of the United States'",
+      "Irish decline (trade war, US Prohibition, resistance to column-still blends). Irish Distillers formed in 1966; new Midleton distillery in 1975; Cooley in 1987",
+      "The 1980s whisky loch and the 1983-85 Scotch closures; the single malt and bourbon booms. Modern rules: SWR 2009, Tennessee 2013, the Irish Technical File 2014, JSLMA 2021, the TTB Part 5 recodification 2022, American Single Malt 2025",
+      "Legend vs record: no document shows that Elijah Craig, or anyone, 'invented' bourbon or the charred barrel"
+     ],
+     "exercise": "Timeline builder: put 15 events in order and link causes to effects (for example, the 1915-16 Act to today's 3-year rule). Then flag 3 marketing legends as unsupported."
+    },
+    {
+     "title": "Reading a Whiskey Label",
+     "objectives": [
+      "Identify the mandatory elements of a US label",
+      "Separate regulated terms from marketing language",
+      "Infer age and source from label clues"
+     ],
+     "topics": [
+      "Mandatory on US labels: brand; class/type; alcohol content (% alc/vol; proof optional); net contents (750 mL, 1 L, 1.75 L, and 700 mL since the end of 2020); bottler or importer name and address; country of origin for imports; the Government Warning (1988 Act)",
+      "Required in some cases: an age statement (under 4 years); the state of distillation if it differs from the address state; a commodity statement for blends containing neutral spirits; disclosure of FD&C Yellow No. 5 or cochineal/carmine; sulfites at 10 ppm or more",
+      "'Distilled by' means the bottler distilled it. 'Bottled by', 'Produced by' or 'Blended by' often signals a non-distiller producer (NDP)",
+      "Defined or policed terms: straight, bottled-in-bond, single malt Scotch, age statements, protected regional names. 'Single barrel' must be literally true",
+      "Not defined in US law: small batch, reserve, select, handcrafted, artisanal, 'family recipe'",
+      "Voluntary claims: cask strength or barrel proof, non-chill filtered, natural color",
+      "A COLA (TTB Certificate of Label Approval) is required before sale"
+     ],
+     "exercise": "Label decoder: 5 invented mock labels (US straight bourbon, US blended whiskey, blended malt Scotch, Irish pot still, Japanese single malt). Tag the mandatory elements, flag anything missing, and mark each term as regulated or not."
+    },
+    {
+     "title": "Flavor Language and the Classic Serves",
+     "objectives": [
+      "Write a structured note using the eight-family flavor wheel",
+      "Match a serve to a style and a guest",
+      "Recall the specs for six classic whiskey cocktails"
+     ],
+     "topics": [
+      "Scotch industry flavor wheel, eight families: cereal, fruity, floral, peaty, feinty, sulphury, woody, winey. Each can be traced to grain, fermentation, distillation or cask",
+      "Structured note: appearance; nose; palate (sweetness, body, intensity, texture); finish (length, character); balance",
+      "Large ice cubes melt more slowly (less surface per unit of volume). Highball: 1:3-1:4 over plenty of ice",
+      "Old Fashioned: 2 oz bourbon or rye, about 1/4 oz syrup, 2-3 dashes aromatic bitters; stirred; orange peel",
+      "Manhattan: 2 oz rye, 1 oz sweet vermouth, 2 dashes bitters; stirred; served up. The Rob Roy is the Scotch version",
+      "Whiskey Sour: 2 oz whiskey, 3/4 oz lemon, 3/4 oz syrup, optional egg white; shaken",
+      "Mint Julep. Sazerac: rye, sugar, Peychaud's-style bitters, absinthe rinse, lemon peel. Irish Coffee: Foynes, 1940s. Penicillin: blended Scotch, lemon, honey-ginger syrup and a float of Islay whisky (New York, 2000s)",
+      "Shake drinks with citrus, egg or cream; stir all-spirit drinks"
+     ],
+     "exercise": "Build-a-drink simulator: choose the method, glass and garnish for 6 classics. Then a 3-glass water test on one whisky (neat, with a few drops of water, with one cube), mapping the changes onto the flavor wheel."
+    }
+   ],
+   "assessment": {
+    "questionTypeMix": "30% single, 20% multi, 20% match, 15% numeric (proof, mashbill %, minimum straight whiskey in a blend, age inference), 10% truefalse, 5% order. About 30% of items carry mock-label or product contexts.",
+    "passPercent": 75,
+    "examQuestionsDrawn": 20,
+    "examPoolSize": 70,
+    "timeLimitMinutes": 0,
+    "sampleHardQuestion": "(multi) Context, mock label: 'STRAIGHT RYE WHISKY - Aged 3 Years - 45% Alc/Vol - Distilled in Indiana - Bottled by Example Spirits Co., Denver, CO'. Select ALL statements that must be true. A) The mash had at least 51% rye. B) It spent at least 2 years in new charred oak. C) It was distilled at no more than 160 proof. D) No coloring or flavoring was added. E) The mash was 100% rye. F) It was aged in Colorado. G) It qualifies as bottled-in-bond. Answer: A, B, C, D. (G fails: it is 90 proof, not 100, and only 3 years old.)"
+   },
+   "appParams": {
+    "proof": 90,
+    "lessonQuizPass": 70,
+    "quizPerLesson": 6,
+    "passPercent": 75,
+    "draw": 20,
+    "pool": 36,
+    "timeLimitMinutes": 0,
+    "mix": "Single, multi-select, match, true/false, order (timelines), a few numeric. First mock-label and product-spec context blocks (about 20% of items): classify a described product."
+   }
+  },
+  {
+   "number": 3,
+   "title": "The Still House: How Whiskey Is Made",
+   "rank": "Low Wines",
+   "difficulty": "Moves from what to how and why: enzyme temperature windows, fermentation variables, still geometry, cut points and cask physics. Process sequencing and the first real calculations (LPA, recovery, dilution, compounding loss). Application scenarios. First timed exam, with 15% interleaved items from L1-L2.",
+   "lessons": [
+    {
+     "title": "Malting and Grain Chemistry",
+     "objectives": [
+      "Explain starch structure and the enzymes that convert it",
+      "Order steeping, germination and kilning with their moisture targets",
+      "Relate peating, grain choice and enzyme law to style"
+     ],
+     "topics": [
+      "Barley kernel: husk (later the filter bed), aleurone (where enzymes are made), starchy endosperm, embryo",
+      "Starch = amylose (alpha-1,4 chains) + amylopectin (alpha-1,4 chains branched at alpha-1,6 points)",
+      "Malting: steep to about 42-46% moisture with air rests; germinate about 4-6 days (floor, Saladin box or drum), which is 'modification'; kiln to about 4-5% moisture",
+      "Enzymes. Beta-amylase clips maltose from chain ends; best at about 55-65 C, denatures quickly above about 65 C. Alpha-amylase makes internal cuts; about 65-72 C, more heat-tolerant. Limit dextrinase cuts alpha-1,6 branches. Beta-glucanase breaks cell walls. Diastatic power = total converting capacity",
+      "Peat phenols are absorbed mainly early in kilning, while the grain is wet. They are measured as ppm in the malt; approximate bands: light under 10-15, medium about 15-30, heavy 30-50+, extreme releases over 100. The spirit keeps only a fraction",
+      "Gelatinization: barley and wheat starch gelatinize at mash temperatures; corn needs cooking near boiling or under pressure; rye's pentosans make sticky, foamy mashes",
+      "Grain chemistry: corn is oily (about 4% oil) and sweet; rye's ferulic acid becomes clove-like 4-vinylguaiacol; wheat is soft; malt is biscuity",
+      "Enzyme law: Scotch allows only the malt's own (endogenous) enzymes; Irish rules allow malt diastase with or without other natural enzymes; US and Canadian producers may add commercial enzymes",
+      "Floor malting survives at a few distilleries (for example Springbank, Laphroaig, Bowmore, Highland Park, Kilchoman, Balvenie)",
+      "Barley varieties low in epiheterodendrin (non-GN) limit ethyl carbamate precursors"
+     ],
+     "exercise": "Kiln simulator: move the peat smoke earlier or later and watch the modeled phenol uptake. Grain sensory set: chew malted and unmalted barley, and nose peated against unpeated malt."
+    },
+    {
+     "title": "Mashing and Fermentation",
+     "objectives": [
+      "Contrast Scotch infusion mashing with the American cook",
+      "Explain sour mash",
+      "Predict how fermentation variables change the new make"
+     ],
+     "topics": [
+      "Scotch grist from a roller mill is about 20% husk, 70% grits, 10% flour; US distillers hammer-mill finely for grain-in mashes",
+      "Infusion mash: first water about 63-64 C, second about 70-80 C, third or sparge about 85-90 C, which is recycled as the next mash's first water. Lauter or semi-lauter mash tuns",
+      "Clear wort gives a fruitier, more estery new make; cloudy wort gives a nuttier, heavier one",
+      "The wort is not boiled, so enzymes keep converting dextrins in the washback. Original gravity about 1.050-1.060; wash about 7-9% ABV",
+      "American cook: corn near 100 C (212 F) or under pressure; cool to about 77 C (170 F) for rye or wheat; then about 63-65 C (145-150 F) for malt. Fermented on the grain",
+      "Sour mash: backset, often about 20-30% of fermenter volume, lowers the pH toward about 5, curbs bacteria and adds nutrients",
+      "C6H12O6 -> 2 C2H5OH + 2 CO2. Theoretical yield is 0.511 g ethanol per g glucose; practical yields are about 90-95% of that",
+      "Fermentation time: about 48 h gives cereal, nutty new make; 70-120 h lets lactic bacteria act and produces more esters. US ferments last 3-5 days; distiller's beer is about 8-10% ABV",
+      "Yeast is a design variable (Four Roses: 2 mashbills x 5 yeasts = 10 recipes). Washbacks of Oregon pine, larch or stainless steel; US fermenters of cypress or steel",
+      "Congeners formed: higher alcohols, esters, aldehydes, acids and sulfur compounds. Co-products: draff and pot ale in Scotland; DDGS animal feed in the US"
+     ],
+     "exercise": "Mash-schedule planner flags any step that would denature beta-amylase too early. Numeric: 1,000 kg of glucose gives 511 kg of ethanol, about 648 L of pure alcohol."
+    },
+    {
+     "title": "Pot Still Distillation",
+     "objectives": [
+      "Describe a double pot-still run and its cuts",
+      "Relate still geometry, condensers and copper to spirit weight",
+      "Calculate alcohol recovery"
+     ],
+     "topics": [
+      "Ethanol boils at 78.4 C. The vapor above a boiling 8% wash is roughly 40-50% ABV",
+      "Wash still: low wines averaging about 20-25% ABV; the run continues to about 1%; the residue is pot ale",
+      "Spirit still charge (low wines plus feints) about 25-30%. Foreshots: acetaldehyde and ethyl acetate, cloudy when tested with water. Heart: for example from about 72-75% down to about 60-65%, averaging about 68-72%. Feints: down to about 1%. Foreshots and feints are recycled",
+      "Ending the heart earlier gives a lighter, fruitier spirit; ending it later gives a heavier, oilier one. Peated distilleries cut later because phenols emerge late in the run",
+      "The spirit safe is a locked glass-and-brass box, a legacy of excise control",
+      "Tall necks, boil balls, lantern shapes, upward lyne arms and purifiers (for example at Ardbeg) raise reflux and lighten the spirit. Glenmorangie's stills are notably tall",
+      "Shell-and-tube condensers (more copper contact, lighter spirit) vs worm tubs (less contact, meaty or sulfury spirit, for example Talisker and Mortlach)",
+      "Copper binds sulfur compounds such as DMTS. Worn stills are replaced in exactly the same shape",
+      "Heating by steam coils or pans, or direct fire (Yoichi's coal-fired stills). Double distillation is the Scotch norm; triple is the Irish and Lowland tradition; Springbank uses a '2.5' partial triple distillation",
+      "LPA = litres x ABV. Recovery = heart LPA / charge LPA"
+     ],
+     "exercise": "Spirit-run simulator: set the cut points and watch yield trade off against character. Drill: a 12,000 L charge at 27% holds 3,240 LPA; a 3,000 L heart at 69% holds 2,070 LPA, so 63.9% is recovered."
+    },
+    {
+     "title": "Column, Doubler and Hybrid Stills",
+     "objectives": [
+      "Explain plate-by-plate continuous separation",
+      "Distinguish the American beer still plus doubler from the Coffey still",
+      "Use proof limits to decide which categories remain open"
+     ],
+     "topics": [
+      "Column anatomy: the feed point, a stripping section below and a rectifying section above. Sieve or bubble-cap plates each act as roughly one equilibrium stage; steam enters at the base",
+      "US beer still: distiller's beer at about 8-10% enters near the top; low wines leave at about 55-65% ABV; stillage leaves the base and becomes backset",
+      "A doubler is a pot-type vessel that receives liquid low wines; a thumper bubbles vapor through liquid. High wines are typically about 65-70% ABV (130-140 proof). Bourbon may not exceed 160 proof off the still",
+      "Coffey still (1830): analyser and rectifier columns, with the wash preheated in the rectifier. Scotch grain whisky is collected at about 94% ABV, just under the 94.8% limit",
+      "Scotch and Irish grain mashes are mainly wheat or maize plus about 10-15% malted barley",
+      "Hybrid still: a pot with a plated column whose plates can be engaged or bypassed; common in craft distilling",
+      "The law constrains still choice. Scotch single malt must be pot-distilled, so all-malt spirit made in a column (as at Loch Lomond) is sold as single grain. Bourbon and American Single Malt have no still-type rule",
+      "Proof ladder: neutral spirits and vodka 190 proof or more; US whisky below 190; light whisky above 160 and below 190 (used or uncharred oak); bourbon, rye and straights 160 or less; Scotch, Irish and EU whisky below 94.8% ABV",
+      "Higher distillation strength leaves fewer congeners and a lighter spirit"
+     ],
+     "exercise": "Proof-limit drill: 8 still-output scenarios. Example: high wines at 164 proof cannot become bourbon or a straight whiskey, but could become light whisky if stored in used or uncharred oak."
+    },
+    {
+     "title": "Barrels, Warehouses and Bottling",
+     "objectives": [
+      "Compare oak species, char, cask sizes and fill histories",
+      "Predict loss and proof drift by climate",
+      "Explain finishing, reduction, chill filtration and coloring rules"
+     ],
+     "topics": [
+      "Oak. Quercus alba: vanillin and coconut lactone, low tannin, tyloses allow sawn staves. Q. robur and Q. petraea: more tannin and spice, split staves. Mizunara (Q. mongolica var. crispula): sandalwood and incense notes, porous and leak-prone",
+      "Cooperage: staves air-seasoned about 1-3 years or kiln-dried; then toasted and/or charred. Char #1-#4 takes roughly 15/30/35/55 s at one large cooperage; #4 is 'alligator' char. A toasted red layer lies beneath the char",
+      "Sizes: US barrel 53 gal (about 200 L); barrique 225 L; hogshead about 225-250 L; butt or puncheon about 450-500 L; port pipe about 550-650 L; quarter cask about 125 L. Scotch, Irish, Canadian, EU, JSLMA and American Single Malt rules cap casks at 700 L; bourbon has no size limit",
+      "Fill history: new charred, then first fill, then refill, then exhausted, then rejuvenated. Most modern 'sherry casks' are seasoned specifically for the whisky trade",
+      "Warehouses: dunnage (stone walls, earth floor, casks about 3 high, cool and humid); racked; palletized; US rickhouses (hotter upper floors, bigger temperature swings)",
+      "Angel's share: about 2% a year in Scotland; several percent a year in Kentucky (more in year 1 as the wood soaks up spirit); 8% or more in Taiwan and southern India",
+      "Proof drift depends on humidity: in cool, humid warehouses ABV falls; on hot, dry upper rickhouse floors proof can rise",
+      "Finishing (double maturation): a second cask for a few months up to about 2 years",
+      "Reduction with demineralized or reverse-osmosis water, in stages. C1V1 = C2V2 ignores volume contraction, so real proofing needs slightly more water and uses density tables",
+      "Chill filtration (about 0 C or below) removes long-chain fatty-acid ethyl esters that haze below about 46% ABV. E150a is allowed in Scotch, Irish, Canadian and JSLMA whisky, not in bourbon or straights"
+     ],
+     "exercise": "Climate comparison: predict the 5-year loss and proof drift in a Speyside dunnage warehouse, on a Kentucky top floor and in a Taiwanese warehouse. Proofing bench: taking 500 L at 60% down to 46% gives about 652 L (about 152 L of water); explain why the true water addition is larger. Then taste a first-fill ex-bourbon malt against a sherry-cask malt."
+    }
+   ],
+   "assessment": {
+    "questionTypeMix": "25% single, 20% multi, 20% numeric (dilution, LPA, recovery, angel's share), 15% order (malting steps, cook temperatures, run fractions), 15% match (still part to function, oak to traits), 5% truefalse. About 40% of items carry production-log or diagram context; 15% are interleaved from L1-L2.",
+    "passPercent": 75,
+    "examQuestionsDrawn": 25,
+    "examPoolSize": 90,
+    "timeLimitMinutes": 35,
+    "sampleHardQuestion": "(numeric) Context: 'Spirit still charge: 10,000 L of low wines and feints at 28.0% ABV. Middle cut: 2,800 L averaging 70.0% ABV.' What percentage of the charge's pure alcohol was recovered as middle cut? Answer: 70%, tolerance +/-0.5. (Charge = 2,800 LPA; heart = 1,960 LPA.)"
+   },
+   "appParams": {
+    "proof": 100,
+    "lessonQuizPass": 70,
+    "quizPerLesson": 6,
+    "passPercent": 75,
+    "draw": 20,
+    "pool": 36,
+    "timeLimitMinutes": 30,
+    "mix": "Application: order (process sequences), numeric calculations (LPA, recovery, dilution, compounding loss) with tolerances, multi-select, scenario single-choice with context blocks (about 35% of items)."
+   }
+  },
+  {
+   "number": 4,
+   "title": "The Rulebook: Law, Labels and the Producing Nations",
+   "rank": "Middle Cut",
+   "difficulty": "Clause-level law across six jurisdictions, with citations (27 CFR sections 5.143, 5.74, 5.88; SWR 2009; Irish Technical File; FDR B.02.020; JSLMA 2021; EU 2019/787). Exceptions and near-miss thresholds serve as distractors. Multi-step label-compliance analysis. Confidence-weighted answering begins and the exam is timed.",
+   "lessons": [
+    {
+     "title": "US Federal Law: Inside 27 CFR Part 5",
+     "objectives": [
+      "Find and cite the key whisky sections",
+      "Apply the rules on age statements, state of distillation, additives and bottled-in-bond to products",
+      "Separate federal rules from state law"
+     ],
+     "topics": [
+      "Federal Alcohol Administration Act 1935, administered by TTB. Part 5 was recodified in 2022 (T.D. TTB-176); the standards of identity are in Subpart I, with whisky at section 5.143",
+      "Lesser-known section 5.143 types: whisky distilled from bourbon (rye, wheat, malt, rye malt) mash (used oak); light whisky; blended light whisky; blended whisky (at least 20% straight, proof-gallon basis); spirit whisky (neutral spirits with at least 5% whisky); blends of straight whiskies",
+      "Imported types (Scotch, Irish, Canadian) are defined by origin and home-country law",
+      "American Single Malt final rule (T.D. TTB-201, December 2024, effective 19 January 2025): 100% malted barley; distilled entirely at one distillery; mashed, distilled and matured in the US; 160 proof or less; oak of 700 L or less; 80 proof or more",
+      "Additives: none in bourbon, straights and similar types. 'Harmless coloring, flavoring and blending materials' (blending materials capped at 2.5% by volume) are allowed only in certain other whiskies and may need formula approval",
+      "Age statements (section 5.74): mandatory under 4 years; state the youngest whisky; bottled-in-bond products are exempt because they are at least 4 years old by definition",
+      "State of distillation: required for bourbon, rye and similar types when the distilling state differs from the state in the label address",
+      "Bottled-in-bond (section 5.88): one season, one distiller, one distillery; at least 4 years in a bonded warehouse; exactly 100 proof; only pure water added; the distillery named (or its DSP number), and the bottler if different. It is an overlay: BiB rye must also meet the rye rules",
+      "Distinctive products: bourbon (1964 resolution) and Tennessee whiskey (trade agreements). The Lincoln County Process comes from Tennessee law, with one grandfathered exemption",
+      "Edge cases: designations for finished bourbon, COLA vs formula approval, standards of fill"
+     ],
+     "exercise": "Compliance clinic: 8 invented specs (for example a straight bourbon, 3 years old, distilled in Indiana, bottled in Ohio). Choose the class/type and decide whether an age statement, a state-of-distillation statement and the term bottled-in-bond are required or allowed."
+    },
+    {
+     "title": "The Scotch Whisky Regulations 2009 in Depth",
+     "objectives": [
+      "Apply each clause of the definition",
+      "Apply the labeling rules for categories, places, distillery names, ages and vintages",
+      "Judge cask eligibility under the 2019 amendment"
+     ],
+     "topics": [
+      "SI 2009/2890, in force 23 November 2009, replaced the Scotch Whisky Act 1988 and the 1990 Order. It is backed by the Scotch Whisky Technical File (GI)",
+      "Clauses: a distillery in Scotland; water and malted barley (other whole cereals may be added); processed at that distillery into a mash; converted only by endogenous enzymes; fermented only by added yeast; distilled below 94.8% ABV, keeping the character of its raw materials; wholly matured in Scotland in oak casks of 700 L or less for at least 3 years in an excise warehouse or permitted place; nothing added except water and plain caramel; 40% ABV or more",
+      "Category names are mandatory and exact. Single malt must be pot-distilled, and since 23 November 2012 it must be bottled in Scotland",
+      "Region and locality names only for whisky wholly distilled there. A distillery's name only for whisky distilled there",
+      "A year of distillation may appear only if all the whisky was distilled that year, with an age statement or bottling year alongside. Any age statement gives the youngest whisky",
+      "'Pure malt' and 'vatted malt' are not permitted as category names",
+      "2019 cask amendment: casks that held wine, beer/ale or spirits are allowed, except stone-fruit products and those flavored or sweetened after fermentation or distillation. The previous use must be traditional for that drink",
+      "The SWA enforces the rules worldwide; since Brexit, Scotch is protected under the UK GI scheme",
+      "Contrasts: Scotch allows oak only and endogenous enzymes only; Irish allows wooden casks and other natural enzymes; the US allows added enzymes and has no cask-size cap"
+     ],
+     "exercise": "Red-pen review: 6 invented Scotch labels with planted violations ('Islay Single Malt' from a Speyside distillery; '12 Years Old' containing a 10-year-old component; 39.5% ABV; single malt bottled in England). Cite the rule and rewrite each label."
+    },
+    {
+     "title": "Irish, Canadian, Japanese, EU and Australian Rules Compared",
+     "objectives": [
+      "Apply the Irish category rules at clause level",
+      "State what Canadian rules permit",
+      "Distinguish Japan's tax law from the voluntary standard, and compare all regimes on one grid"
+     ],
+     "topics": [
+      "Irish Whiskey Act 1980 led to the Technical File (2014). The GI 'Irish Whiskey / Uisce Beatha Eireannach / Irish Whisky' covers the whole island",
+      "Irish categories: Pot Still (at least 30% malted and at least 30% unmalted barley; up to 5% other cereals in the 2014 text; pot stills); Malt; Grain (no more than 30% malted barley; column stills); Blended. 'Single' means one distillery; the number of distillations is not mandated",
+      "Canada (FDR B.02.020-B.02.022.1): cereal mash converted by malt or other enzymes and fermented by yeast, or yeast plus other micro-organisms; at least 3 years in small wood of 700 L or less; mashed, distilled and aged in Canada; Canadian character; 40% ABV or more; caramel and flavouring permitted. The often-cited '9.09%' allowance for other spirits or wine (check its legal basis)",
+      "Japan: the Liquor Tax Act's 'whisky' allows blends with other spirits and requires no Japanese origin. The JSLMA standard is voluntary (announced February 2021, effective April 2021, full compliance by 31 March 2024) and also restricts Japanese place names, people's names and flags on products that do not qualify",
+      "EU 2019/787: distilled below 94.8% ABV; at least 3 years in wooden casks of 700 L or less; 40% ABV or more; no sweetening or flavoring; only plain caramel",
+      "Australia: at least 2 years' maturation in wood",
+      "Comparison grid of 10 attributes: grains, enzymes, still type, maximum distillation strength, cask material and size, minimum age, where it must be aged, minimum ABV, additives, where it must be bottled"
+     ],
+     "exercise": "Complete the grid for US bourbon, Scotch single malt, Irish pot still, Canadian, JSLMA Japanese and EU whisky. Then judge 6 export scenarios, for example Irish vs Scotch whisky finished in chestnut casks, or a molasses spirit labeled 'whisky' for the UK."
+    },
+    {
+     "title": "America in Depth: Kentucky, Tennessee, Indiana and the Craft Map",
+     "objectives": [
+      "Explain how US production is structured, including contract distilling and NDPs",
+      "Interpret rickhouse and mashbill practice",
+      "Evaluate craft, small-barrel and American Single Malt approaches"
+     ],
+     "topics": [
+      "Kentucky produces the dominant share of bourbon (industry bodies cite about 95%; date-stamp this) and holds millions of aging barrels, clustered around Bardstown, Frankfort, Louisville and Lawrenceburg",
+      "Rickhouse practice: a barrel's floor, rick and closeness to walls changes its temperature exposure, angel's share and dump proof. Producers select barrels, blend across floors or heat-cycle brick warehouses",
+      "Indiana: a large Lawrenceburg contract distillery whose 95% rye / 5% malt recipe defined a modern rye style. 'Distilled in Indiana' on a label reveals the sourcing",
+      "NDPs, contract distilling and private labels; the debate over transparency about sourced whiskey",
+      "Rye heritage: Pennsylvania (Monongahela) vs Maryland; the revival since the 2000s; the voluntary Empire Rye standard in New York",
+      "Mashbill design: wheated vs high-rye bourbon; 51% vs 95% ryes; four-grain bourbons; heirloom corn",
+      "Craft: more than 2,000 US craft distilleries and the cash-flow problem of aging. Small barrels (5-15 gal) extract fast, but oxidation still needs time, so rapid-aging claims deserve skepticism",
+      "History behind the rules: Dr James Crow's scientific sour mash (1830s-50s); E.H. Taylor and Treasury Secretary John G. Carlisle behind bottled-in-bond; consolidation after repeal; the 1970s-80s slump; the Kentucky Bourbon Trail (1999)",
+      "American Single Malt: regional climates (Pacific Northwest, Texas heat, Colorado altitude) and freedom of cask type"
+     ],
+     "exercise": "Sourcing sleuth: 6 invented labels with name/address and state-of-distillation statements. For each, work out who most likely distilled it, whether the brand owner is an NDP, and the minimum age the label implies."
+    },
+    {
+     "title": "Producing Nations in Depth",
+     "objectives": [
+      "Describe the production landscape of each major nation",
+      "Explain how climate and industry structure shape style",
+      "Identify region and style in a blind flight"
+     ],
+     "topics": [
+      "Scotland: about 150 distilleries. Islay has 10 working distilleries, including Port Ellen (reopened 2024); Campbeltown has 3. Large grain distilleries (Cameronbridge, Girvan, North British) supply the blends",
+      "The whisky loch led to closures in 1983-85; ghost distilleries have since reopened (Brora 2021, Port Ellen 2024)",
+      "Blend economics: grain is usually the majority of a standard blend, and malt content both signals and drives price",
+      "Ireland: Midleton dominated for decades (Redbreast and Green Spot are single pot still whiskeys made there). Bushmills makes triple-distilled malt; Cooley double-distills and makes peated malt. More than 40 distilleries today",
+      "Japan: Suntory runs Yamazaki, Hakushu and the Chita grain distillery; Nikka runs Yoichi (coal-fired stills) and Miyagikyo (Coffey stills); Chichibu dates from 2008. A 2010s stock shortage led to withdrawn age statements",
+      "Canada: base and flavouring whiskies, mostly used barrels; the US is the largest export market; 100% rye Canadian bottlings exist; Prohibition-era exports",
+      "New world: India (heat in Bangalore and Goa, angel's share about 10% or more); Taiwan (Kavalan distilling since 2006); Tasmania; Wales (Penderyn, 2000; Welsh whisky GI); England; Nordic countries; Israel; Mexico (nixtamalized corn)",
+      "The hot-climate trade-off: fast extraction and oxidation, but high losses and a risk of over-oaking. Age statements tell you less"
+     ],
+     "exercise": "Blind regional triangulation: 4 glasses (sherry-cask Speyside-style, peated Islay, Japanese single malt, Irish single pot still). Identify each from cereal, fruit, peat and cask cues and justify each call with production facts."
+    }
+   ],
+   "assessment": {
+    "questionTypeMix": "30% multi (select every violation or requirement), 20% single, 20% match (jurisdiction to rule, clause to citation), 15% truefalse on exceptions, 10% numeric (age inference, proof thresholds, % straight on a proof-gallon basis), 5% order. About 60% of items use mock labels, spec sheets or regulatory excerpts; distractors use near-miss thresholds; confidence-weighted; 15% interleaved.",
+    "passPercent": 80,
+    "examQuestionsDrawn": 30,
+    "examPoolSize": 110,
+    "timeLimitMinutes": 45,
+    "sampleHardQuestion": "(multi) Context, a proposed label from a Speyside distillery: 'PURE MALT Scotch Whisky - Speyside - Matured 8 years, finished 9 months in ex-peach-brandy casks - 38% ABV - Bottled in Scotland'. Select ALL breaches of SWR 2009 or the Technical File. A) 'Pure Malt' B) 38% ABV C) Finishing in casks that held a stone-fruit spirit D) Use of 'Speyside' E) An 8-year age statement on a finished whisky F) 'Bottled in Scotland'. Answer: A, B, C."
+   },
+   "appParams": {
+    "proof": 110,
+    "lessonQuizPass": 75,
+    "quizPerLesson": 6,
+    "passPercent": 80,
+    "draw": 25,
+    "pool": 42,
+    "timeLimitMinutes": 40,
+    "mix": "Clause-level law: near-miss thresholds as distractors, label-compliance scenarios in context blocks (about 50% of items), multi-select with close distractors, match jurisdictions to rules, a few numeric."
+   }
+  },
+  {
+   "number": 5,
+   "title": "The Sensory Lab: Flavor Chemistry and Tasting Science",
+   "rank": "Red Layer",
+   "difficulty": "Molecular level: compound names, formation pathways, thresholds and odor activity values. Reading GC and panel data. Statistics for discrimination tests. Questions demand diagnosis: infer the production cause from a note or a data table. Longer timed exam.",
+   "lessons": [
+    {
+     "title": "The Physiology of Flavor",
+     "objectives": [
+      "Explain orthonasal and retronasal smell, taste and trigeminal sensation",
+      "Predict how ABV, temperature and glass change perception",
+      "Account for thresholds, adaptation and context bias"
+     ],
+     "topics": [
+      "About 400 functional olfactory receptor types code aromas in combination; most of what we call 'flavor' is retronasal",
+      "Perceived sweetness in dry spirits comes largely from aroma (vanillin, lactones) through cross-modal enhancement",
+      "Ethanol lowers the activation threshold of the heat receptor TRPV1 from about 42 C to about 34 C, which is why spirit 'burns'. Astringency is tannins binding salivary proteins",
+      "The detection threshold is lower than the recognition threshold. Thresholds vary by orders of magnitude between compounds and people; specific anosmias are common",
+      "Adaptation and cross-adaptation: rest 30-60 s; reset on neutral skin or water",
+      "Ethanol suppresses aroma in the headspace. A 2017 molecular-dynamics study (Karlsson and Friedman) found that guaiacol associates with ethanol at the liquid surface at lower ABV, one reason water lifts smoke",
+      "Blenders nose at about 20-23% ABV. Warmth raises volatility; ice suppresses it",
+      "Context bias: Morrot et al. (2001) showed white wine dyed red was described in red-wine terms. Dark or blue glasses remove the color cue"
+     ],
+     "exercise": "Dilution series: one whisky of 46% or more, tasted at full strength and at about 40, 30 and 20% ABV. Score 5 descriptors from 0 to 10 and plot the results. Then the pinched-nose jellybean test."
+    },
+    {
+     "title": "Congeners: The Chemistry of Ferment and Still",
+     "objectives": [
+      "Name the congener families with their descriptors",
+      "Explain how yeast and bacteria form them",
+      "Predict where each family falls in a spirit run, and use odor activity values"
+     ],
+     "topics": [
+      "Higher alcohols via the Ehrlich pathway: leucine gives 3-methylbutan-1-ol (isoamyl alcohol), isoleucine gives 2-methylbutan-1-ol, valine gives isobutanol; plus n-propanol. Reported in g per 100 L of absolute alcohol",
+      "Acetate esters: ethyl acetate (the most abundant; pear or solvent), isoamyl acetate (banana, pear drop), 2-phenylethyl acetate (rose, honey)",
+      "Ethyl esters: hexanoate (green apple), octanoate (pear, apricot), decanoate (waxy). Long-chain esters (dodecanoate, hexadecanoate) cause chill haze",
+      "Aldehydes: acetaldehyde (pungent green apple, in the heads) and its acetal 1,1-diethoxyethane; furfural (almond, toasty)",
+      "Acids: acetic, butyric (rancid butter), isovaleric (sweaty), caprylic/capric (soapy)",
+      "Sulfur compounds: H2S, DMS, DMDS and DMTS (meaty, cooked brassica, very low threshold), removed by copper and char",
+      "Diacetyl (butter) comes from yeast and lactic bacteria. Methanol comes from pectin, so it is low in grain spirits",
+      "Phenols: guaiacol and 4-methylguaiacol (smoky); phenol and cresols (medicinal, tarry); 4-ethylphenol and 4-ethylguaiacol; 4-vinylguaiacol (clove) from ferulic acid",
+      "Volatility depends on ethanol strength, not boiling point alone. Esters and isoamyl alcohol are volatile at low ABV but lag at high ABV; acetaldehyde comes first; fatty acids, long-chain esters, furfural and phenols concentrate late, in the feints",
+      "Odor activity value (OAV) = concentration / threshold. Compounds with OAV above 1 drive the aroma"
+     ],
+     "exercise": "Kitchen-proxy matching: banana, green apple, rose, clove, butter, smoked tea. Then put the compounds in order of emergence during a spirit run, and calculate OAVs from a mock GC table."
+    },
+    {
+     "title": "Wood Chemistry and Maturation Science",
+     "objectives": [
+      "Link oak polymers and extractives to specific flavors",
+      "Explain the chemistry of seasoning, toasting and charring",
+      "Quantify the effects of entry proof and cask size"
+     ],
+     "topics": [
+      "Oak composition: cellulose about 40-45%, hemicellulose 20-25%, lignin 25-30%, extractives 5-10% (ellagitannins vescalagin and castalagin, lactones, phenolic acids)",
+      "cis-beta-methyl-gamma-octalactone (whisky lactone, coconut, far more potent than the trans form) is high in Q. alba; ellagitannins are high in Q. robur; Q. petraea is finer-grained and more aromatic",
+      "Seasoning 18-36 months outdoors leaches bitter tannins and allows fungal and enzymatic changes that kiln drying does not",
+      "Toasting at about 150-230 C. Hemicellulose yields furfural, 5-methylfurfural, 5-HMF, maltol and cyclotene. Lignin yields coniferaldehyde (then vanillin) and sinapaldehyde (then syringaldehyde). Heavy toast adds guaiacol, 4-methylguaiacol and eugenol. Lactones peak at light-to-medium toast",
+      "Char: the active-carbon layer adsorbs sulfur, and its cracks expose the red layer",
+      "Three mechanisms. Additive: extraction. Subtractive: adsorption, and evaporation of volatile sulfur. Interactive: oxidation, esterification, acetal formation, ethanolysis of lignin",
+      "Oxidation chain: oxygen enters through the wood; oxidized phenolics produce H2O2; with trace iron or copper, ethanol becomes acetaldehyde, then acetic acid, then ethyl acetate",
+      "Entry proof: a lower strength favors water-soluble extractives (sugars, some tannins); a higher strength favors ethanol-soluble ones (lignin aldehydes, lactones). The US cap is 125 proof; Scotch is commonly filled at 63.5% ABV",
+      "Surface area to volume scales as V^(-1/3): a 50 L cask has (200/50)^(1/3), about 1.59x, the SA/V of a 200 L barrel. Extraction speeds up; oxidation does not keep pace",
+      "Sherry and wine casks bring absorbed wine. Sulfur-candle fumigation can leave struck-match notes"
+     ],
+     "exercise": "Cask chemistry flight: straight bourbon, first-fill ex-bourbon malt, refill malt and sherry-cask malt. Attribute lactone, vanillin, tannin, dried fruit and sulfur markers to each glass. Then calculate SA/V for 50, 125, 200 and 500 L casks."
+    },
+    {
+     "title": "Faults, Off-Notes and Quality Control",
+     "objectives": [
+      "Diagnose faults from tasting descriptions",
+      "Trace each fault to its production or storage cause",
+      "Describe lab and panel QC methods"
+     ],
+     "topics": [
+      "Sulfury: struck match or rubber (fumigated casks); cooked cabbage or meaty (DMTS from low copper contact or worm tubs); rotten egg (H2S)",
+      "Excess feints: sweaty, leathery, tobacco, cardboard (late cuts, an overloaded feints recycle)",
+      "Microbial: acetic and butyric notes from infected fermentations",
+      "Musty or corky: TCA and TBA at ng/L levels (corks, pallets, warehouse treatments)",
+      "Metallic or inky notes and black haze: iron reacting with oak tannins. Soapy or waxy: excess fatty acids. Flat: oxidized open bottles",
+      "Haze: chill haze (long-chain esters below about 46% ABV) vs mineral haze (hard reduction water)",
+      "Ethyl carbamate forms from cyanate derived from barley's epiheterodendrin. Limits: Canada 150 ug/L for distilled spirits; US voluntary industry target 125 ug/L. Controlled with non-GN barley and process choices",
+      "QC: GC-FID for major congeners; GC-MS and GC-olfactometry for trace aroma compounds; HPLC for phenols and wood aldehydes; density meters for ABV; color by spectrophotometry; sensory panels sign off new make, casks and batches"
+     ],
+     "exercise": "Fault flight with safe household spikes: a drop of malt vinegar, water steeped with wet cardboard, a struck match held near the glass. Then 8 diagnosis cards linking fault to cause to fix."
+    },
+    {
+     "title": "Sensory Methods and Deductive Tasting",
+     "objectives": [
+      "Design and evaluate discrimination tests",
+      "Run a calibrated, bias-controlled panel",
+      "Infer production choices from sensory evidence"
+     ],
+     "topics": [
+      "Tests: triangle (chance 1/3), duo-trio (1/2), paired comparison or 2-AFC (1/2), tetrad (1/3, more statistical power than the triangle)",
+      "Minimum correct answers in a triangle test (one-tailed binomial, alpha 0.05): 12 assessors need 8, 18 need 10, 24 need 13, 30 need 15, 36 need 18",
+      "Descriptive analysis: a trained panel, a lexicon, reference standards (vanillin, isoamyl acetate and guaiacol solutions) and 0-10 line scales. Monitor repeatability, discrimination and consensus",
+      "Analytical vs hedonic: QC panels describe, consumers judge liking",
+      "Biases: expectation, stimulus error, halo, position, contrast, central tendency. Controls: blind 3-digit codes, randomized orders, dark glasses, standard pours and ABV, rest, palate cleansers",
+      "Blender practice: samples reduced to about 20% ABV and nosed more than tasted; calibration sessions; written specs",
+      "Deductive grid: grain base, peat, new vs used oak, cask type, age band, proof band, then origin. Clues: meaty = worm tubs or low copper; banana/pear = estery ferment; clove and spice = 4-vinylguaiacol/rye; coconut = American oak; dried fruit and walnut = oloroso cask; iodine = peat cresols",
+      "Scoring systems (100-point scales, medals) and the critique of score inflation and context effects"
+     ],
+     "exercise": "Home triangle test: a helper prepares coded cups of the same whisky at 40% vs 43% (or a tea-based no-alcohol version), and the in-app binomial calculator judges the result. Then a six-glass blind flight of 10 mL each, scored on every step of the deductive grid, spitting encouraged."
+    }
+   ],
+   "assessment": {
+    "questionTypeMix": "25% multi, 20% match (compound to aroma to origin), 20% single (diagnose a cause from a note or data), 20% numeric (OAV, SA/V, triangle critical values, dilution ABVs), 10% order (spirit-run emergence, toasting pathways), 5% truefalse. About 60% of items carry GC tables, panel results or tasting notes; 15% interleaved.",
+    "passPercent": 80,
+    "examQuestionsDrawn": 35,
+    "examPoolSize": 125,
+    "timeLimitMinutes": 55,
+    "sampleHardQuestion": "(numeric) Context: 'Triangle test, Cask A vs Cask B: 30 assessors, 15 correctly pick the odd sample.' Using a one-tailed binomial test with chance 1/3 at alpha 0.05, what is the minimum number of correct answers needed to conclude that the casks differ? Answer: 15, exact. Follow-up (single): is the result significant? Yes, just: P(X>=15) is about 0.043."
+   },
+   "appParams": {
+    "proof": 120,
+    "lessonQuizPass": 75,
+    "quizPerLesson": 6,
+    "passPercent": 80,
+    "draw": 25,
+    "pool": 42,
+    "timeLimitMinutes": 45,
+    "mix": "Diagnosis and analysis: infer production causes from tasting notes or data tables in context blocks (about 60%), match compounds to aromas and origins, numeric (OAV, triangle-test critical values, SA/V), multi-select."
+   }
+  },
+  {
+   "number": 6,
+   "title": "The Blender's Bench: Quantitative Mastery, Business and Stewardship",
+   "rank": "Keeper of the Spirit Safe",
+   "difficulty": "Professional synthesis: multi-step models (yield, mass balance, compounding loss, PG/LPA accounting, excise, pricing waterfalls, cask valuation) plus judgment scenarios that balance legal, sensory, financial and ethical constraints. Longest timed exam and highest pass mark. Passing all six level exams earns the Heart of the Cut certificate.",
+   "lessons": [
+    {
+     "title": "Process and Maturation Modeling",
+     "objectives": [
+      "Explain the ethanol-water ceiling and staging",
+      "Calculate yields and mass balances",
+      "Model losses and inventory across years"
+     ],
+     "topics": [
+      "Ethanol-water is non-ideal. The azeotrope is about 95.6% ethanol by mass (about 97% ABV, about 89 mol%) and boils at about 78.2 C; neutral spirit is collected at about 95-96% ABV",
+      "Stages: one equilibrium stage lifts an 8% liquid to a vapor of roughly 40-50%. A pot still gives about 1-2 stages plus neck reflux; many-plate columns approach the azeotrope (the McCabe-Thiele concept)",
+      "Fusel oils are more volatile than ethanol at low strength and less volatile at high strength, so they build up mid-column and are removed as side-draws",
+      "Yields: Scotch malt about 400-430 LPA per tonne, compared against a predicted spirit yield. Corn: theoretically about 6 PG per 56-lb bushel (about 62% starch), about 5 PG in practice",
+      "Mass balance: charge LPA = foreshots + hearts + feints + losses. Rising feints strength signals a problem with the cuts or the recycle",
+      "Compound loss: V_t = V_0 x (1 - r)^t. 200 L at 2% a year leaves about 156.9 L after 12 years. Track LPA (volume x ABV) separately",
+      "Entry-proof economics: filling at 105 proof instead of 125 needs about 19% more barrels for the same proof gallons",
+      "Regauging: wet dip vs weight-based (gross weight minus tare, then density to volume to LPA); warehouse mapping by floor and position",
+      "Accelerated aging (heat, pressure, ultrasound, chips): age counts only time in qualifying casks; products may need a different designation or formula approval",
+      "Inventory: stock-to-sales ratios, forecasting 4-12+ years ahead, aged stock as working capital, boom-and-bust cycles",
+      "Safety and sustainability: the flash point of 40% ABV spirit is about 26 C, which calls for hazardous-area (ATEX) design; vapor recompression, anaerobic digestion of pot ale, DDGS"
+     ],
+     "exercise": "Inventory simulator: fill 1,000 barrels a year at a chosen entry proof. Forecast the LPA available in year 8 and the number of 750 mL bottles at 45%, then stress-test against a 20% surge in demand. Then the bushel calculation: 56 lb x 0.62 x 1.111 x 0.511 / 0.789 g/mL is about 11.3 L of ethanol, about 6.0 PG."
+    },
+    {
+     "title": "Blending and Proofing Mathematics",
+     "objectives": [
+      "Convert between WG, PG, litres and LPA",
+      "Solve blend, dilution and bottle-yield problems including contraction",
+      "Build a compliant, consistent batch from cask inventory"
+     ],
+     "topics": [
+      "Proof gallon = 1 US gallon at 100 proof at 60 F. PG = WG x proof / 100; 1 PG is about 1.893 LPA; 750 mL = 0.198 gal",
+      "Blend ABV (ignoring contraction) = sum of (V x ABV) / total V. Pearson square: 45% from 60% and 40% stocks takes 1 part to 3",
+      "Contraction: 50 mL ethanol + 50 mL water gives about 96-97 mL. Professional proofing works by mass and density tables (27 CFR Part 30 gauging, OIML tables), referenced to 60 F in the US and 20 C in the EU",
+      "Bottle yield: 40 WG at 130 proof = 52 PG. At 90 proof that is 57.8 WG, about 218.7 L, so 291 full 750 mL bottles",
+      "The youngest component sets the label age, whatever the blend ratios",
+      "Composition targets: weighted averages of spirit phenol ppm, esters and color as a starting point, then panel confirmation",
+      "Batch costing: liquid cost per LPA + dry goods + excise + overhead + margin. Single barrel vs batch; marrying time; limits on batch-to-batch variance"
+     ],
+     "exercise": "Blending bench: build 10,000 bottles of 700 mL at 43% (3,010 LPA) from four cask parcels. Meet a minimum 10-year age statement and a smoke target, then calculate the reduction water, the cost per bottle and the leftover stock."
+    },
+    {
+     "title": "The Business of Whiskey",
+     "objectives": [
+      "Explain three-tier, control states and trade-practice law",
+      "Calculate excise, price waterfalls and pour cost",
+      "Analyze category economics and trade risk"
+     ],
+     "topics": [
+      "Aged-spirit economics: years of inventory before any revenue; a consolidated industry alongside contract distilling, NDPs and private labels; depletions vs shipments; 9-litre cases; premium price tiers",
+      "Three-tier system (21st Amendment, 1933): supplier or importer, then wholesaler, then retailer or on-premise account. Franchise laws; tied-house and trade-practice rules (27 CFR Parts 6, 8, 10 and 11)",
+      "Control states: commonly 17, plus some local jurisdictions, each with its own markup formula; the rest are license states",
+      "Federal excise tax: $13.50/PG. Reduced rates, permanent since December 2020: $2.70/PG on the first 100,000 PG and $13.34/PG on the next 22,130,000 PG each year. Paid on removal from bond. A 750 mL bottle at 80 proof is 0.1585 PG, about $2.14 at the full rate (about $2.67 at 100 proof)",
+      "State excise taxes vary. UK duty is charged per LPA, plus VAT",
+      "Markup vs margin: a $24 cost at a 30% margin gives $34.29, a 42.9% markup. Illustrative margins: distributor about 25-30%, retailer about 25-35%",
+      "Pour cost: a 750 mL bottle holds 25.36 fl oz, about 16.9 pours of 1.5 oz. Targets are about 15-25%; price = cost per pour / target",
+      "Direct-to-consumer spirits shipping is legal only in a minority of states (verify current law)",
+      "Trade policy: the EU 25% tariff on American whiskey (2018-2021, suspended); the US 25% tariff on single malt Scotch (2019-2021, suspended); the 2025 disputes and Canadian provincial delistings (check current status)",
+      "Scale: India is the largest market by volume; Scotch exports run to several billion pounds a year (cite current SWA data)"
+     ],
+     "exercise": "Pricing waterfall builder: open-state vs control-state, with excise tiers entered by the user. Then set a menu price for a 1.5 oz pour from a $34 bottle at a 20% pour cost (about $2.01 cost, about $10.06 price)."
+    },
+    {
+     "title": "Collecting, the Secondary Market and Cask Ownership",
+     "objectives": [
+      "Assess value drivers and counterfeit risk",
+      "Explain the legal limits on resale",
+      "Do due diligence and valuation math on a cask offer"
+     ],
+     "topics": [
+      "Value drivers: closed or 'silent' distilleries, age, limited releases, independent bottlings, provenance, condition",
+      "US resale: unlicensed private resale is illegal in most states. Some states allow licensed vintage-spirits sales (for example Kentucky since 2017; verify). UK and EU auctions charge buyer's and seller's premiums",
+      "Counterfeits and refills: check closure, glass embossing, codes, print, fill level, UV and provenance. Radiocarbon bomb-pulse dating: in 2017 a dram sold at a Swiss hotel as an 1878 whisky was dated to about 1970-72",
+      "Cask purchase: the buyer owns liquid held in bond. Title is shown by the bonded warehouse's records and a Delivery Order, not by a certificate from the seller",
+      "Costs and losses: storage, insurance, regauging, sampling and transfer fees; angel's share and falling ABV. Below 40% ABV a cask can no longer be bottled as Scotch",
+      "Exits: brokers, independent bottlers or the original distiller. Bottling requires duty and VAT, a compliant label and often permission to use the distillery name, which is frequently refused",
+      "In the UK, cask sales generally fall outside FCA regulation unless structured as a collective investment scheme; regulators have issued warnings",
+      "Red flags: guaranteed returns, cold calls and pressure, no named warehouse, no Delivery Order, a cask number, fill date or regauge that cannot be verified, inflated valuations",
+      "Valuation math: 200 L at 63.5% = 127 LPA. After 7 more years at 2% loss, about 173.6 L at about 58% = about 100.7 LPA, which fills about 312 bottles of 70 cl at 46%"
+     ],
+     "exercise": "Due-diligence case on an invented brochure ('guaranteed 12% annual return', no warehouse named). Flag every red flag, compute the remaining LPA and bottle yield, and calculate the break-even price per bottle using a duty rate the learner enters."
+    },
+    {
+     "title": "Hospitality, Cocktail Engineering and Responsible Leadership (Capstone)",
+     "objectives": [
+      "Engineer cocktails with ABV and dilution math",
+      "Design a profitable, compliant whiskey program and tasting event",
+      "Lead responsible service and give accurate health and legal information"
+     ],
+     "topics": [
+      "Cocktail ABV: a Manhattan of 60 mL rye at 50% plus 30 mL vermouth at 16.5% holds 34.95 mL of ethanol in 90 mL (38.8%). With 25% dilution it reaches 112.5 mL at about 31%",
+      "Method physics: shaking chills and dilutes faster and aerates; stirring keeps clarity; typical dilution is about 20-30%",
+      "Families: the Old Fashioned; the Manhattan family (Rob Roy, Brooklyn, Vieux Carre, Boulevardier); sours (Ward 8, Gold Rush, Penicillin); highballs; juleps and smashes; hot drinks (Hot Toddy, Irish Coffee). Bonded or high-rye whiskey stands up to vermouth; peated whisky works as a float or rinse",
+      "Batching: add the expected dilution water; citrus does not keep; refrigerate vermouth; check local rules on pre-batched drinks",
+      "Curating a list and flights: progression by style and intensity, 15-25 mL pours, price tiers, storytelling without unverifiable claims",
+      "Staff training: correcting myths, guest-friendly language, gluten questions (distillation removes gluten proteins, but guests with celiac disease should follow their own medical guidance)",
+      "Responsible service: ID checks; counting standard drinks; signs of intoxication; refusal scripts; dram-shop and host liability (varies by jurisdiction); transport; alcohol-free options. Driving BAC limits: 0.08% in most US states, 0.05% in Utah and Scotland, 0.08% in England and Wales. The body eliminates about one standard drink an hour, and that cannot be sped up",
+      "Health facts: alcohol is an IARC Group 1 carcinogen; the US Surgeon General issued an advisory on alcohol and cancer in January 2025; UK CMOs advise no more than 14 units a week; no alcohol in pregnancy; never make health-benefit claims",
+      "Event alcohol budget: 6 x 15 mL at 45% is about 2.3 US drinks, which breaks a 2-drink cap; 12 mL pours give about 1.8"
+     ],
+     "exercise": "Capstone: design a ticketed 6-whiskey tasting for 30 guests. Order the styles by intensity, keep each guest under 2 US drinks, calculate bottles and cost per head at a 22% pour cost, check every label claim for compliance, and write the responsible-service brief (water, food, spittoons, transport)."
+    }
+   ],
+   "assessment": {
+    "questionTypeMix": "30% numeric multi-step (yield, compounding loss, PG/LPA, FET, pricing, cask valuation), 25% single (best decision in a scenario), 20% multi (all risks or violations), 10% order, 10% match, 5% truefalse. About 75% of items are built on context (cask reports, P&L snippets, regauge sheets, menus, brochures); 15% interleaved; confidence-weighted.",
+    "passPercent": 85,
+    "examQuestionsDrawn": 40,
+    "examPoolSize": 150,
+    "timeLimitMinutes": 75,
+    "sampleHardQuestion": "(numeric) Context: 'Barrel #4471: filled with 53 WG at 125 proof; dumped after 6 years at 40.0 WG and 130 proof. Target: 90 proof in 750 mL bottles (1 US gal = 3.7854 L; ignore contraction).' How many full bottles can be filled? Answer: 291. (40 x 1.30 = 52 PG; 52 / 0.90 = 57.78 WG = 218.7 L; / 0.75 = 291.6.) Follow-up (numeric): the federal excise tax at the full $13.50/PG rate on the barrel's 52 PG is $702."
+   },
+   "appParams": {
+    "proof": 130,
+    "lessonQuizPass": 75,
+    "quizPerLesson": 6,
+    "passPercent": 85,
+    "draw": 30,
+    "pool": 48,
+    "timeLimitMinutes": 60,
+    "mix": "Professional synthesis: multi-step numeric problems (PG, LPA, excise, bottle yield, cask valuation, pour cost, cocktail ABV) with stated rounding and tolerances, judgment scenarios balancing legal, sensory, financial and responsible-service constraints (about 75% with context blocks)."
+   }
+  }
+ ],
+ "interactiveFeatures": [
+  "Proof and units converter pinned to the toolbar: ABV, US proof, historic UK proof, WG/PG/LPA, US standard drinks and UK units",
+  "Dilution and blending calculator: C1V1, Pearson square, weighted ABV, youngest-age check and a volume-contraction warning backed by a density table",
+  "Mashbill and process classifier: enter grain %, distillation proof, entry proof, container and age to get every US designation the product qualifies for, with the reason each other one fails. Toggles apply Scotch, Irish, Canadian, EU and JSLMA rules",
+  "Label forensics workbench: invented mock labels only, with a jurisdiction toggle. Learners tag mandatory elements and flag violations, and see the rule citation for each",
+  "Spirit-run simulator: set cut points and reflux, watch the ABV curve and the yield vs character trade-off, and calculate LPA recovery",
+  "Barrel lab (labeled as a teaching model): choose oak species, char, cask size, entry proof, climate or floor, and years to see compounding loss, proof drift and SA/V ratio",
+  "Structured tasting journal keyed to the eight-family flavor wheel, with 0-10 sliders, water notes, a blind mode and export (stored locally)",
+  "Flight builder and standard-drink meter: style-based flights with pour sizes and grams, US drinks and UK units, warnings above about 2 US drinks, and a nose-only alternative for every exercise",
+  "Triangle-test kit: random 3-digit codes and serving orders for a helper, answer capture and an exact binomial significance check",
+  "Aroma reference guide: kitchen proxies mapped to compounds (banana for isoamyl acetate, clove for eugenol and 4-vinylguaiacol, smoked tea for guaiacol), with a blind matching game",
+  "Jurisdiction rule grid: a fill-in comparison matrix with cell-level feedback that becomes a printable cheat sheet",
+  "Timeline builder and interactive maps, including Scotch regions vs localities and the world-whisky map, with myth-vs-record reveals",
+  "Trade math sandbox: excise tiers using rates the user enters, a price waterfall that separates markup from margin, pour cost and menu pricing, and cask valuation",
+  "Leitner spaced-repetition flashcards fed automatically by missed quiz items, with near-miss drills (125 vs 160 proof, 94.8 vs 95% ABV, 51 vs 80% corn, 2/3/4 years) and a mistake journal",
+  "Practice exams in tutor mode with explanations, confidence-weighted answering in L4-L6, and a 'regulation last verified' date on every lesson that depends on law",
+  "Age-gate confirmation, rank badges and a locally generated completion certificate"
+ ],
+ "accuracyHotspots": [
+  "Bourbon has no minimum age. Only 'straight' requires at least 2 years, and any US whisky under 4 years needs an age statement (section 5.74).",
+  "Bourbon can be made anywhere in the US. Kentucky's roughly 95% share is an industry estimate; date-stamp it.",
+  "Proof limits. Bourbon, rye and similar types: distilled at 160 proof or less, entered at 125 or less, bottled at 80 or more. US whisky generally: below 190 proof. Light whisky: above 160 and below 190, in used or uncharred oak. Scotch, Irish and EU: below 94.8% ABV. JSLMA: below 95% ABV.",
+  "Corn whisky: at least 80% corn, used or uncharred new oak, no charred-wood treatment, no aging required.",
+  "Bottled-in-bond: one season (January-June or July-December), one distiller, one distillery, at least 4 years, exactly 100 proof. It guarantees provenance, not quality, and it is an overlay on the class.",
+  "Part 5 was recodified in 2022 (T.D. TTB-176). Verify the current section and subsection numbers (5.143 standards; 5.74 age; 5.88 BiB; the state-of-distillation provision) before citing them.",
+  "American Single Malt: T.D. TTB-201, effective 19 January 2025. Verify the final text, including whether caramel coloring or other additives are permitted, and check for later amendments.",
+  "The 2.5% blending-materials allowance and 'harmless coloring/flavoring' apply only to certain whiskies, never to bourbon or straights. Confirm the scope in current Part 5.",
+  "Tennessee whiskey's Lincoln County Process comes from Tennessee state law (2013) with one grandfathered exemption, not from the federal standards.",
+  "Scotch: Highland, Lowland and Speyside are protected REGIONS; Islay and Campbeltown are protected LOCALITIES. 'Islands' is not protected. One of the three proposals wrongly called Speyside a locality.",
+  "Single malt Scotch must be pot-distilled and has had to be bottled in Scotland since 23 November 2012. Vintage statements require all the whisky to come from that year.",
+  "The Scotch cask rules widened in 2019 (wine, beer and spirit casks, excluding stone-fruit products and anything flavored or sweetened after production). Older texts list fewer cask types.",
+  "Irish whiskey: triple distillation is not required; casks must be wooden, not necessarily oak; other natural enzymes are allowed; Northern Ireland is included. Check whether the 2014 cap of 5% other cereals in Pot Still has since been amended.",
+  "The Japanese standard was issued by the Japan Spirits & Liqueurs Makers Association (JSLMA), not 'JSWA'. It is voluntary, effective 1 April 2021 with a transition to 31 March 2024. Check whether it has moved toward statute or a GI.",
+  "Canada: 'rye' implies nothing about rye content, and caramel and flavouring are permitted. The '9.09%' figure must be traced to its legal or tax source before it is stated as law.",
+  "Australia's minimum is 2 years in wood. The EU, Scotland, Ireland, Canada and Japan require 3. Verify the Australian rule for any recent changes.",
+  "The 700 mL US standard of fill was authorized at the end of 2020.",
+  "The azeotrope is about 95.6% by MASS (about 97% ABV, about 89 mol%). Units are often confused.",
+  "Proof drift during maturation depends on relative humidity, not heat alone.",
+  "Angel's share, char times (#1-#4 at about 15/30/35/55 s), cut points, low-wine strength, peat ppm bands and fermentation hours are typical ranges, not legal values. Peat ppm is measured on the malt, not the spirit.",
+  "The 46% chill-haze threshold is a rule of thumb.",
+  "Triangle-test critical values were computed with an exact one-tailed binomial at alpha 0.05: 12->8, 18->10, 24->13, 30->15, 36->18.",
+  "Federal excise: $13.50/PG; reduced rates of $2.70 on the first 100,000 PG and $13.34 on the next 22,130,000 PG, permanent since December 2020. Recheck before publishing. UK duty per LPA is uprated regularly.",
+  "Tariffs (EU 2018-2021, US on Scotch 2019-2021, the 2025 disputes and Canadian delistings), the control-state count, states allowing direct-to-consumer shipping, and US secondary-market laws all change. Date every claim.",
+  "Health guidance: IARC Group 1; the US Surgeon General's January 2025 advisory; the US Dietary Guidelines 2025-2030 alcohol wording (verify the current text); UK CMOs 14 units a week. Legal drinking ages: 21 US, 18 UK, 20 Japan. BAC: Scotland and Utah 0.05%.",
+  "Distillery counts and reopenings: about 150 in Scotland; 10 on Islay including Port Ellen (2024); 3 in Campbeltown; more than 40 in Ireland; more than 2,000 US craft distilleries; Brora 2021. Recheck each year.",
+  "History dates that are often misquoted: 1494 Friar John Cor; 1608 Antrim licence (not proof of continuity); 1823 Excise Act; Coffey 1830; Spirits Act 1860; BiB 1897; Taft 1909; Immature Spirits Act 1915-16; Prohibition 17 January 1920 to 5 December 1933; Yamazaki 1923; Yoichi 1934. Elijah Craig 'inventing' bourbon is a legend.",
+  "Ethyl carbamate limits (Canada 150 ug/L; US voluntary 125 ug/L), the TRPV1 34 C figure and the 2017 guaiacol modeling study should be checked against the primary sources.",
+  "Brand examples are limited to stable facts: Laphroaig is a peated Islay single malt; Auchentoshan triple-distills; Maker's Mark is a wheated bourbon; Four Roses has 10 recipes; Yoichi uses coal-fired stills; Loch Lomond's column-distilled malt is sold as single grain; Redbreast and Green Spot are single pot still. Keep all mock labels fictitious."
+ ],
+ "judge": {
+  "scores": [
+   {
+    "key": "certification",
+    "score": 8,
+    "strengths": "Cleanest regulatory spine (US, then Scotland and Ireland, then Japan, Canada and the world). History is taught where it explains a rule. Exam pools are at least 3x the draw. Sample questions are excellent, including the 165-proof spec that resolves to 'Whisky' and the Irish pot-still cereal-cap trap. Responsible service comes back as dram-shop liability.",
+    "weaknesses": "Sensory science and flavor chemistry wait until L6, which overloads that level. Three consecutive law levels share the same question format. No nose-only path. The Canadian '9.09%' figure is presented as law. The 'verification code' certificate needs a server. Production depth (enzymes, cuts, recovery math) is lighter than the distiller proposal."
+   },
+   {
+    "key": "distiller",
+    "score": 9,
+    "strengths": "Deepest and most precise of the three. Each level answers a different question: what, then how, then the rules, then molecular why, then systems. Best quantitative strand (LPA recovery, proofing with contraction, SA/V, triangle-test statistics, PG and excise). Richest set of accuracy hotspots. Nose-only path. Mock labels are fictitious. Calculations check out.",
+    "weaknesses": "The L2 Style Atlas and the L4 Rulebook state the Scotch and US definitions at almost the same depth, which breaks the no-repeat rule. L2, L3 and L6 have 6 lessons each, which is long. McCabe-Thiele staging is engineer-level material for a trade audience. A 75-minute exam at 85% is steep without interleaved review. The brief's 'JSWA' acronym is used unchallenged."
+   },
+   {
+    "key": "learner",
+    "score": 8,
+    "strengths": "Best learning science: 15-20% of exam items interleaved from earlier levels, Leitner spaced repetition fed by missed items, confidence-weighted answering and a mistake journal. The deductive blind-tasting grid scores reasoning, not just the guess. Alcohol-free path throughout and a cap of about 2 US standard drinks per session. Strong capstone. Correctly flags the JSLMA naming.",
+    "weaknesses": "Factual error: it lists Speyside as a protected 'locality'. Under SWR 2009 Speyside is a protected region; only Islay and Campbeltown are localities. L4 packs five jurisdictions into one level, so the content is thin per country. Chemistry and sensory science share one level with production math. Peer review and auto-checking of legal claims need a server. The 9.09% explanation is speculative."
+   }
+  ],
+  "rationale": "Spine: the distiller proposal ('Heart of the Cut'), because each level answers a different question: what, then how, then the rules, then molecular why, then mastery. It is also the most precise of the three. It keeps 6 levels, which the brief allows, and there is no strong reason for 5 or 7.\n\nGrafts:\n- From the learner proposal: interleaved review items in exams from L3 on, Leitner flashcards fed by missed items, confidence-weighted answering in L4-L6, the deductive blind-tasting grid (moved into L5), the cask-valuation math and the 2-drink session cap.\n- From the certification proposal: history tied to the rules it produced, the standard-drink numeric item in L1, the 165-proof designation logic, and a bigger L4 American-history thread (Crow, Taylor and Carlisle, the slump and the revival).\n\nRepetition fixes:\n- L2 now teaches only the headline legal numbers and style. L4 teaches clause-level law with citations, exceptions, labeling rules and near-miss thresholds.\n- The two labels lessons are split by depth: L2 covers which elements are mandatory, L4 covers compliance under 27 CFR sections 5.74/5.88 and SWR.\n- L1 serves cover basics, L2 cocktail specs, and L6 cocktail engineering (ABV and dilution math, batching, costing).\n- L6 drops from 6 lessons to 5 by merging distillation physics into process and maturation modeling. This keeps the azeotrope, stages and yields but drops the hands-on McCabe-Thiele construction.\n\nFactual fixes:\n- Speyside is a protected region, not a locality.\n- The Japanese standard's body is the Japan Spirits & Liqueurs Makers Association (JSLMA); the brief says 'JSWA'.\n- The Canadian 9.09% allowance and the Irish pot-still 5% cereal cap are hedged as verify-before-publish.\n- The open question of whether ASM permits caramel is flagged.\n- Triangle-test critical values were recomputed with an exact binomial: 12->8, 18->10, 24->13, 30->15, 36->18; P(X>=15 | n=30) = 0.0435.\n- All worked numbers were re-verified: 1.67 drinks, 70% recovery, 291 bottles, $702 FET, 312 bottles, 1.59x SA/V and the 19% extra barrels.\n- Server-dependent features were removed.\n\nAssessment rises on every axis: pass mark 70 -> 75 -> 75 -> 80 -> 80 -> 85; questions drawn 15 -> 40; pools 50 -> 150; untimed, then 35/45/55/75 minutes; the share of items with context blocks rises from about 10% to about 75%."
+ }
+}

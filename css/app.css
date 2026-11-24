@@ -1891,7 +1891,8 @@ textarea:focus {
 .tabs {
   display: flex;
   gap: 0;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  row-gap: 4px;
   border-bottom: 2px solid var(--ink);
 }
 .tab {
