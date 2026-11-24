@@ -105,7 +105,7 @@ The previous maturation must also be **part of the traditional process** for tha
       type: 'text',
       md: `### Who enforces the rules
 
-The **Scotch Whisky Association (SWA)** polices the name worldwide, monitoring labels and taking legal action against fakes and misleading uses in many countries. Since Brexit, Scotch whisky has been protected under the **UK GI scheme** for spirit drinks, and it remains protected in the EU. Many other countries register it as a GI under trade agreements, so a breach can be pursued far from Scotland.`,
+The **Scotch Whisky Association (SWA)** polices the name worldwide, monitoring labels and taking legal action against fakes and misleading uses in many countries. Since the Brexit transition period ended, Scotch whisky has been protected under the **UK GI scheme** for spirit drinks, which began on **1 January 2021**, and it remains protected in the EU. Many other countries register it as a GI under trade agreements, so a breach can be pursued far from Scotland.`,
     },
     {
       type: 'table',
@@ -131,11 +131,10 @@ The **Scotch Whisky Association (SWA)** polices the name worldwide, monitoring l
       terms: [
         { term: 'Endogenous enzymes', definition: 'The enzymes a grain makes itself, chiefly during malting. Scotch Whisky may be converted only by these, so added commercial enzymes are forbidden.' },
         { term: 'Excise warehouse', definition: 'A bonded warehouse approved by HM Revenue and Customs where spirit is stored with duty suspended. Scotch must mature in one, or in another permitted place, in Scotland.' },
-        { term: 'Protected locality', definition: 'Under SWR 2009 reg. 10, Campbeltown or Islay. The name may appear only on Scotch wholly distilled there.' },
-        { term: 'Protected region', definition: 'Under SWR 2009 reg. 10, Highland, Lowland or Speyside. The name may appear only on Scotch wholly distilled in that region.' },
+        { term: 'Year of distillation (vintage)', definition: 'A label statement of the year a Scotch was distilled. SWR 2009 allows it only if all the whisky was distilled that year and the age or bottling year appears in the same field of vision.' },
+        { term: 'Stone fruit', definition: 'Fruit with a single hard stone, such as cherry, plum, peach and apricot. Since 2019 Scotch may not mature in casks that held wine, beer or spirits made from them.' },
         { term: 'Compulsory sales description', definition: 'The category name, such as "Blended Malt Scotch Whisky", that reg. 8 requires on every bottle of Scotch. It must be one of the five legal categories.' },
         { term: 'Scotch Whisky Technical File', definition: 'The official product specification that supports Scotch whisky\'s geographical indication. Its June 2019 amendment set out which previously used casks are allowed.' },
-        { term: 'Geographical indication (GI)', definition: 'A legal name protection that ties a product to its place of origin and its specification, so only qualifying products may use the name.' },
       ],
     },
     {
@@ -198,14 +197,14 @@ All of its malt whiskies were distilled on Islay; its grain whisky was distilled
       type: 'single',
       prompt: 'Under the 2019 Technical File amendment, which oak cask may NOT be used to mature or finish Scotch Whisky?',
       options: [
-        'A cask that held reposado tequila',
-        'A cask that held Calvados',
-        'A cask that held slivovitz (plum brandy)',
-        'A cask that held oloroso sherry',
+        'A cask that held Sauternes (sweet white wine)',
+        'A cask that held Madeira',
+        'A cask that held kirsch (cherry brandy)',
+        'A cask that held Irish whiskey',
       ],
       answer: 2,
       explanation:
-        'Plums are stone fruit, and casks that held stone-fruit products are excluded. Calvados is made from apples, which are pome fruit, and tequila and sherry are traditionally cask-matured, so those casks are allowed.',
+        'Cherries are stone fruit, so a cask that held kirsch is excluded. Sauternes, Madeira and Irish whiskey are all traditionally matured in oak casks. Sauternes is sweet, but the sweetening exclusion covers only beer and spirits sweetened after production, and grape wine is not a stone-fruit product.',
     },
     {
       id: 'l4-scotch-whisky-regulations-q5',

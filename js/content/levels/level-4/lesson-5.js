@@ -58,7 +58,7 @@ Canadian producers usually distill and age grains separately. A **base whisky** 
         ['India', 'Amrut (Bengaluru), Paul John (Goa)', 'Tropical heat; angel\'s share often 10% a year or more. Much domestic "whisky" is molasses-based and would not qualify in the UK, EU or US.'],
         ['Taiwan', 'Kavalan (Yilan), first spirit March 2006', 'Subtropical heat and humidity; fast maturation and high losses'],
         ['Australia', 'Lark Distillery (1992) revived Tasmanian distilling', 'A 2-year legal minimum; small casks and fortified-wine casks are common'],
-        ['Wales', 'Penderyn, first distilled in 2000', '"Single Malt Welsh Whisky" became a UK GI in 2023, the first spirit under the post-Brexit scheme'],
+        ['Wales', 'Penderyn, first distilled in 2000', '"Single Malt Welsh Whisky" became a UK GI in 2023, the first new spirit GI granted under the post-Brexit UK scheme'],
         ['England', 'The English Whisky Co., Norfolk (2006)', 'A young, fast-growing sector of small distilleries'],
         ['Nordic countries', 'Mackmyra, Sweden (1999)', 'Cold climate and slow maturation; local peat, juniper and oak experiments'],
         ['Israel', 'Milk & Honey, Tel Aviv', 'Hot climate; very fast maturation and high losses'],
@@ -85,7 +85,7 @@ The consequence for buyers: **an age statement tells you less** once you cross c
     {
       type: 'tasting',
       title: 'Blind regional triangulation',
-      md: `This exercise is optional. Ask a helper to pour four **10-15 mL** samples into identical, numbered glasses so you do not know which is which. Nose first, taste in small sips, use water and spit; the whole flight stays well under 2 US standard drinks. For a **nose-only** version, nose each glass three times, rest 30 seconds between glasses, and make every call from aroma alone.
+      md: `This exercise is optional. Ask a helper to pour four **10-15 mL** samples into identical, numbered glasses so you do not know which is which. Nose first, taste in small sips, use water and spit. Even at 15 mL each, four pours at 40-46% ABV come to about 1.5 US standard drinks, under the course's session limit of about 2; check it with the Standard drinks tool. For a **nose-only** version, nose each glass three times, rest 30 seconds between glasses, and make every call from aroma alone.
 
 Work through four cues in order: **peat** (smoke, iodine, tar), **cereal and texture** (creamy, oily, spicy grain), **fruit** (fresh orchard or dried fruit) and **cask** (vanilla, nuts, spice, incense). For each glass, name the style and justify it with one production fact.`,
       flight: [
@@ -104,11 +104,10 @@ Work through four cues in order: **peat** (smoke, iodine, tar), **cereal and tex
     {
       type: 'keyTerms',
       terms: [
-        { term: 'Whisky loch', definition: 'The large surplus of maturing Scotch built up in the 1970s and early 1980s, which led to the distillery closures of 1983 and 1985.' },
+        { term: 'Over-oaking', definition: 'Wood influence strong enough to bury the spirit under tannin, bitterness and drying oak, a common risk when casks work fast in hot climates.' },
+        { term: 'Direct-fired still', definition: 'A pot still heated by a flame beneath it, such as the coal fires at Yoichi, in place of internal steam coils.' },
         { term: 'Ghost distillery', definition: 'A closed distillery whose casks remain in stock and are still being bottled. Brora and Port Ellen were famous examples before Diageo reopened them.' },
         { term: 'Grain distillery', definition: 'A large distillery that makes column-still grain whisky, mainly for blends. Cameronbridge, Girvan and North British are Scotland\'s best known.' },
-        { term: 'Base whisky', definition: 'In Canadian practice, a whisky distilled to high strength, often from corn, that gives a blend its light, clean body.' },
-        { term: 'Flavouring whisky', definition: 'In Canadian practice, a whisky distilled to lower strength, often from rye, that carries much of a blend\'s character.' },
         { term: 'Nixtamalization', definition: 'Cooking corn in alkaline lime water, a Mesoamerican technique some Mexican whisky makers use to change the grain\'s flavor and texture before mashing.' },
       ],
     },
@@ -194,10 +193,10 @@ A 200-litre cask loses 10% of its remaining volume each year.`,
 Two single malts side by side: a 4-year-old from northern Taiwan, matured in ex-bourbon barrels, and a 12-year-old Speyside, matured in refill hogsheads.`,
       prompt: 'Which conclusion is best supported?',
       options: [
-        'The 12-year-old must taste more mature, because age statements measure maturity.',
-        'The Taiwanese malt may show similar or greater wood influence, because heat speeds extraction while losses run several times higher.',
-        'The Taiwanese malt lost less spirit to evaporation, because it spent 8 fewer years in cask.',
-        'The Taiwanese malt must be stronger, because heat always raises proof.',
+        'The 12-year-old probably tastes more mature, because age statements track maturity across climates.',
+        'The Taiwanese malt may show similar wood influence, because heat speeds extraction while losses run higher.',
+        'The Taiwanese malt probably lost less spirit, because it spent 8 fewer years in cask.',
+        'The Taiwanese malt is probably stronger, because heat drives water out faster than alcohol.',
       ],
       answer: 1,
       explanation:

@@ -52,7 +52,7 @@ Producers manage this in four ways. Some **rotate** barrels between floors, thou
       type: 'text',
       md: `### Indiana and the sourcing economy
 
-In **Lawrenceburg, Indiana**, a distillery that Seagram bought in **1933** became one of the largest **contract distilleries** in the country. After Seagram, it passed to Lawrenceburg Distillers Indiana (LDI) in 2007 and to MGP Ingredients in 2011; MGP now runs it as the Ross & Squibb Distillery. It makes whiskey to order and sells aged and new whiskey in bulk to many brands. Its Seagram-era recipe of **95% rye and 5% malted barley** defined a modern rye style.
+In **Lawrenceburg, Indiana**, a distillery that Seagram bought in **1933** became one of the largest **contract distilleries** in the country. When Seagram's drinks business was broken up in 2001 the plant went to Pernod Ricard, which sold it in 2007 to owners who ran it as Lawrenceburg Distillers Indiana (LDI); MGP Ingredients bought it in 2011 and now runs it as the Ross & Squibb Distillery. It makes whiskey to order and sells aged and new whiskey in bulk to many brands. Its Seagram-era recipe of **95% rye and 5% malted barley** defined a modern rye style.
 
 **Non-distiller producers (NDPs)** sell whiskey they did not distill. They buy aged barrels, contract a distillery to make spirit to their recipe, or commission **private labels** for retailers. Many craft brands also sell **sourced whiskey** while their own stock matures.
 
@@ -104,7 +104,7 @@ Mashbill design is the main lever a distiller controls. A **high-rye bourbon** c
       type: 'text',
       md: `### Craft, small barrels and American single malt
 
-The American Craft Spirits Association counted **2,131 active craft distillers** in August 2026, down 6.6% on 2025, with closures outnumbering openings for the first time. The core problem is cash flow: whiskey ties up money for years before it can be sold. Craft distillers bridge the gap with gin and vodka, with sourced whiskey and with **small barrels** of 5-15 gallons.
+The American Craft Spirits Association counted **2,131 active craft distillers** in August 2026, down 6.6% on 2025, as more distillers closed than opened. The core problem is cash flow: whiskey ties up money for years before it can be sold. Craft distillers bridge the gap with gin and vodka, with sourced whiskey and with **small barrels** of 5-15 gallons.
 
 Small barrels have more wood surface per liter, so they pull color and oak flavor quickly. Oxidation, ester formation and the loss of harsh, volatile compounds take time, and a small barrel does not speed them up as much. The result often tastes woody and young at once. Treat rapid-aging claims (heat, pressure, sound waves, wood chips) with skepticism; Level 5 gives the chemistry.
 
@@ -187,16 +187,17 @@ Bottled by Cold Forge Spirits, Denver, Colorado`,
     {
       id: 'l4-america-in-depth-q3',
       type: 'numeric',
-      context: `**LANTERN FORD**
-Kentucky Straight Bourbon Whiskey
-50% Alc./Vol. · 750 mL
-Distilled and bottled by Lantern Ford Distillery, Bardstown, KY`,
+      context: `**PIKE & LANTERN**
+Straight Rye Whiskey
+Distilled in Kentucky
+45% Alc./Vol. · 750 mL
+Bottled by Pike & Lantern Spirits Co., Columbus, OH`,
       prompt: 'What is the minimum age, in years, that this label implies?',
       answer: 4,
       tolerance: 0,
       unit: 'years',
       explanation:
-        'Straight requires 2 years, but any whisky under 4 years must carry an age statement (27 CFR 5.74). With no age statement, this straight bourbon is at least 4 years old. Answering 2 is the near miss.',
+        'Straight requires 2 years, but any whisky under 4 years must carry an age statement (27 CFR 5.74). With no age statement, this straight rye is at least 4 years old, whoever distilled it. Answering 2 is the near miss.',
     },
     {
       id: 'l4-america-in-depth-q4',

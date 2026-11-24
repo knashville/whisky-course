@@ -37,7 +37,7 @@ The labeling rules sit in **27 CFR Part 5**. TTB reorganized and renumbered Part
 
 Table 1 to section 5.143(c) lists more whisky types than most drinkers know. Each one turns on a single variable: the distillation proof, the container, or the share of straight whiskey in a blend.
 
-The imported types work differently. **Scotch, Irish and Canadian whisky** are defined by origin: each must be made in that country in compliance with that country's own laws for home consumption. A whisky made "the Scotch way" in Oregon is never Scotch whisky, however faithful the method.
+The imported types work differently. **Scotch, Irish and Canadian whisky** are defined by origin: each must be made in Scotland, on the island of Ireland (the Republic or Northern Ireland) or in Canada, in compliance with the laws that govern whisky made there for home consumption. A whisky made "the Scotch way" in Oregon is never Scotch whisky, however faithful the method.
 
 Two straights of the same type from the same state can be mixed and stay "straight", because straight whisky includes mixtures of straights of the same type produced in the same state. Mix a straight bourbon with a straight rye, or Kentucky straight bourbon with Indiana straight bourbon, and the result is a **blend of straight whiskies** instead.`,
     },
@@ -64,14 +64,14 @@ Two straights of the same type from the same state can be mixed and stay "straig
         { title: 'Total the blend', md: '44 + 180 = **224 PG**.' },
         { title: 'Find the straight share', md: '44 ÷ 224 = 0.196, or **19.6%** straight whisky on a PG basis. Measured by volume (40 ÷ 220 = 18.2%) you would get the wrong number.' },
         { title: 'Classify', md: 'Under 20%, so the product cannot be blended whisky. It has at least 5% whisky and its straight portion is under 20%, so it is **spirit whisky**. Raising the straight rye to 45 PG (about 40.9 wine gallons at 110 proof) gives 45 ÷ 225 = exactly 20%, and the blend qualifies as blended whisky.' },
-        { title: 'Check the label', md: 'Any blend containing neutral spirits also needs a commodity statement under **5.71**, disclosing the neutral spirits and the commodity they were distilled from (for example "grain neutral spirits"). Check proof-gallon conversions with the **Cask yield** tool.' },
+        { title: 'Check the label', md: 'Any blend containing neutral spirits also needs a statement under **5.71** giving the percentage of neutral spirits and the commodity they were distilled from (for example "80% grain neutral spirits"). Check proof-gallon conversions with the **Cask yield** tool.' },
       ],
     },
     {
       type: 'text',
       md: `### American single malt: the newest type
 
-TTB added **American single malt whisky** to section 5.143 in **T.D. TTB-199**, published on 18 December 2024 and effective on **19 January 2025**. The type requires:
+TTB added **American single malt whisky** to section 5.143 in a final rule published in **December 2024** and effective on **19 January 2025**. The type requires:
 
 - a mash of **100% malted barley**;
 - distillation **entirely at one US distillery**, with mashing, distillation and aging all in the US;
@@ -87,7 +87,7 @@ Neutral spirits, flavoring and blending materials are not allowed. **Caramel col
       title: 'Additives: who may add what (27 CFR 5.143 and 5.155)',
       md: `- **Nothing at all:** bourbon and every straight whisky. Table 1 to 5.143 allows them no coloring, flavoring or blending materials, so even caramel is out.
 - **Up to 2.5% by volume:** other whiskies, such as non-straight rye, blended whisky and spirit whisky, may contain "harmless coloring, flavoring and blending materials": caramel, sugar, fruit juice, wine, or straight malt or straight rye malt whisky. If these total more than 2.5% of the finished product, the addition alters the class or type (**5.155**).
-- **American single malt:** caramel color only, disclosed on the label (T.D. TTB-199).
+- **American single malt:** caramel color only, disclosed on the label (the December 2024 final rule).
 - A product made with flavoring or blending materials generally needs **formula approval** from TTB before its label can be approved. TTB lists some exceptions.`,
     },
     {
@@ -102,7 +102,7 @@ Neutral spirits, flavoring and blending materials are not allowed. **Caramel col
 
 ### State of distillation (27 CFR 5.66(f))
 
-For bourbon, rye, wheat, malt and rye malt whisky, corn whisky, the straight types and the "distilled from ___ mash" types, the label must show the **state where the whisky was originally distilled**. A bottler's address in the same state satisfies the rule. When the address is in another state, the label adds a statement such as "Distilled in Indiana". A state name may sit in front of the class, as in "Kentucky straight bourbon whisky", only if the whisky was distilled and aged in that state. Light whisky and blended whisky fall outside this rule.`,
+For bourbon, rye, wheat, malt and rye malt whisky, corn whisky, the straight types and the "distilled from ___ mash" types, the label must show the **state where the whisky was originally distilled**. A bottler's address in the same state satisfies the rule. When the address is in another state, the label adds a statement such as "Distilled in Indiana". A state name may sit in front of the class, as in "Kentucky straight bourbon whisky", only if the whisky was distilled in that state. Light whisky and blended whisky fall outside this rule.`,
     },
     {
       type: 'callout',
@@ -142,20 +142,20 @@ For bourbon, rye, wheat, malt and rye malt whisky, corn whisky, the straight typ
       headers: ['Spec', 'Class/type', 'Age statement', 'State of distillation', '"Bottled-in-bond"'],
       rows: [
         ['75% corn; 135 proof off the still; new charred oak at 118; 3 years; distilled in Indiana; bottled in Ohio by an Ohio firm; 100 proof', 'Straight bourbon whisky', 'Required ("3 years old")', 'Required ("Distilled in Indiana")', 'Not allowed (under 4 years)'],
-        ['95% rye, 5% malted barley; spring 2019 season; one Kentucky distillery; 6 years in its bonded warehouse; 100 proof; distiller bottles it', 'Straight rye whisky', 'Optional', 'Shown by the Kentucky address', 'Allowed, with the distillery name and DSP number'],
+        ['95% rye, 5% malted barley; 140 proof off the still; new charred oak at 115; spring 2019 season; one Kentucky distillery; 6 years in its bonded warehouse; 100 proof; distiller bottles it', 'Straight rye whisky', 'Optional', 'Shown by the Kentucky address', 'Allowed, with the distillery name and DSP number'],
         ['51% corn; 158 proof off the still; 5 years in used bourbon barrels', 'Whisky distilled from bourbon mash', 'Optional (over 4 years)', 'Required if the address state differs', 'Only if every 5.88 condition is met'],
-        ['82% corn; 2 years in used oak; nothing added', 'Straight corn whisky', 'Required ("2 years old")', 'Required if the address state differs', 'Not allowed'],
+        ['82% corn; 150 proof off the still; entered used oak at 120; 2 years; nothing added', 'Straight corn whisky', 'Required ("2 years old")', 'Required if the address state differs', 'Not allowed'],
         ['Grain mash distilled at 175 proof; 3 years in used oak', 'Light whisky', 'Required ("3 years old")', 'Not required; "Kentucky" and "Tennessee" barred except in an address', 'Not allowed'],
         ['25% straight bourbon (PG basis, 3 years old) plus grain neutral spirits', 'Blended whisky', 'Required, with the percentage and age of the whiskey', 'Not required', 'Not allowed'],
-        ['Bourbon mash; distilled and aged 5 years in Tennessee; no charcoal filtering; Tennessee bottler', 'Straight bourbon whisky (cannot be called Tennessee whiskey under state law)', 'Optional', 'Shown by the Tennessee address', 'Only if every 5.88 condition is met'],
+        ['Bourbon mash; 140 proof off the still; new charred oak at 120; distilled and aged 5 years in Tennessee; no charcoal filtering; Tennessee bottler', 'Straight bourbon whisky (cannot be called Tennessee whiskey under state law)', 'Optional', 'Shown by the Tennessee address', 'Only if every 5.88 condition is met'],
         ['Straight bourbon, 4 years; spring and fall 2021 distillate married; one distillery; 100 proof', 'Straight bourbon whisky', 'Optional', 'Required if the address state differs', 'Not allowed (two seasons)'],
       ],
     },
     {
       type: 'keyTerms',
       terms: [
-        { term: 'Standard of identity', definition: 'The legal definition of a class or type of spirit, such as bourbon or light whisky, set out for whisky in 27 CFR 5.143. A product must meet it to use that name on its label.' },
-        { term: 'Proof gallon (PG)', definition: 'One US gallon of spirit at 60 °F at 100 proof (50% ABV). Proof gallons equal wine gallons times proof divided by 100, and US blend percentages are measured in them.' },
+        { term: 'Blend of straight whiskies', definition: 'A US mixture of straight whiskies that does not qualify as one straight type, such as straight bourbon mixed with straight rye, or straight bourbons from different states.' },
+        { term: 'Distilled spirits specialty', definition: 'A TTB category for a spirit that fits no standard of identity, such as bourbon finished in a port cask. It is labeled with a statement of composition and generally needs formula approval.' },
         { term: 'Light whisky', definition: 'A US whisky distilled at more than 160 and less than 190 proof and stored in used or uncharred new oak. Its label may not use "Kentucky" or "Tennessee" except in an address.' },
         { term: 'Spirit whisky', definition: 'A mixture of neutral spirits with at least 5% whisky or straight whisky on a proof-gallon basis, in which the straight whisky portion is less than 20%.' },
         { term: 'Harmless coloring, flavoring and blending materials', definition: 'Additions such as caramel, sugar, fruit juice, wine or straight malt whisky that some US whiskies may contain up to 2.5% by volume. Bourbon and straight whiskies may contain none.' },
@@ -176,22 +176,22 @@ US whisky law lives in 27 CFR Part 5, recodified in 2022: standards in 5.143, ad
       id: 'l4-us-federal-law-q1',
       type: 'multi',
       context: `**Spec sheet: Product A**
-Mash: 75% corn, 15% rye, 10% malted barley
-Distilled at 135 proof in Indiana; entered new charred oak at 118 proof
-Aged 3 years; reduced with water to 100 proof
-Bottled in Ohio by an Ohio company; nothing added`,
+Mash: 70% corn, 21% rye, 9% malted barley
+Distilled at 128 proof in Kentucky; entered new charred oak at 112 proof
+Aged 3 years; reduced with water to 90 proof
+Bottled in Tennessee by a Tennessee company; nothing added`,
       prompt: 'Which statements about Product A\'s label are correct? Select all that apply.',
       options: [
         'It may be labeled "straight bourbon whisky".',
         'An age statement is mandatory.',
-        'A statement such as "Distilled in Indiana" is mandatory.',
-        'It may say "bottled-in-bond" because it is exactly 100 proof.',
+        'A statement such as "Distilled in Kentucky" is mandatory.',
+        'Reduced to exactly 100 proof, it could say "bottled-in-bond".',
         'Up to 2.5% caramel could be added without changing its class.',
-        '"Ohio straight bourbon whisky" would be an accurate designation.',
+        '"Tennessee straight bourbon whisky" would be an accurate designation.',
       ],
       answer: [0, 1, 2],
       explanation:
-        'It meets every bourbon rule plus 2 years in new charred oak, so it is straight bourbon. At 3 years it needs an age statement (5.74), and because the address is in Ohio it must name Indiana as the state of distillation (5.66(f)). Bonding needs 4 years, bourbon takes no caramel, and a state name in front of the class requires distilling and aging in that state.',
+        'It meets every bourbon rule plus 2 years in new charred oak, so it is straight bourbon. At 3 years it needs an age statement (5.74), and because the address is in Tennessee it must name Kentucky as the state of distillation (5.66(f)). Bonding needs 4 years whatever the proof, bourbon takes no caramel, and a state name in front of the class requires the whisky to have been distilled in that state.',
     },
     {
       id: 'l4-us-federal-law-q2',

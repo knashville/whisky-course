@@ -2,7 +2,7 @@ export default {
   id: 'l4-world-whisky-rules',
   title: 'Irish, Canadian, Japanese, EU and Australian Rules Compared',
   summary:
-    'Apply the Irish Technical File category by category, state what Canadian rules permit and where they now live, separate Japan\'s tax law from its voluntary industry standard, and compare six regimes on one grid.',
+    'Apply the Irish Technical File category by category, state what Canadian rules permit and where they are moving, separate Japan\'s tax law from its voluntary industry standard, and compare six regimes on one grid.',
   minutes: 13,
   blocks: [
     {
@@ -15,7 +15,7 @@ export default {
       type: 'text',
       md: `### Ireland: one island, one GI
 
-The **Irish Whiskey Act 1980** first defined Irish whiskey in statute. The current specification is the **Technical File** for the geographical indication **"Irish Whiskey / Uisce Beatha Eireannach / Irish Whisky"**, submitted in **2014**. The GI covers the **whole island**, so whiskey made in Northern Ireland qualifies on the same terms as whiskey from the Republic.
+The **Irish Whiskey Act 1980**, which replaced an earlier Irish Whiskey Act of 1950, set the statutory definition of Irish whiskey. The current specification is the **Technical File** for the geographical indication **"Irish Whiskey / Uisce Beatha Eireannach / Irish Whisky"**, submitted in **2014**. The GI covers the **whole island**, so whiskey made in Northern Ireland qualifies on the same terms as whiskey from the Republic.
 
 The core definition:
 
@@ -48,9 +48,9 @@ The Pot Still recipe may change. In 2026 Ireland's Department of Agriculture, Fo
     },
     {
       type: 'text',
-      md: `### Canada: generous rules, new address
+      md: `### Canada: generous rules, a changing address
 
-For decades the Canadian standard sat in the **Food and Drug Regulations at B.02.020**. Amendments published in December 2024 (**SOR/2024-244**) moved the compositional standard for "Canadian whisky, Canadian rye whisky or rye whisky" into the **Canadian Food Compositional Standards Document (Volume 2, section 2.1.3)**, which the regulations incorporate by reference. B.02.020 still holds the age-claim rule: only time in small wood counts as age. Expect to see both citations in the trade for years.
+For decades the Canadian standard sat in the **Food and Drug Regulations at B.02.020**. Amendments published in Canada Gazette Part II in December 2024 (**SOR/2024-244**) move the compositional standard for "Canadian whisky, Canadian rye whisky or rye whisky" into the **Canadian Food Compositional Standards Document (Volume 2, section 2.1.3)**, which the regulations incorporate by reference; check the date they come into force before you cite either source. Under the amendments, B.02.020 keeps the age-claim rule: only time in small wood counts as age. Expect to see both citations in the trade for years.
 
 The requirements, as long written in B.02.020 and carried into the new document:
 
@@ -78,7 +78,6 @@ To be called Japanese whisky under the standard, a product must use **malted gra
 Products that do not qualify should not use labeling that suggests Japanese whisky: names of people associated with Japan, Japanese cities, regions, famous places, mountains or rivers, the Japanese flag or era names. As of 2026, the JSLMA has applied for a "Japanese Whisky" GI and the National Tax Agency has been working on legal protection. Check whether the standard has moved into law before you rely on its voluntary status.`,
     },
     {
-      type: 'text',
       type: 'callout',
       variant: 'law',
       title: 'The EU definition: Regulation (EU) 2019/787, Annex I, category 2',
@@ -90,13 +89,13 @@ Products that do not qualify should not use labeling that suggests Japanese whis
 - at least **40% ABV**, with no added alcohol;
 - **not sweetened**, even to round off the taste, **not flavoured**, and free of additives except **plain caramel (E150a)** for colour.
 
-The rule says nothing about where the whisky is distilled or matured, and it is the reason a molasses spirit cannot be sold as whisky in Europe. The UK keeps an equivalent definition in its own retained spirit drinks law.`,
+The rule says nothing about where the whisky is distilled or matured, and it is the reason a molasses spirit cannot be sold as whisky in Europe. Great Britain keeps an equivalent definition in its own spirit drinks law: assimilated law based on the older Regulation (EC) No 110/2008, because 2019/787 applied only from 25 May 2021, after the Brexit transition had ended. Northern Ireland applies Regulation 2019/787 directly.`,
     },
     {
       type: 'text',
       md: `### Australia
 
-**Australia** sets its minimum through excise law: under **section 77FI of the Excise Act 1901**, Australian brandy, whisky or rum may not be released for home consumption until it has matured in wood for at least **2 years**. Section 105A of the Customs Act 1901 applies the same rule to imports. A 2-year-old Australian whisky is lawful at home but falls short of the 3-year EU, UK, Irish, Canadian and Japanese standards.`,
+**Australia** sets its minimum through excise law: under **section 77FI of the Excise Act 1901**, Australian brandy, whisky or rum may not be released for home consumption until it has matured in wood for at least **2 years**. Section 105A of the Customs Act 1901 applies the same rule to imports. A 2-year-old Australian whisky is lawful at home but cannot be sold as whisky in the EU or the UK, which require 3 years; Japan's tax law sets no minimum age, so it can be sold there as whisky.`,
     },
     {
       type: 'table',
@@ -139,8 +138,8 @@ The rule says nothing about where the whisky is distilled or matured, and it is 
       terms: [
         { term: 'Uisce beatha', definition: 'Irish for "water of life", the root of the English word whiskey. "Uisce Beatha Eireannach" is one of the protected names of the Irish whiskey GI.' },
         { term: 'Pot Still Irish whiskey', definition: 'An Irish category made in pot stills from a mash of at least 30% malted and at least 30% unmalted barley, with up to 5% other cereals under the 2014 Technical File.' },
-        { term: 'Small wood', definition: 'Canadian legal term for wooden casks or barrels of 700 litres or less, in which Canadian whisky must age for at least 3 years.' },
-        { term: 'Food Compositional Standards Document', definition: 'The Canadian Food Inspection Agency document, incorporated by reference into Canadian food law, that holds the Canadian whisky standard under amendments published in December 2024.' },
+        { term: 'Grain Irish whiskey', definition: 'An Irish category distilled in column stills from a mash of no more than 30% malted barley with whole unmalted cereals such as maize, wheat or barley.' },
+        { term: 'Food Compositional Standards Document', definition: 'The Canadian Food Inspection Agency document, incorporated by reference into Canadian food law, into which amendments published in December 2024 move the Canadian whisky standard.' },
         { term: 'JSLMA standard', definition: 'The Japan Spirits & Liqueurs Makers Association\'s voluntary 2021 definition of "Japanese whisky", requiring distillation, 3 years of maturation and bottling in Japan.' },
         { term: 'Liquor Tax Act whisky', definition: 'Japan\'s tax-law definition of whisky, which permits blends with neutral spirit or shochu and requires no Japanese origin.' },
       ],
@@ -149,7 +148,7 @@ The rule says nothing about where the whisky is distilled or matured, and it is 
       type: 'text',
       md: `### Recap
 
-Irish whiskey (Technical File 2014) covers the whole island, allows other natural enzymes and any wooden cask, and defines Pot Still as 30%+ malted and 30%+ unmalted barley with up to 5% other cereals, a cap under review in 2026. Canada's standard moved from FDR B.02.020 into the Food Compositional Standards Document in December 2024; it allows caramel and flavouring and its three names say nothing about rye content, while the 9.09% figure has no clause behind it. Japan's Liquor Tax Act permits blends of any origin; the voluntary JSLMA standard (2021, fully in force 2024) reserves "Japanese whisky" for spirit distilled, aged 3 years and bottled in Japan. The EU bans sweetening and flavouring and needs 3 years; Australia needs 2.`,
+Irish whiskey (Technical File 2014) covers the whole island, allows other natural enzymes and any wooden cask, and defines Pot Still as 30%+ malted and 30%+ unmalted barley with up to 5% other cereals, a cap under review in 2026. Canada's standard is moving from FDR B.02.020 into the Food Compositional Standards Document under amendments published in December 2024; it allows caramel and flavouring and its three names say nothing about rye content, while the 9.09% figure has no clause behind it. Japan's Liquor Tax Act permits blends of any origin; the voluntary JSLMA standard (2021, fully in force 2024) reserves "Japanese whisky" for spirit distilled, aged 3 years and bottled in Japan. The EU bans sweetening and flavouring and needs 3 years; Australia needs 2.`,
     },
   ],
   quiz: [
@@ -178,11 +177,11 @@ Irish whiskey (Technical File 2014) covers the whole island, allows other natura
 - D: Fermented-molasses spirit, 3 years in oak, labeled "Whisky" for the UK
 - E: Imported Scotch malt blended with grain whisky and bottled in Japan by a JSLMA member, labeled "Japanese Whisky"
 - F: 3-year-old malt whisky sweetened with 2 g/L sugar, labeled "Whisky" for Germany`,
-      prompt: 'Which products may lawfully carry the name shown? Select all that apply.',
+      prompt: 'Which products meet the definition or standard that governs the name shown? Select all that apply.',
       options: ['Product A', 'Product B', 'Product C', 'Product D', 'Product E', 'Product F'],
       answer: [0, 2],
       explanation:
-        'Irish whiskey may use any wooden cask, and Canadian rye whisky needs no rye and may contain caramel. Scotch must stay in oak, UK and EU whisky must come from cereals and may not be sweetened, and JSLMA Japanese whisky must be distilled and aged 3 years in Japan.',
+        'Irish whiskey may use any wooden cask, and Canadian rye whisky needs no rye and may contain caramel, so A and C qualify. Scotch must stay in oak (B), and UK and EU whisky must come from a cereal mash (D) and may not be sweetened (F). E breaks the JSLMA standard, which is voluntary but is the standard that governs "Japanese Whisky" for its members: distillation and 3 years of maturation must happen in Japan.',
     },
     {
       id: 'l4-world-whisky-rules-q3',
@@ -217,10 +216,10 @@ Blended and bottled in Japan · 40% Alc./Vol. · 700 mL
 *Producer file: a JSLMA member. The blend is imported Scotch malt plus grain spirit distilled in Japan; none of it has aged 3 years in Japan.*`,
       prompt: 'Which assessment is correct?',
       options: [
-        'It is lawful "whisky" under the Liquor Tax Act, but under the JSLMA standard it may not be called Japanese whisky and should not use the national flag.',
-        'It may be called "Japanese whisky" because it was blended and bottled in Japan.',
-        'It cannot be sold as "whisky" in Japan at all, because it contains imported spirit.',
-        'It fully complies, because the JSLMA standard restricts only the words "Japanese whisky" and not label art.',
+        'It is whisky under the Liquor Tax Act, but the JSLMA standard bars "Japanese whisky" and asks it to drop the flag.',
+        'It may be called "Japanese whisky" under the JSLMA standard, because a member blended and bottled it in Japan.',
+        'It cannot be sold as whisky under the Liquor Tax Act, because part of the blend is imported spirit.',
+        'It meets the JSLMA standard, because the standard restricts the words "Japanese whisky" but not label art.',
       ],
       answer: 0,
       explanation:
@@ -236,11 +235,11 @@ Blended and bottled in Japan · 40% Alc./Vol. · 700 mL
         'EU spirit drinks Regulation 2019/787 adopted',
         'JSLMA Japanese whisky standard takes effect',
         'JSLMA transition for existing products ends',
-        'Canada moves its whisky standard into the Food Compositional Standards Document',
+        'Canada publishes amendments moving its whisky standard into the Food Compositional Standards Document',
         'Ireland consults on raising the Pot Still other-cereals cap',
       ],
       explanation:
-        'The order runs 1980 (Irish Whiskey Act), 2014 (Technical File), 2019 (EU 2019/787), April 2021 (JSLMA standard), March 2024 (JSLMA transition ends), December 2024 (Canada, SOR/2024-244) and 2026 (Irish consultation). Knowing the dates tells you which edition of a rule a source is quoting.',
+        'The order runs 1980 (the current Irish Whiskey Act), 2014 (Technical File), 2019 (EU 2019/787), April 2021 (JSLMA standard), March 2024 (JSLMA transition ends), December 2024 (Canada publishes SOR/2024-244) and 2026 (Irish consultation). Knowing the dates tells you which edition of a rule a source is quoting.',
     },
   ],
 };
