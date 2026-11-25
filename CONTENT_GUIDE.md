@@ -178,3 +178,42 @@ Kentucky Straight Bourbon Whisky
 Aged 3 Years · 45% Alc./Vol. (90 Proof) · 750 mL
 Distilled and bottled by Old Harbor Distilling Co., Bardstown, KY
 ```
+
+## Difficulty calibration
+
+Scoring gives partial credit on composite questions: "select all" earns
+(right picks − wrong picks) ÷ right options, matching earns the share of pairs
+right, ordering earns Kendall's tau (one neighbor swap costs little, a random
+order earns nothing). Single choice, true/false and numeric are all or nothing.
+
+Each level is written for a target learner:
+
+| Level | Who should pass | Without the lessons? |
+|---|---|---|
+| 1 | A curious beginner after the lessons (aim for about 80%) | An experienced industry professional should pass cold |
+| 2 | An enthusiast after the lessons | A professional should pass cold, with less margin |
+| 3-4 | A professional after light study | Unlikely without study: specific numbers and rules matter |
+| 5-6 | A serious student after real study | No: these levels are meant to be demanding |
+
+Rules for every question, at every level:
+
+- Test one idea that matters to someone who sells, serves, makes or studies
+  whiskey. No trivia: no minor dates, no legal drinking ages of individual
+  countries, no exact wording of health guidance, no facts that exist only to
+  be tested.
+- Every exam question must be answerable from the lessons (or earlier levels).
+- One defensible answer. No trick wording, no double negatives at Levels 1-2,
+  no overlapping ranges among options or match targets, no subjective sensory
+  pairings presented as facts.
+- Size limits (the validator enforces them):
+
+| Level | Match pairs | Order items | Options |
+|---|---|---|---|
+| 1-2 | at most 4 | at most 5 | at most 5 |
+| 3-4 | at most 5 | at most 6 | at most 6 |
+| 5-6 | at most 6 | at most 7 | at most 6 |
+
+- Levels 1-2: mostly single choice and true/false. "Select all" items have
+  2-3 correct options of 4-5. Numeric items are simple (proof and ABV);
+  multi-step calculations belong at Level 3 and above.
+- Lesson quiz items are practice and sit slightly below the exam in difficulty.

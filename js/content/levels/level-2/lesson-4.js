@@ -46,7 +46,7 @@ History also has a marketing problem. Founding legends sell bottles, and many ha
       type: 'callout',
       variant: 'history',
       title: 'History: where the 3-year rule came from',
-      md: `In the First World War, Chancellor of the Exchequer **David Lloyd George** wanted to curb drinking among war workers. The **Immature Spirits (Restriction) Act 1915** required spirits to rest in bond for at least **2 years** before sale, and in **1916** the minimum rose to **3 years**. Distillers had to hold stock longer, and young, raw spirit left the market.
+      md: `In the First World War, Chancellor of the Exchequer **David Lloyd George** wanted to curb drinking among war workers. The **Immature Spirits (Restriction) Act 1915** required spirits to rest in bond for at least **3 years** before sale. For a transitional year, spirit aged **2 years** could still be released on payment of extra duty, so the full 3-year rule took hold in **1916**. Distillers had to hold stock longer, and young, raw spirit left the market.
 
 That wartime rule is the origin of the 3-year minimum in Scotch. Ireland, then part of the UK, inherited it, and the same figure now appears in Canadian law, EU law and the Japanese industry standard.`,
     },
@@ -114,7 +114,7 @@ A test for any founding story: **what document from the time supports it?** The 
         { term: 'Malt Tax', definition: 'A tax on malted barley extended to Scotland in 1725. It caused riots and pushed much Highland distilling into illicit stills and smuggling.' },
         { term: 'Rectifier', definition: 'In 19th- and early 20th-century America, a firm that bought spirit and blended, flavored or redistilled it, often using neutral spirit, instead of distilling whiskey from grain.' },
         { term: 'Taft Decision', definition: 'President Taft\'s 1909 ruling that straight, blended and imitation whiskey could all be sold as whiskey if labeled honestly. It is the root of today\'s US straight and blended types.' },
-        { term: 'Immature Spirits Act', definition: 'The UK wartime law of 1915 that required spirits to rest in bond before sale: 2 years at first, raised to 3 years in 1916. It is the origin of the 3-year minimum for Scotch.' },
+        { term: 'Immature Spirits Act', definition: 'The UK wartime law of 1915 that required spirits to rest in bond for at least 3 years before sale, after a one-year transition in which 2-year-old spirit could be released on payment of extra duty. It is the origin of the 3-year minimum for Scotch.' },
         { term: 'Pattison crash', definition: 'The 1898 collapse of the Leith blenders Pattisons Ltd, which shattered confidence in the Scotch trade and began years of slump.' },
         { term: 'Whisky loch', definition: 'The huge surplus of unsold Scotch in the early 1980s, which led to a wave of distillery closures in 1983-85.' },
         { term: 'Medicinal whiskey', definition: 'Whiskey sold on a doctor\'s prescription during US Prohibition (1920-1933) by a handful of licensed companies.' },

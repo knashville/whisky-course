@@ -51,7 +51,7 @@ export function renderQuestion(prepared, opts = {}) {
   const feedback = reveal && question ? renderFeedback(question, grade) : null;
   return h(
     'section',
-    { class: ['question', grade && (grade.correct ? 'is-right' : 'is-miss')], 'aria-labelledby': `${id}-prompt`, dataset: { qid: prepared.id } },
+    { class: ['question', grade && (grade.correct ? 'is-right' : grade.credit > 0 ? 'is-part' : 'is-miss')], 'aria-labelledby': `${id}-prompt`, dataset: { qid: prepared.id } },
     head,
     context,
     prompt,
@@ -63,11 +63,18 @@ export function renderQuestion(prepared, opts = {}) {
 export function renderFeedback(question, grade) {
   return h(
     'div',
-    { class: ['q-feedback', grade.correct ? 'ok' : 'miss'], role: 'status' },
-    h('p', { class: 'q-verdict' }, grade.correct ? 'Correct' : grade.answered ? 'Not quite' : 'Not answered'),
+    { class: ['q-feedback', grade.correct ? 'ok' : grade.credit > 0 ? 'part' : 'miss'], role: 'status' },
+    h('p', { class: 'q-verdict' }, verdict(grade)),
     !grade.correct ? h('p', { class: 'q-answer' }, h('span', { class: 'q-answer-label' }, 'Answer: '), md1(describeAnswer(question))) : null,
     h('div', { class: 'q-explain' }, md(question.explanation)),
   );
+}
+
+export function verdict(grade) {
+  if (grade.correct) return 'Correct';
+  if (!grade.answered) return 'Not answered';
+  if (grade.credit > 0) return `Partly right: ${Math.round(grade.credit * 100)}% credit`;
+  return 'Not quite';
 }
 
 function choiceList(prepared, id, kind, response, onChange, locked, revealQ) {

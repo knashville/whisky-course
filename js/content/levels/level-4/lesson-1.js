@@ -86,7 +86,7 @@ Neutral spirits, flavoring and blending materials are not allowed. **Caramel col
       variant: 'law',
       title: 'Additives: who may add what (27 CFR 5.143 and 5.155)',
       md: `- **Nothing at all:** bourbon and every straight whisky. Table 1 to 5.143 allows them no coloring, flavoring or blending materials, so even caramel is out.
-- **Up to 2.5% by volume:** other whiskies, such as non-straight rye, blended whisky and spirit whisky, may contain "harmless coloring, flavoring and blending materials": caramel, sugar, fruit juice, wine, or straight malt or straight rye malt whisky. If these total more than 2.5% of the finished product, the addition alters the class or type (**5.155**).
+- **Up to 2.5% by volume:** other whiskies, such as blended whisky and spirit whisky, may contain "harmless coloring, flavoring and blending materials": caramel, sugar, fruit juice, wine, or straight malt or straight rye malt whisky. If these total more than 2.5% of the finished product, the addition alters the class or type (**5.155**).
 - **American single malt:** caramel color only, disclosed on the label (the December 2024 final rule).
 - A product made with flavoring or blending materials generally needs **formula approval** from TTB before its label can be approved. TTB lists some exceptions.`,
     },

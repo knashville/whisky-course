@@ -47,7 +47,7 @@ Read the bourbon row as six separate rules:
 5. **Bottled at 80 proof or more.**
 6. **Nothing added but water.** Bourbon may not contain added coloring, flavoring or blending materials. Its color and flavor come from grain, yeast, distillation and wood.
 
-Rye, wheat, malt and rye malt whisky follow exactly the same pattern, with the named grain at 51% or more.`,
+Rye, wheat, malt and rye malt whisky follow the same numbers, with the named grain at 51% or more. Rule 6 is the one difference: unless they are straight, these four may contain harmless coloring, flavoring or blending materials up to 2.5% of the finished product. Bourbon may not, straight or not.`,
     },
     {
       type: 'callout',

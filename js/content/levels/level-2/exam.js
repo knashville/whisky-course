@@ -398,7 +398,7 @@ export default {
         { left: 'Natural color', right: 'No caramel coloring added' },
         { left: 'Bottled-in-bond', right: 'At least 4 years old, so no age statement is needed' },
       ],
-      explanation: `Barrel proof, non-chill filtered and natural color are voluntary claims that must be truthful, and "single barrel" has no formal definition but must be literally true. Of these, only bottled-in-bond has a full definition in the regulations (27 CFR 5.88), and because it requires at least 4 years in a bonded warehouse, the label need not state an age.`,
+      explanation: `Non-chill filtered and natural color are voluntary claims that must be truthful, and "single barrel" has no formal definition but must be literally true. Barrel proof is voluntary too, but the regulations limit it to whiskey bottled no more than 2 proof below its strength out of the cask (27 CFR 5.87). Bottled-in-bond is fully defined in 27 CFR 5.88, and because it requires at least 4 years in a bonded warehouse, the label need not state an age.`,
     },
     {
       id: 'x2-28',

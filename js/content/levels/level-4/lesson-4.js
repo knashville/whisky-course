@@ -52,7 +52,7 @@ Producers manage this in four ways. Some **rotate** barrels between floors, thou
       type: 'text',
       md: `### Indiana and the sourcing economy
 
-In **Lawrenceburg, Indiana**, a distillery that Seagram bought in **1933** became one of the largest **contract distilleries** in the country. When Seagram's drinks business was broken up in 2001 the plant went to Pernod Ricard, which sold it in 2007 to owners who ran it as Lawrenceburg Distillers Indiana (LDI); MGP Ingredients bought it in 2011 and now runs it as the Ross & Squibb Distillery. It makes whiskey to order and sells aged and new whiskey in bulk to many brands. Its Seagram-era recipe of **95% rye and 5% malted barley** defined a modern rye style.
+In **Lawrenceburg, Indiana**, a distillery that Seagram bought in **1933** became one of the largest **contract distilleries** in the country. When Seagram's drinks business was broken up in 2001 the plant went to Pernod Ricard, which sold it in 2007 to owners who ran it as Lawrenceburg Distillers Indiana (LDI); MGP Ingredients bought it in 2011; the site traded as the Ross & Squibb Distillery from 2021 and took back the MGP Distillery name in September 2026. It makes whiskey to order and sells aged and new whiskey in bulk to many brands. Its Seagram-era recipe of **95% rye and 5% malted barley** defined a modern rye style.
 
 **Non-distiller producers (NDPs)** sell whiskey they did not distill. They buy aged barrels, contract a distillery to make spirit to their recipe, or commission **private labels** for retailers. Many craft brands also sell **sourced whiskey** while their own stock matures.
 

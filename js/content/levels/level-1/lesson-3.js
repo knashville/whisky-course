@@ -42,7 +42,7 @@ Single malts get the attention, but blends make up the large majority of all Sco
 
 - **Scotland:** at least 3 years in oak casks in Scotland (Scotch Whisky Regulations 2009).
 - **Ireland:** at least 3 years in wooden casks on the island of Ireland (Irish Whiskey Act 1980 and the Irish Whiskey Technical File).
-- **Canada:** at least 3 years in small wood in Canada (Food and Drug Regulations, B.02.020).
+- **Canada:** at least 3 years in small wood in Canada (Canadian Food Compositional Standards, Volume 2, incorporated into the Food and Drug Regulations; until December 2024 this rule sat in section B.02.020).
 - **European Union:** at least 3 years in wooden casks for whisky made in the EU (Regulation (EU) 2019/787).
 
 The United States is the big exception. **Bourbon has no minimum age** (27 CFR 5.143). Only **straight bourbon** must be aged at least 2 years.`,
@@ -92,7 +92,7 @@ Most bourbon is made in Kentucky, which has the history, the climate and most of
 - be aged at least 3 years in wooden casks in Japan;
 - be bottled in Japan at 40% ABV or more.
 
-The standard binds only the association's members and has no force of national law. The association has said it wants the name protected as a geographical indication.`,
+The standard binds only the association's members and has no force of national law. In October 2026 Japan's National Tax Agency published a draft to designate "Japanese whisky" as a geographical indication, which would give the name legal protection; as of November 2026 the draft was still open for public comment.`,
     },
     {
       type: 'text',
@@ -152,14 +152,12 @@ Each style has a headline rule. Scotch: made and aged at least 3 years in oak in
       type: 'match',
       prompt: 'Match each style to the statement that fits it.',
       pairs: [
-        { left: 'Scotch whisky', right: 'At least 3 years, and the casks must be oak' },
-        { left: 'Irish whiskey', right: 'At least 3 years; triple distillation is common but not required' },
+        { left: 'Scotch whisky', right: 'Made in Scotland and aged at least 3 years in oak there' },
         { left: 'Bourbon', right: 'At least 51% corn and new charred oak, with no minimum age' },
-        { left: 'Rye whiskey (US)', right: 'At least 51% rye grain in the mash' },
         { left: 'Tennessee whiskey', right: 'Filtered through maple charcoal before aging' },
-        { left: 'Canadian whisky', right: 'At least 3 years in small wood; often called "rye" whatever its grain' },
+        { left: 'Canadian whisky', right: 'Often called "rye", whatever its rye content' },
       ],
-      explanation: 'Scotch, Irish and Canadian whisky all need at least 3 years, so the second half of each statement decides: only Scotch insists on oak casks, Irish whiskey is often but not necessarily triple distilled, and Canadian whisky may be called "rye" with little rye in it. US rye whiskey is the one that must really be at least 51% rye. Bourbon needs at least 51% corn and new charred oak with no minimum age, and Tennessee whiskey adds maple charcoal filtering.',
+      explanation: 'Scotch must be made and aged at least 3 years in oak in Scotland, and bourbon needs at least 51% corn and new charred oak with no minimum age. Tennessee whiskey is made like a bourbon and adds maple charcoal filtering before aging. The "rye" nickname belongs to Canadian whisky, which may carry it with very little rye grain; it is US rye whiskey that must really be at least 51% rye.',
     },
     {
       id: 'l1-world-map-q2',

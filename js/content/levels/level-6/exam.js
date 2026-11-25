@@ -14,9 +14,9 @@ export default {
 - Ethanol: 0.789 kg per litre · 1 US gallon = 3.7854 L`,
       prompt: 'What is the theoretical yield of this corn in proof gallons per bushel? Round to two decimal places.',
       answer: 6.37,
-      tolerance: 0.02,
+      tolerance: 0.03,
       unit: 'PG per bushel',
-      explanation: `Starch = 56 × 0.4536 × 0.66 = 16.76 kg; glucose = 16.76 × 1.111 = 18.62 kg; ethanol = 18.62 × 0.511 = 9.52 kg, or 9.52 / 0.789 = 12.06 L. That is 12.06 / 3.7854 = 3.19 US gallons of pure ethanol, and because pure ethanol is 200 proof it counts as 6.37 PG. Stopping at 3.19 forgets that a gallon of pure alcohol is two proof gallons; the richer starch lifts this lot above the 6.0 PG of a 62% bushel.`,
+      explanation: `Starch = 56 × 0.4536 × 0.66 = 16.76 kg; glucose = 16.76 × 1.111 = 18.62 kg; ethanol = 18.62 × 0.511 = 9.52 kg, or 9.52 / 0.789 = 12.06 L. That is 12.06 / 3.7854 = 3.19 US gallons of pure ethanol, and because pure ethanol is 200 proof it counts as 6.37 PG. Stopping at 3.19 forgets that a gallon of pure alcohol is two proof gallons. Yield scales with starch, so 6.0 × 66 / 62 gives the same answer within rounding.`,
     },
     {
       id: 'x6-2',
@@ -43,11 +43,11 @@ export default {
 - At filling, 6 years ago: 200.0 L at 63.5% ABV · tare recorded: 49.0 kg
 - Today: gross weight 218.5 kg · strength 60.0% ABV at 20 C
 - Density for 60.0% ABV at 20 C, from the tables: 0.909 kg/L`,
-      prompt: 'What average annual loss of LPA, compounded, does this regauge show? Give % per year to two decimal places.',
-      answer: 2.09,
-      tolerance: 0.02,
-      unit: '% per year',
-      explanation: `Net spirit = 218.5 − 49.0 = 169.5 kg, so volume = 169.5 / 0.909 = 186.5 L and LPA = 186.5 × 0.600 = 111.9, against 127.0 LPA at filling. Solving (1 − r)^6^ = 111.9 / 127.0 = 0.881 gives 1 − r = 0.9791, a loss of about 2.09% of LPA a year. Dividing the total 11.9% loss by 6 gives 1.98%, which understates the rate, because each year's loss comes out of a smaller amount; forgetting the tare would overstate what is left.`,
+      prompt: 'What percentage of its filling LPA has the cask lost? Round to one decimal place.',
+      answer: 11.9,
+      tolerance: 0.1,
+      unit: '% of filling LPA',
+      explanation: `Net spirit = 218.5 − 49.0 = 169.5 kg, so volume = 169.5 / 0.909 = 186.5 L and LPA = 186.5 × 0.600 = 111.9, against 200.0 × 0.635 = 127.0 LPA at filling: a loss of 15.1 LPA, or 11.9%. The tempting shortcut compares volumes, 200 L down to 186.5 L, which looks like only a 6.8% loss; the strength also fell from 63.5% to 60.0%, so the alcohol, which is what the owner sells and the stock record tracks, fell almost twice as fast. Forgetting the tare would put about 240 L in a 200 L cask, a quick check that catches that slip.`,
     },
     {
       id: 'x6-4',
@@ -166,7 +166,7 @@ PSY on every malt certificate: 415 LPA per tonne. Cut points and the feints recy
         { left: 'ATEX or DSEAR zoning', right: 'Designs places where flammable spirit vapor can occur as hazardous areas' },
         { left: 'Weight regauge', right: `Finds a cask's contents from gross weight minus tare and a density table` },
       ],
-      explanation: `MVR and anaerobic digestion cut energy use and turn effluent into fuel, and DDGS turns US stillage into a saleable feed. Hazardous-area zoning follows from the low flash point of spirit (about 26 C at 40% ABV), and a weight regauge turns gross weight, tare and density into litres and LPA. Each belongs in the same model as yield, because each moves money, emissions, risk or the accuracy of the stock record.`,
+      explanation: `MVR and anaerobic digestion are easy to swap because both save energy: MVR reuses heat the plant already has, while anaerobic digestion makes a new fuel, biogas, from pot ale and draff. DDGS turns US stillage into a saleable feed. Hazardous-area zoning follows from the low flash point of spirit (about 26 C at 40% ABV), and a weight regauge turns gross weight, tare and density into litres and LPA.`,
     },
 
     // ---------- Lesson 2: Blending and Proofing Mathematics ----------
@@ -260,17 +260,18 @@ PSY on every malt certificate: 415 LPA per tonne. Cut points and the feints recy
       context: `**Release panel, batch 26-04 against the reference standard**
 - Triangle test: 24 trained assessors, coded and randomized
 - 12 assessors picked the odd sample correctly
-- One-tailed binomial test, chance 1/3, α = 0.05
+- Triangle test tool output (one-tailed, chance 1/3): probability of 12 or more correct by guessing alone = 0.068
+- Significance level set in the spec: α = 0.05
 - Strength, color and congener checks: all within specification`,
       prompt: 'What should the blender conclude?',
       options: [
-        'Release: 12 is below the critical value of 13, so the panel has not shown a difference',
+        'Release: the chance of 12 or more correct by guessing is above 0.05, so the panel has not shown a difference',
         'Hold: 12 of 24 is 50%, well above the one-third chance level, so the batch differs',
-        'Release: a result below the critical value proves the batch is identical to the reference standard',
-        'Hold: the critical value for 24 assessors is 10, so 12 correct answers show a significant difference',
+        'Release: a probability above 0.05 proves the batch is identical to the reference standard',
+        'Hold: a 0.068 chance of guessing means the panel was right 93% of the time, so the batch differs',
       ],
       answer: 0,
-      explanation: `With 24 assessors the triangle-test critical value at α = 0.05 is 13 (10 is the value for 18 assessors), so 12 correct is not significant and the batch passes its consistency check alongside its other specifications. Beating one third is not enough on its own, because guessing alone gives 12 or more correct about 7% of the time. A non-significant result means no difference was detected at this panel size; it never proves the two are identical.`,
+      explanation: `The test asks how likely this many correct answers would be if every assessor were guessing. At 0.068 that is above α = 0.05 (12 is one short of the critical value of 13 for 24 assessors), so no difference has been shown and the batch passes its consistency check alongside its other specifications. Beating the one-third chance level is not enough on its own, and 1 − 0.068 is not the share of assessors who were right. A non-significant result means no difference was detected with this panel size; it never proves the two are identical.`,
     },
     {
       id: 'x6-17',
@@ -301,10 +302,10 @@ A distiller is building a batch labeled "Bottled-in-Bond Straight Rye Whisky". T
         'Ester content expressed per litre of pure alcohol',
         'The age statement',
         'Aroma intensity as scored by the sensory panel',
-        'Color absorbance, treated as unaffected by reduction water',
+        'Color absorbance of the blend after reduction to bottling strength',
       ],
       answer: [0, 1],
-      explanation: `Figures on a pure-alcohol basis blend as LPA-weighted averages and are not changed by reduction water, which makes them sound starting targets. The age statement follows the youngest parcel whatever the weights. Aroma does not add linearly because compounds mask and lift each other, and color blends roughly by volume and falls as water goes in, so both need measuring after the blend is made.`,
+      explanation: `Figures on a pure-alcohol basis blend as LPA-weighted averages and are not changed by reduction water, which makes them sound starting targets. The age statement follows the youngest parcel whatever the weights. Aroma does not add linearly because compounds mask and lift each other. Color is the tempting one: it blends roughly by volume, not by LPA, and reduction water lowers it, so it is measured after the blend is made and reduced.`,
     },
     {
       id: 'x6-19',
@@ -318,7 +319,7 @@ A distiller is building a batch labeled "Bottled-in-Bond Straight Rye Whisky". T
         { left: 'Confirm a batch matches the house style', right: 'Panel test against a retained reference standard' },
         { left: 'Count alcohol for US excise and inventory', right: 'Proof gallons (WG × proof / 100)' },
       ],
-      explanation: `The Pearson square solves two-stock ratios, and the youngest parcel always sets the age. Staged reduction with a density-meter trim handles contraction, a panel test against a retained reference standard guards consistency, and US tax and inventory records count proof gallons, since volume alone ignores strength.`,
+      explanation: `The Pearson square solves two-stock ratios, and the youngest parcel always sets the age, never a weighted average. Staged reduction with a density-meter trim handles contraction, which a single C1V1 calculation misses. A panel test against a retained reference standard guards consistency, and US tax and inventory records count proof gallons, since volume alone ignores strength.`,
     },
     {
       id: 'x6-20',
@@ -458,7 +459,7 @@ Bottled by Quillfeather Spirits Co., Nashville, TN`,
       options: [
         '"Bottled by" with an out-of-state distillation statement points to sourced whiskey, so the brand owner is probably a non-distiller producer',
         'The age statement is mandatory, because the whiskey is under 4 years old',
-        `"Distilled in Indiana" must appear, because the distilling state differs from the state in the bottler's address`,
+        `Indiana must be named as the state of distillation, because it differs from the state in the bottler's address`,
         'The whiskey must have been aged in Tennessee, because the bottler is there',
         'The brand could add "Bottled-in-Bond" simply by reducing the whiskey to 100 proof',
       ],
@@ -731,10 +732,10 @@ A new supervisor has written four "facts for guests". Only one is accurate.`,
         '"Blended malt Scotch whisky: single malts from three distilleries"',
         `"Single malt Scotch, vatted from three distilleries' malts"`,
         '"From the oldest distillery in the world," for a producer whose claim cannot be verified',
-        '"Cask-strength bourbon, 114 proof"',
+        '"Single malt Scotch whisky, 12 years old, from one Speyside distillery"',
       ],
       answer: [0, 3, 4],
-      explanation: `Bottled-in-bond requires at least 4 years, so a 3-year-old bonded rye cannot exist, and "single malt" means one distillery, so malts from three distilleries make a blended malt ("vatted" is not a permitted category name either). An unverifiable "oldest" claim must be proved or dropped. The straight bourbon line meets the 2-year minimum, the blended malt line uses the correct category, and "cask strength" is a voluntary claim the bottler can stand behind.`,
+      explanation: `Bottled-in-bond requires at least 4 years, so a 3-year-old bonded rye cannot exist, and "single malt" means one distillery, so malts from three distilleries make a blended malt ("vatted" is not a permitted category name either). An unverifiable "oldest" claim must be proved or dropped. The straight bourbon line meets the 2-year minimum, the blended malt line uses the correct category for exactly that mix, and the 12-year-old single malt from one Speyside distillery meets both the one-distillery rule and the region rule.`,
     },
     {
       id: 'x6-47',

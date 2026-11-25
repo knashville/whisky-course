@@ -50,7 +50,7 @@ The Pot Still recipe may change. In 2026 Ireland's Department of Agriculture, Fo
       type: 'text',
       md: `### Canada: generous rules, a changing address
 
-For decades the Canadian standard sat in the **Food and Drug Regulations at B.02.020**. Amendments published in Canada Gazette Part II in December 2024 (**SOR/2024-244**) move the compositional standard for "Canadian whisky, Canadian rye whisky or rye whisky" into the **Canadian Food Compositional Standards Document (Volume 2, section 2.1.3)**, which the regulations incorporate by reference; check the date they come into force before you cite either source. Under the amendments, B.02.020 keeps the age-claim rule: only time in small wood counts as age. Expect to see both citations in the trade for years.
+For decades the Canadian standard sat in the **Food and Drug Regulations at B.02.020**. Amendments that came into force when they were published in Canada Gazette Part II on **18 December 2024** (**SOR/2024-244**) moved the compositional standard for "Canadian whisky, Canadian rye whisky or rye whisky" into the **Canadian Food Compositional Standards Document (Volume 2, section 2.1.3)**, which the regulations incorporate by reference. Under the amendments, B.02.020 keeps the age-claim rule: only time in small wood counts as age. Expect to see both citations in the trade for years.
 
 The requirements, as long written in B.02.020 and carried into the new document:
 
@@ -75,7 +75,7 @@ Japan has two definitions, and they answer different questions.
 
 To be called Japanese whisky under the standard, a product must use **malted grain** (other cereals allowed) and **water extracted in Japan**; be mashed, fermented and distilled **at a distillery in Japan**; be distilled to **less than 95% ABV**; mature at least **3 years in Japan in wooden casks of 700 L or less**; and be **bottled in Japan** at **40% ABV or more**. Plain caramel is allowed.
 
-Products that do not qualify should not use labeling that suggests Japanese whisky: names of people associated with Japan, Japanese cities, regions, famous places, mountains or rivers, the Japanese flag or era names. As of 2026, the JSLMA has applied for a "Japanese Whisky" GI and the National Tax Agency has been working on legal protection. Check whether the standard has moved into law before you rely on its voluntary status.`,
+Products that do not qualify should not use labeling that suggests Japanese whisky: names of people associated with Japan, Japanese cities, regions, famous places, mountains or rivers, the Japanese flag or era names. In October 2026 the National Tax Agency opened public comment, until 30 November 2026, on a draft designation of "Japanese whisky" as a geographical indication, which would give the rules legal force. Check whether the designation has been made final before you rely on the standard's voluntary status.`,
     },
     {
       type: 'callout',
@@ -139,7 +139,7 @@ The rule says nothing about where the whisky is distilled or matured, and it is 
         { term: 'Uisce beatha', definition: 'Irish for "water of life", the root of the English word whiskey. "Uisce Beatha Eireannach" is one of the protected names of the Irish whiskey GI.' },
         { term: 'Pot Still Irish whiskey', definition: 'An Irish category made in pot stills from a mash of at least 30% malted and at least 30% unmalted barley, with up to 5% other cereals under the 2014 Technical File.' },
         { term: 'Grain Irish whiskey', definition: 'An Irish category distilled in column stills from a mash of no more than 30% malted barley with whole unmalted cereals such as maize, wheat or barley.' },
-        { term: 'Food Compositional Standards Document', definition: 'The Canadian Food Inspection Agency document, incorporated by reference into Canadian food law, into which amendments published in December 2024 move the Canadian whisky standard.' },
+        { term: 'Food Compositional Standards Document', definition: 'The Canadian Food Inspection Agency document, incorporated by reference into Canadian food law, into which amendments in force since 18 December 2024 moved the Canadian whisky standard.' },
         { term: 'JSLMA standard', definition: 'The Japan Spirits & Liqueurs Makers Association\'s voluntary 2021 definition of "Japanese whisky", requiring distillation, 3 years of maturation and bottling in Japan.' },
         { term: 'Liquor Tax Act whisky', definition: 'Japan\'s tax-law definition of whisky, which permits blends with neutral spirit or shochu and requires no Japanese origin.' },
       ],
@@ -148,7 +148,7 @@ The rule says nothing about where the whisky is distilled or matured, and it is 
       type: 'text',
       md: `### Recap
 
-Irish whiskey (Technical File 2014) covers the whole island, allows other natural enzymes and any wooden cask, and defines Pot Still as 30%+ malted and 30%+ unmalted barley with up to 5% other cereals, a cap under review in 2026. Canada's standard is moving from FDR B.02.020 into the Food Compositional Standards Document under amendments published in December 2024; it allows caramel and flavouring and its three names say nothing about rye content, while the 9.09% figure has no clause behind it. Japan's Liquor Tax Act permits blends of any origin; the voluntary JSLMA standard (2021, fully in force 2024) reserves "Japanese whisky" for spirit distilled, aged 3 years and bottled in Japan. The EU bans sweetening and flavouring and needs 3 years; Australia needs 2.`,
+Irish whiskey (Technical File 2014) covers the whole island, allows other natural enzymes and any wooden cask, and defines Pot Still as 30%+ malted and 30%+ unmalted barley with up to 5% other cereals, a cap under review in 2026. Canada's standard moved from FDR B.02.020 into the Food Compositional Standards Document under amendments in force since 18 December 2024; it allows caramel and flavouring and its three names say nothing about rye content, while the 9.09% figure has no clause behind it. Japan's Liquor Tax Act permits blends of any origin; the voluntary JSLMA standard (2021, fully in force 2024) reserves "Japanese whisky" for spirit distilled, aged 3 years and bottled in Japan. The EU bans sweetening and flavouring and needs 3 years; Australia needs 2.`,
     },
   ],
   quiz: [

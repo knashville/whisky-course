@@ -176,9 +176,9 @@ Congeners are a tiny fraction of new make and nearly all of its character. Highe
         { left: '2-Phenylethyl acetate', right: 'Rose, honey' },
         { left: 'Diacetyl', right: 'Butter, butterscotch' },
         { left: '4-Vinylguaiacol', right: 'Clove' },
-        { left: 'Isovaleric acid', right: 'Sweaty, cheesy' },
+        { left: 'Isovaleric acid', right: 'Sweaty feet' },
       ],
-      explanation: 'These are the reference descriptors used in panel training. Isoamyl acetate is the banana ester, ethyl hexanoate the green-apple ester, 2-phenylethyl acetate the rose-honey ester, diacetyl the butter compound, 4-vinylguaiacol the clove phenol and isovaleric acid the sweaty acid.',
+      explanation: 'These are the reference descriptors used in panel training: 2-phenylethyl acetate is the rose-honey ester, diacetyl the butter compound, 4-vinylguaiacol the clove phenol and isovaleric acid the sweaty acid. The two fruity esters are the easy pair to swap. Banana and pear drops belong to isoamyl acetate, an acetate ester, while green apple belongs to ethyl hexanoate, an ethyl ester.',
     },
     {
       id: 'l5-congeners-q2',
@@ -193,7 +193,7 @@ Congeners are a tiny fraction of new make and nearly all of its character. Highe
       prompt: 'What is the odor activity value of ethyl hexanoate in this sample? Give the exact value.',
       answer: 12,
       tolerance: 0.05,
-      explanation: 'OAV = concentration ÷ threshold = 0.84 ÷ 0.07 = 12. The compound is present at twelve times its threshold, so it very likely contributes green-apple fruit to the aroma.',
+      explanation: 'OAV = concentration ÷ threshold = 0.84 ÷ 0.07 = 12. The compound is present at twelve times its threshold, so it very likely contributes green-apple fruit to the aroma. Dividing the other way (0.07 ÷ 0.84 = 0.083) is the usual slip, and it would wrongly put the compound below threshold.',
     },
     {
       id: 'l5-congeners-q3',
@@ -224,7 +224,7 @@ Congeners are a tiny fraction of new make and nearly all of its character. Highe
         '3-Methylbutanal, after decarboxylation',
         '3-Methylbutan-1-ol, after reduction',
       ],
-      explanation: 'The yeast first removes the amino group (transamination) to make the keto acid, then removes carbon dioxide (decarboxylation) to make an aldehyde one carbon shorter, then reduces the aldehyde to the higher alcohol, isoamyl alcohol.',
+      explanation: 'The yeast first removes the amino group (transamination) to make the keto acid, then removes carbon dioxide (decarboxylation) to make an aldehyde one carbon shorter, then reduces the aldehyde to the higher alcohol, isoamyl alcohol. Putting decarboxylation first is the usual slip: in this pathway it acts on the keto acid, which exists only once transamination has happened.',
     },
     {
       id: 'l5-congeners-q5',

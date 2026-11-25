@@ -202,7 +202,7 @@ New make at 70% ABV. GC-FID: isoamyl alcohol 0.84 g per liter of sample.`,
       type: 'order',
       prompt: `Put these congeners in the order in which they concentrate during a pot-still spirit run, earliest first.`,
       items: [`Acetaldehyde`, `Ethyl acetate`, `Ethyl hexanoate`, `Octanoic (caprylic) acid`],
-      explanation: `Acetaldehyde is more volatile than ethanol at every strength, so it leads, with ethyl acetate close behind in the heads. Fruity esters such as ethyl hexanoate concentrate in the heart, and fatty acids such as octanoic acid come late, in the feints. Boiling point alone is a poor guide; what decides the order is each compound's volatility relative to ethanol at the strength of the liquid in the still.`,
+      explanation: `Acetaldehyde is more volatile than ethanol at every strength, so it leads, with ethyl acetate close behind in the heads. Fruity esters such as ethyl hexanoate concentrate in the heart, and fatty acids such as octanoic acid come late, in the feints. The tempting slip is to swap the first two: ethyl acetate is the most abundant ester and a heads marker, but acetaldehyde is the more volatile and always comes first.`,
     },
     {
       id: 'x5-14',
@@ -510,7 +510,7 @@ Plan: reduce with water to 43% ABV before bottling`,
         { left: `Soapy, waxy note; GC shows caprylic and capric acids above spec`, right: `Excess fatty acids` },
         { left: `Meaty, cooked-cabbage new make after the stills were run harder to raise output`, right: `Sulfides left by too little copper contact` },
       ],
-      explanation: `A musty, muted nose in a sealed bottle points to haloanisoles, while a dull but clean whiskey in a long-open, nearly empty bottle has lost aroma to the air space. Caprylic and capric acids are the soapy, waxy fatty acids. Running a still hard cuts the copper contact the vapor gets, so more DMTS and related sulfides survive into the new make.`,
+      explanation: `The first two cases are the tempting pair, because both show a dull nose. Only a haloanisole adds a musty, damp-cardboard note, and a sealed bottle has no air space to lose aroma to; the long-open, nearly empty bottle is dull but clean because aroma escaped and slow oxidation dulled the rest. Caprylic and capric acids are the soapy, waxy fatty acids. Running a still hard cuts the copper contact the vapor gets, so more DMTS and related sulfides survive into the new make.`,
     },
     {
       id: 'x5-34',
@@ -537,11 +537,15 @@ The heart-to-feints cut point has not changed, but the feints receiver level has
       id: 'x5-35',
       lesson: 'l5-sensory-methods',
       type: 'numeric',
-      prompt: `A triangle test was planned for 40 assessors, but only 36 attended. Using the exact one-tailed binomial at α = 0.05 with chance 1/3, what is the minimum number of correct answers needed to conclude that the samples differ?`,
+      context: `**Binomial table extract, triangle test** (chance 1/3)
+Probability of at least k correct by guessing alone:
+- 36 assessors: k = 17: 0.058; k = 18: 0.028; k = 19: 0.012
+- 40 assessors: k = 18: 0.083; k = 19: 0.044; k = 20: 0.021`,
+      prompt: `A triangle test was planned for 40 assessors, but only 36 attended, and each gave one answer. At α = 0.05 (one-tailed), what is the minimum number of correct answers needed to conclude that the samples differ?`,
       answer: 18,
       tolerance: 0,
       unit: 'correct answers',
-      explanation: `For 36 assessors the probability of 18 or more correct by guessing is about 0.028, below 0.05, while 17 or more has a probability of about 0.058, so 18 is the critical value. Guessing alone would give about 12 correct (36 ÷ 3), so beating chance by a few answers is not enough. Check it with the Triangle test tool.`,
+      explanation: `Use the row for the panel that actually took part, 36 assessors, and find the smallest k whose probability is 0.05 or less: 18 (0.028), since 17 gives 0.058. Reading the planned 40-assessor row gives 19, the critical value for a panel that never sat. Guessing alone would give about 12 correct (36 ÷ 3), so beating chance by a few answers is not enough. Check it with the Triangle test tool.`,
     },
     {
       id: 'x5-36',

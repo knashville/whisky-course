@@ -1413,6 +1413,9 @@ tbody th {
 .dot.is-ok {
   background: var(--good);
 }
+.dot.is-part {
+  background: var(--warn);
+}
 .dot.is-miss {
   background: var(--bad);
 }
@@ -1432,6 +1435,9 @@ tbody th {
 }
 .question.is-right {
   border-color: var(--good);
+}
+.question.is-part {
+  border-color: var(--warn);
 }
 .question.is-miss {
   border-color: var(--bad);
@@ -1620,11 +1626,16 @@ textarea:focus {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  max-width: 280px;
+  flex-wrap: wrap;
+}
+.numeric .num-input {
+  width: 12rem;
+  max-width: 100%;
 }
 .num-unit {
   font-family: var(--font-ui);
   color: var(--ink-soft);
+  white-space: nowrap;
 }
 .numeric.is-key .num-input {
   border-color: var(--good);
@@ -1644,6 +1655,9 @@ textarea:focus {
 }
 .q-feedback.ok .q-verdict {
   color: var(--good);
+}
+.q-feedback.part .q-verdict {
+  color: var(--warn);
 }
 .q-feedback.miss .q-verdict {
   color: var(--bad);

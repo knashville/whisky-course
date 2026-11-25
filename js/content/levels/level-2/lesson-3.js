@@ -28,7 +28,7 @@ The technical file is the official specification behind the protected geographic
     {
       type: 'table',
       caption:
-        'The four Irish whiskey categories, as set in the 2014 Technical File. An industry proposal to raise the Pot Still limit on other cereals from 5% to 30% was under review at the time of writing, so check the current file.',
+        'The four Irish whiskey categories, as set in the 2014 Technical File. An Irish Whiskey Association proposal to raise the Pot Still limit on other cereals from 5% to 30% went to public consultation in mid-2026 and had not been adopted by late 2026, so check the current file.',
       headers: ['Category', 'Mash', 'Still', 'Notes'],
       rows: [
         ['Malt Irish whiskey', '100% malted barley', 'Pot stills', 'Often triple-distilled, but not always'],

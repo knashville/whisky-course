@@ -18,7 +18,7 @@ Diagnosis runs backwards from the glass: **descriptor, then compound, then cause
 Sulfur faults all smell "sulfury", but they come from different places and need different fixes.
 
 - **Struck match or rubber.** Associated with wine casks fumigated with burning sulfur candles. The residue passes to the spirit during maturation. One affected cask can taint a whole vatting, so blenders nose casks individually before they are combined.
-- **Cooked cabbage, onion, meaty.** **Dimethyl trisulfide** (DMTS) and related compounds from the fermentation that the still failed to remove. The usual cause is **too little copper contact**: worm-tub condensers (which give less copper contact than shell-and-tube condensers), stills run hard, copper surfaces that are fouled or exhausted from running without rests, or copper parts replaced with stainless steel. Many distillers rest stills open to the air between runs so the copper surface regenerates.
+- **Cooked cabbage, onion, meaty.** **Dimethyl trisulfide** (DMTS) and related compounds from the fermentation that the still failed to remove. The usual cause is **too little copper contact**: worm-tub condensers (which give less copper contact than shell-and-tube condensers), stills run hard, copper surfaces that are fouled or exhausted from running without rests, or copper parts replaced with stainless steel. Some distillers rest stills open to the air between runs so the copper surface regenerates.
 - **Rotten egg.** **Hydrogen sulfide** (H2S), produced by stressed yeast, often short of nitrogen. It points back to the fermentation.`,
     },
     {
@@ -67,7 +67,7 @@ The main control is barley: plant breeders have produced varieties that make lit
       type: 'callout',
       variant: 'law',
       title: 'Ethyl carbamate limits',
-      md: `- **Canada:** maximum level of **150 µg/L** for distilled spirits, with a higher level of 400 µg/L for fruit brandies (Health Canada, List of Contaminants and Other Adulterating Substances in Foods).
+      md: `- **Canada:** maximum level of **150 µg/L** for distilled spirits, with a higher level of 400 µg/L for spirits distilled from fruit, such as fruit brandies (Health Canada maximum levels for ethyl carbamate, as of 2026).
 - **United States:** no regulatory limit. A **voluntary target of 125 µg/L** for whiskey was agreed between the distillers' trade body (DISCUS) and the FDA in the late 1980s.
 
 A µg/L is a part per billion. Recheck current figures before relying on them for compliance.`,
@@ -192,19 +192,23 @@ All three bottles were bought within the past month and opened within days of pu
         { left: 'Black, inky haze', right: 'Iron reacting with oak tannins' },
         { left: 'White haze that stays when warmed', right: 'Hard water used for reduction' },
       ],
-      explanation: 'Each descriptor points to a compound and a place in the process: fumigation residues from casks, feints compounds from the still, acetic acid from infection, H2S from stressed yeast, iron-tannin complexes, and calcium and magnesium salts from hard water.',
+      explanation: 'Each descriptor points to a compound and a place in the process: fumigation residues from casks, feints compounds from the still, acetic acid from infection and H2S from stressed yeast. The two hazes are the tempting pair to swap. A white haze that stays when warmed is calcium and magnesium salts from hard reduction water, while a black, inky haze is iron reacting with oak tannins.',
     },
     {
       id: 'l5-faults-and-qc-q4',
-      type: 'numeric',
-      context: `**Lab certificate**
-Product: single malt for export to Canada
-Ethyl carbamate: 180 µg/L`,
-      prompt: 'By what percentage does this result exceed Canada’s maximum level for distilled spirits? Round to the nearest whole percent.',
-      answer: 20,
-      tolerance: 0.5,
-      unit: '%',
-      explanation: 'Canada’s maximum for distilled spirits is 150 µg/L. The excess is 180 − 150 = 30 µg/L, and 30 ÷ 150 = 0.20, so the result is 20% over the limit. It is also above the US voluntary target of 125 µg/L.',
+      type: 'single',
+      context: `**QC meeting notes, malt distillery**
+Lab: ethyl carbamate in recent new make is above the company's internal target.
+Sensory panel: the same samples smelled clean and on spec.`,
+      prompt: 'Which action tackles the ethyl carbamate at its source?',
+      options: [
+        'Switch to a barley variety that makes little or no epiheterodendrin (EPH)',
+        'Train the panel to recognize ethyl carbamate so it can reject affected batches',
+        'Chill-filter the spirit to remove ethyl carbamate with the long-chain esters',
+        'Reduce the spirit with reverse-osmosis water instead of hard water',
+      ],
+      answer: 0,
+      explanation: 'Ethyl carbamate starts with EPH in the barley: fermentation releases a cyanohydrin from it that breaks down to cyanide, copper oxidizes the cyanide to cyanate, and cyanate reacts with ethanol. Barley that makes little or no EPH removes the precursor, which is why it is the main control. Panel training cannot help, because ethyl carbamate has no useful aroma, which is why the samples smelled clean. Chill filtration removes haze-forming esters and reverse-osmosis water prevents mineral haze, so neither touches the cause.',
     },
     {
       id: 'l5-faults-and-qc-q5',

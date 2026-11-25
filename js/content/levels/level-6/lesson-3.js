@@ -112,9 +112,9 @@ Example: a **$34 bottle** gives 34 / 16.9 = **$2.01 per 1.5 oz pour**. At a **20
       headers: ['When', 'Measure', 'What happened next'],
       rows: [
         ['June 2018', 'EU 25% tariff on American whiskey, in retaliation for US steel and aluminum tariffs', 'Suspended from 1 January 2022 under a US-EU arrangement'],
-        ['October 2019', 'US 25% tariff on single malt Scotch, part of the Airbus-Boeing aircraft dispute', 'Suspended in March 2021, then for five years under a June 2021 US-UK agreement'],
+        ['October 2019', 'US 25% tariff on single malt Scotch, part of the Airbus-Boeing aircraft dispute', 'Suspended in March 2021, then for five years under a June 2021 US-UK agreement; in July 2026 the UK government said the arrangement continues'],
         ['2025', 'New US tariffs, including 10% on UK goods such as Scotch from April 2025; the EU threatened 50% on American whiskey, then dropped it; several Canadian provinces pulled US alcohol from shelves from March 2025', 'US exports to Canada fell sharply; Scotch volumes to the US dropped'],
-        ['2026', 'The US tariff on UK whisky was lifted during 2026; reports differ on the date and the legal route','Several Canadian provinces still restricted US alcohol during 2026; verify current status'],
+        ['2026', 'The US announced on 30 April 2026 that it would lift its 10% tariff on UK whisky; the exemption took effect on 24 July 2026', 'Several Canadian provinces still restricted US alcohol during 2026; verify current status'],
       ],
     },
     {
@@ -190,14 +190,14 @@ Example: a **$34 bottle** gives 34 / 16.9 = **$2.01 per 1.5 oz pour**. At a **20
     {
       id: 'l6-business-of-whiskey-q5',
       type: 'match',
-      prompt: 'Match each part of 27 CFR to the trade practice it governs.',
+      prompt: 'Match each supplier practice to the federal trade-practice rule it most directly breaks.',
       pairs: [
-        { left: 'Part 6', right: 'Tied house' },
-        { left: 'Part 8', right: 'Exclusive outlets' },
-        { left: 'Part 10', right: 'Commercial bribery' },
-        { left: 'Part 11', right: 'Consignment sales' },
+        { left: 'Giving a bar a free ice machine', right: 'Tied house (27 CFR Part 6)' },
+        { left: 'Requiring a bar to stop buying competing bourbons as a condition of the deal', right: 'Exclusive outlets (27 CFR Part 8)' },
+        { left: 'Paying a bar\'s head bartender $1 for every bottle of the brand sold', right: 'Commercial bribery (27 CFR Part 10)' },
+        { left: 'Agreeing to take back any bottles still unsold after 60 days, for full credit', right: 'Consignment sales (27 CFR Part 11)' },
       ],
-      explanation: 'Part 6 covers things of value given to retailers, Part 8 arrangements that shut out competitors, Part 10 payments to a retailer\'s employees or agents, and Part 11 consignment and return privileges. Together they keep suppliers from controlling the retail tier.',
+      explanation: 'Part 6 covers things of value given to the retailer itself, such as equipment. Part 8 targets deals that make a retailer shut out competitors. Part 10 covers payments to a retailer\'s employees or agents, which is why cash to the bartender is bribery even though the bar itself receives nothing; calling it a tied-house gift is the usual slip. Part 11 covers consignment and return privileges, which shift the risk of unsold stock back to the supplier.',
     },
     {
       id: 'l6-business-of-whiskey-q6',

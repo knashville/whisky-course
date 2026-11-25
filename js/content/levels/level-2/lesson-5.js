@@ -84,7 +84,7 @@ Sourcing is legal, common and often excellent. It only becomes a problem when a 
         {
           heading: 'Voluntary claims that must be truthful',
           points: [
-            'Cask strength or barrel proof: bottled at or very close to the strength it had in the cask',
+            'Cask strength or barrel proof: bottled no more than 2 proof below its strength when dumped from the cask (27 CFR 5.87)',
             'Non-chill filtered: not chilled and filtered before bottling',
             'Natural color: no caramel added',
           ],

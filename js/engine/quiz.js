@@ -104,55 +104,81 @@ export function isAnswered(q, r) {
 }
 
 /**
- * Grade one response. All-or-nothing scoring: `correct` decides the mark.
- * `detail` explains partial results for feedback (which pairs/positions were right).
+ * Grade one response.
+ *
+ * `credit` (0 to 1) is the mark the question contributes. Single choice,
+ * true/false and numeric questions are all or nothing. The composite types
+ * earn partial credit, designed so that guessing does not pay:
+ *   multi  (right picks − wrong picks) ÷ number of right options, never below 0
+ *   match  share of pairs matched correctly
+ *   order  Kendall's tau over every pair of items, never below 0, so one
+ *          neighbor swap costs little and a random order earns about nothing
+ * `correct` means full credit. `detail` drives the per-part feedback.
  */
 export function gradeQuestion(q, r) {
   const answered = isAnswered(q, r);
-  if (!answered) return { answered: false, correct: false, detail: null };
+  if (!answered) return { answered: false, correct: false, credit: 0, detail: null };
+  const whole = (ok, detail = null) => ({ answered, correct: ok, credit: ok ? 1 : 0, detail });
   switch (q.type) {
     case 'single':
-      return { answered, correct: r === q.answer, detail: null };
+      return whole(r === q.answer);
     case 'multi': {
       const want = new Set(q.answer);
       const got = new Set(r);
-      const correct = want.size === got.size && [...want].every((x) => got.has(x));
+      const hits = [...got].filter((x) => want.has(x)).length;
+      const wrong = [...got].filter((x) => !want.has(x));
+      const correct = hits === want.size && wrong.length === 0;
       return {
         answered,
         correct,
-        detail: {
-          missed: [...want].filter((x) => !got.has(x)),
-          wrong: [...got].filter((x) => !want.has(x)),
-        },
+        credit: correct ? 1 : Math.max(0, (hits - wrong.length) / want.size),
+        detail: { missed: [...want].filter((x) => !got.has(x)), wrong },
       };
     }
     case 'truefalse':
-      return { answered, correct: r === q.answer, detail: null };
+      return whole(r === q.answer);
     case 'order': {
       const positions = r.map((v, i) => v === i);
-      return { answered, correct: positions.every(Boolean), detail: { positions } };
+      const correct = positions.every(Boolean);
+      return { answered, correct, credit: correct ? 1 : orderCredit(r), detail: { positions } };
     }
     case 'match': {
       const pairs = q.pairs.map((_, i) => r[i] === i);
-      return { answered, correct: pairs.every(Boolean), detail: { pairs } };
+      const right = pairs.filter(Boolean).length;
+      return { answered, correct: right === pairs.length, credit: right / pairs.length, detail: { pairs } };
     }
     case 'numeric': {
       const n = parseNumber(r);
       const tol = Math.abs(q.tolerance ?? 0);
-      return { answered, correct: Math.abs(n - q.answer) <= tol + 1e-9, detail: { value: n } };
+      return whole(Math.abs(n - q.answer) <= tol + 1e-9, { value: n });
     }
     default:
-      return { answered: false, correct: false, detail: null };
+      return { answered: false, correct: false, credit: 0, detail: null };
   }
+}
+
+/** Kendall's tau between the learner's order and the true order, clipped at 0. */
+export function orderCredit(order) {
+  let concordant = 0;
+  let discordant = 0;
+  for (let i = 0; i < order.length; i++) {
+    for (let j = i + 1; j < order.length; j++) {
+      if (order[i] < order[j]) concordant++;
+      else discordant++;
+    }
+  }
+  const pairs = concordant + discordant;
+  return pairs ? Math.max(0, (concordant - discordant) / pairs) : 0;
 }
 
 /** Score a whole attempt. `responses` is keyed by question id. */
 export function scoreAttempt(questions, responses) {
   const results = questions.map((q) => ({ id: q.id, ...gradeQuestion(q, responses[q.id]) }));
   const correct = results.filter((r) => r.correct).length;
+  const points = results.reduce((s, r) => s + r.credit, 0);
   const total = questions.length;
-  const percent = total ? (correct / total) * 100 : 0;
-  return { results, correct, total, percent };
+  const percent = total ? (points / total) * 100 : 0;
+  return { results, correct, points, total, percent };
 }
 
 export function isPass(percent, passPercent) {

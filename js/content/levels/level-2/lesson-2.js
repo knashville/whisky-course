@@ -64,7 +64,7 @@ SWR 2009 protects five geographical names, in two tiers:
 - **Protected regions:** Highland, Lowland and Speyside.
 - **Protected localities:** Islay and Campbeltown.
 
-Speyside sits geographically inside the Highlands but is its own protected region. **"Islands"** is a popular grouping for distilleries on Skye, Orkney, Mull, Jura, Arran and other islands, but it is not a protected name. Legally, island distilleries other than Islay's fall inside the Highland region.`,
+Speyside sits geographically inside the Highlands but is its own protected region. **"Islands"** is a popular grouping for distilleries on Skye, Orkney, Mull, Jura, Arran and other islands, but it is not a protected name. Legally, most island distilleries outside Islay, including those on Skye, Orkney, Mull and Jura, fall inside the Highland region.`,
     },
     {
       type: 'table',
@@ -72,17 +72,17 @@ Speyside sits geographically inside the Highlands but is its own protected regio
       headers: ['Name', 'Legal status', 'Snapshot', 'Producers to know'],
       rows: [
         ['Speyside', 'Protected region', 'The densest cluster: around 50 malt distilleries, roughly a third of Scotland\'s total (counts change every year). Often fruity, floral and honeyed; sherry casks are common; mostly unpeated.', 'Glenfiddich, The Glenlivet, The Macallan'],
-        ['Highland', 'Protected region', 'The largest and most varied region, from light and floral to rich, waxy or smoky. Includes the island distilleries outside Islay.', 'Talisker (Isle of Skye), Highland Park (Orkney), Glenmorangie'],
+        ['Highland', 'Protected region', 'The largest and most varied region, from light and floral to rich, waxy or smoky. Includes most of the island distilleries outside Islay.', 'Talisker (Isle of Skye), Highland Park (Orkney), Glenmorangie'],
         ['Lowland', 'Protected region', 'Lighter, grassy and floral styles, with a tradition of triple distillation.', 'Auchentoshan (still triple-distills)'],
         ['Islay', 'Protected locality', 'Famous for heavily peated malts, though not every distillery peats its spirit.', 'Laphroaig, Lagavulin, Ardbeg (heavily peated); Bunnahabhain, Bruichladdich (much of their spirit unpeated)'],
-        ['Campbeltown', 'Protected locality', 'Once about 30 distilleries, now 3. Often oily, briny and lightly smoky.', 'Springbank, Glen Scotia, Glengyle'],
+        ['Campbeltown', 'Protected locality', 'Once about 30 distilleries; 3 were working in early 2026. Often oily, briny and lightly smoky.', 'Springbank, Glen Scotia, Glengyle'],
       ],
     },
     {
       type: 'callout',
       variant: 'history',
       title: 'History: the rise and fall of Campbeltown',
-      md: `In the 19th century this small port on the Kintyre peninsula had around **30 distilleries** and called itself the whisky capital of the world. Overproduction, falling quality and the loss of export markets, including the United States during Prohibition, closed almost all of them. By the 1930s only **Springbank** and **Glen Scotia** survived. **Glengyle** reopened on an old distillery site in 2004 and sells its whisky as Kilkerran, bringing the count to three. Several new distilleries were being built nearby in 2025-26, so check the current count.`,
+      md: `In the 19th century this small port on the Kintyre peninsula had around **30 distilleries** and called itself the whisky capital of the world. Overproduction, falling quality and the loss of export markets, including the United States during Prohibition, closed almost all of them. By the 1930s only **Springbank** and **Glen Scotia** survived. **Glengyle** reopened on an old distillery site in 2004 and sells its whisky as Kilkerran, bringing the count to three. A new distillery was nearing completion in the town in 2026, so check the current count.`,
     },
     {
       type: 'text',

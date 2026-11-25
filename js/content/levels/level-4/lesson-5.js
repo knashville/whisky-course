@@ -15,10 +15,10 @@ The rules in Lessons 2 and 3 set the outer limits of each national whisky. Insid
       type: 'text',
       md: `### Scotland
 
-The Scotch Whisky Association counted **151 operating distilleries** in May 2024, so "about 150" is a safe round figure. Most are malt distilleries, but a handful of very large **grain distilleries**, such as **Cameronbridge** in Fife, **Girvan** in Ayrshire and **North British** in Edinburgh, make the column-still spirit that fills most blends.
+The Scotch Whisky Association counted **154 operating distilleries** in May 2026, so "about 150" is a safe round figure. Most are malt distilleries, but a handful of very large **grain distilleries**, such as **Cameronbridge** in Fife, **Girvan** in Ayrshire and **North British** in Edinburgh, make the column-still spirit that fills most blends.
 
 - **Islay** has **11 working distilleries**: Port Ellen reopened in March 2024, and Laggan Bay filled its first cask in April 2026. Another, Portintruan, was under construction in 2026.
-- **Campbeltown** has **3**: Springbank, Glen Scotia and Glengyle. New projects were being built in 2026; check whether any has started distilling.
+- **Campbeltown** has had **3** for years: Springbank, Glen Scotia and Glengyle. New projects, such as Witchburn, were nearly complete in 2026; check whether any has started distilling.
 
 **Blend economics.** Grain whisky is cheaper to make and usually forms the **majority** of a standard blended Scotch; producers rarely publish recipes. A higher share of malt, and older malt, both signal and drive a higher price, which is why deluxe blends advertise their malt content and age.`,
     },
@@ -115,7 +115,7 @@ Work through four cues in order: **peat** (smoke, iodine, tar), **cereal and tex
       type: 'text',
       md: `### Recap
 
-Scotland has about 150 distilleries, with 11 working on Islay and 3 in Campbeltown; a few huge grain distilleries supply blends, in which grain is usually the majority and malt content drives price. The whisky loch closed Brora and Port Ellen in 1983; both are back (2021, 2024). Midleton dominated Ireland, Cooley broke the pattern, and about 50 distilleries now operate. Suntory and Nikka make many styles in-house, and the 2010s shortage cost them age statements. Canada blends separately aged base and flavouring whiskies, mostly for the US. In hot climates, casks work fast and lose fast, so age statements tell you less.`,
+Scotland has about 150 distilleries, with 11 working on Islay and, for years, 3 in Campbeltown; a few huge grain distilleries supply blends, in which grain is usually the majority and malt content drives price. The whisky loch closed Brora and Port Ellen in 1983; both are back (2021, 2024). Midleton dominated Ireland, Cooley broke the pattern, and about 50 distilleries now operate. Suntory and Nikka make many styles in-house, and the 2010s shortage cost them age statements. Canada blends separately aged base and flavouring whiskies, mostly for the US. In hot climates, casks work fast and lose fast, so age statements tell you less.`,
     },
   ],
   quiz: [
@@ -184,7 +184,7 @@ A 200-litre cask loses 10% of its remaining volume each year.`,
       ],
       answer: [0, 1, 2],
       explanation:
-        'Overproduction in the 1970s and falling demand in the early 1980s created a surplus, and DCL closures followed in 1983 and 1985. Brora returned in 2021 and Port Ellen in 2024. A ghost distillery is defined by its surviving casks, and Campbeltown has 3 working distilleries.',
+        'Overproduction in the 1970s and falling demand in the early 1980s created a surplus, and DCL closures followed in 1983 and 1985. Brora returned in 2021 and Port Ellen in 2024. A ghost distillery is defined by its surviving casks, and Campbeltown has had only 3 working distilleries for years.',
     },
     {
       id: 'l4-producing-nations-q6',

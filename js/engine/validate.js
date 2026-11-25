@@ -53,7 +53,7 @@ export function validateCourse(course, opts = {}) {
       if (!Array.isArray(lesson.quiz) || lesson.quiz.length < 4) err(w, 'quiz needs at least 4 questions');
       (lesson.quiz || []).forEach((q, qi) => {
         claim(q.id, `${w}.quiz[${qi}]`);
-        validateQuestion(q, `${w}.quiz[${qi}] (${q.id})`, err, warn);
+        validateQuestion(q, `${w}.quiz[${qi}] (${q.id})`, err, warn, level.number);
       });
     });
 
@@ -72,7 +72,7 @@ export function validateCourse(course, opts = {}) {
     exam.questions.forEach((q, qi) => {
       const qw = `${ew}.q[${qi}] (${q.id})`;
       claim(q.id, qw);
-      validateQuestion(q, qw, err, warn);
+      validateQuestion(q, qw, err, warn, level.number);
       if (q.lesson && !lessonIds.has(q.lesson)) err(qw, `lesson tag "${q.lesson}" is not a lesson in this level`);
     });
     for (const lid of lessonIds) {
@@ -135,7 +135,24 @@ function validateBlock(b, w, err, warn) {
   }
 }
 
-function validateQuestion(q, w, err, warn) {
+/**
+ * Size limits by level. Composite questions get harder fast as they grow, so
+ * beginner levels keep them small. Index = level number.
+ */
+export const SIZE_LIMITS = {
+  1: { match: 4, order: 5, options: 5 },
+  2: { match: 4, order: 5, options: 5 },
+  3: { match: 5, order: 6, options: 6 },
+  4: { match: 5, order: 6, options: 6 },
+  5: { match: 6, order: 7, options: 6 },
+  6: { match: 6, order: 7, options: 6 },
+};
+
+function validateQuestion(q, w, err, warn, levelNumber) {
+  const lim = SIZE_LIMITS[levelNumber] || { match: 7, order: 8, options: 6 };
+  if (Array.isArray(q.pairs) && q.pairs.length > lim.match) err(w, `match has ${q.pairs.length} pairs; Level ${levelNumber} allows at most ${lim.match}`);
+  if (Array.isArray(q.items) && q.items.length > lim.order) err(w, `order has ${q.items.length} items; Level ${levelNumber} allows at most ${lim.order}`);
+  if (Array.isArray(q.options) && q.options.length > lim.options) err(w, `${q.options.length} options; Level ${levelNumber} allows at most ${lim.options}`);
   if (!q || !QUESTION_TYPES.includes(q.type)) return err(w, `unknown question type "${q && q.type}"`);
   if (typeof q.prompt !== 'string' || q.prompt.trim().length < 8) err(w, 'prompt is missing or too short');
   if (typeof q.explanation !== 'string' || q.explanation.trim().length < 15) err(w, 'explanation is missing or too short');

@@ -174,9 +174,8 @@ Whiskey is distilled from fermented grain and almost always aged in wood; the ba
         { left: 'Brandy', right: 'Grapes or other fruit' },
         { left: 'Rum', right: 'Sugar cane juice or molasses' },
         { left: 'Tequila', right: 'Blue agave' },
-        { left: 'Gin', right: 'Neutral spirit flavored with juniper' },
       ],
-      explanation: 'The raw material decides the spirit family. Whiskey comes from grain, brandy from fruit, rum from cane, tequila from blue agave, and gin is neutral spirit given its flavor by juniper.',
+      explanation: 'The raw material decides the spirit family: whiskey comes from grain, brandy from fruit, rum from cane and tequila from blue agave. Color is no help here, because an aged brandy or rum can look just like whiskey; only the base material sorts them.',
     },
     {
       id: 'l1-what-makes-whiskey-q4',
@@ -191,7 +190,7 @@ Whiskey is distilled from fermented grain and almost always aged in wood; the ba
       prompt: 'The word "whiskey" comes from the Gaelic *uisce beatha* or *uisge beatha*. What does that phrase mean?',
       options: ['Water of life', 'Spirit of barley', 'Fire water', 'Gift of the glen'],
       answer: 0,
-      explanation: 'Uisce beatha (Irish) and uisge beatha (Scottish Gaelic) mean "water of life", a translation of the Latin aqua vitae. None of the other phrases is a translation of it.',
+      explanation: 'Uisce beatha (Irish) and uisge beatha (Scottish Gaelic) mean "water of life", a translation of the Latin aqua vitae that medieval scholars used for distilled spirit. "Fire water" is a tempting guess because strong spirit burns, but the Gaelic phrase names neither fire nor any grain or place.',
     },
   ],
 };

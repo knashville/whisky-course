@@ -207,7 +207,7 @@ Professional proofing works **by mass, using density tables**: in the US, the ga
         { left: '1 US gallon', right: 'about 3.785 L' },
         { left: '40 WG at 130 proof', right: '52 PG' },
       ],
-      explanation: 'A proof gallon is a gallon at 50% alcohol, so 3.7854 × 0.5 = 1.893 LPA, and the inverse is 0.528 PG per LPA. A 750 mL bottle is 0.75 / 3.7854 = 0.198 gallon. PG = WG × proof / 100, so 40 × 130 / 100 = 52 PG.',
+      explanation: 'A proof gallon is a gallon at 50% alcohol, so 3.7854 × 0.5 = 1.893 LPA, and the inverse is 0.528 PG per LPA. Swapping those two is the usual slip; remember that a proof gallon holds more alcohol than one litre of pure alcohol, so it equals more than 1 LPA. A 750 mL bottle is 0.75 / 3.7854 = 0.198 gallon, and PG = WG × proof / 100, so 40 × 130 / 100 = 52 PG.',
     },
     {
       id: 'l6-blending-proofing-math-q6',
@@ -217,7 +217,7 @@ Professional proofing works **by mass, using density tables**: in the US, the ga
 Label: 12 Years Old · 43% ABV · 700 mL
 
 1. Finished bottles test at 42.6% ABV
-2. One parcel in the vat was filled 11 years and 8 months before vatting
+2. One parcel in the vat had spent 11 years and 8 months in cask when the batch was bottled
 3. Color is 4% darker than the reference, inside the ±8% specification
 4. Reduction water was estimated by C1V1, then the vat was trimmed in stages and checked by density meter before bottling
 5. In a discrimination test the panel reliably told the batch apart from the reference standard`,
