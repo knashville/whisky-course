@@ -42,7 +42,7 @@ Single malts get the attention, but blends make up the large majority of all Sco
 
 - **Scotland:** at least 3 years in oak casks in Scotland (Scotch Whisky Regulations 2009).
 - **Ireland:** at least 3 years in wooden casks on the island of Ireland (Irish Whiskey Act 1980 and the Irish Whiskey Technical File).
-- **Canada:** at least 3 years in small wood in Canada (Canadian Food Compositional Standards, Volume 2, incorporated into the Food and Drug Regulations; until December 2024 this rule sat in section B.02.020).
+- **Canada:** at least 3 years in "small wood" (casks of 700 L or less) in Canada, under Canada's food regulations.
 - **European Union:** at least 3 years in wooden casks for whisky made in the EU (Regulation (EU) 2019/787).
 
 The United States is the big exception. **Bourbon has no minimum age** (27 CFR 5.143). Only **straight bourbon** must be aged at least 2 years.`,
