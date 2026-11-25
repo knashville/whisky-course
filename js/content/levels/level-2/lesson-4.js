@@ -134,15 +134,13 @@ Scotland's record runs from Friar John Cor's malt in 1494 through the first exci
       prompt: 'Put these Scottish milestones in order, first to last.',
       items: [
         'The Exchequer Rolls record malt for Friar John Cor to make aqua vitae',
-        'The Scottish Parliament levies its first excise duty on spirits',
         'The Malt Tax sets off riots in Glasgow',
         'The Excise Act makes licensed distilling worthwhile',
         'Aeneas Coffey patents his column still',
         'The Spirits Act allows blending in bond',
-        'The Pattison crash shakes the whisky trade',
       ],
       explanation:
-        'The dates are 1494, 1644, 1725, 1823, 1830, 1860 and 1898. Notice the chain: taxes drove distilling underground, the 1823 Act brought it back into the open, and the Coffey still plus blending in bond created blended Scotch.',
+        'The dates are 1494, 1725, 1823, 1830 and 1860. Follow the chain: the Malt Tax drove distilling underground, the 1823 Act brought it back into the open, Coffey\'s still then made cheap grain whisky, and blending in bond turned that grain whisky into blended Scotch. Putting blending before the Coffey still breaks the chain, because blends needed the grain whisky first.',
     },
     {
       id: 'l2-five-centuries-q2',
@@ -150,16 +148,13 @@ Scotland's record runs from Friar John Cor's malt in 1494 through the first exci
       prompt: 'Put these American milestones in order, first to last.',
       items: [
         'The first federal excise tax on whiskey',
-        'The Whiskey Rebellion',
         'The Bottled-in-Bond Act',
-        'The Pure Food and Drug Act',
         'The Taft Decision',
         'National Prohibition begins',
-        'The Federal Alcohol Administration Act',
         'Congress names bourbon a distinctive product of the United States',
       ],
       explanation:
-        'The dates are 1791, 1794, 1897, 1906, 1909, 1920, 1935 and 1964. Bottled-in-bond came before the food law, and the Taft Decision settled the fight that the 1906 Act started.',
+        'The dates are 1791, 1897, 1909, 1920 and 1964. Bottled-in-bond (1897) was the first federal guarantee of unadulterated whiskey, and the Taft Decision (1909) came a decade later to settle the fight over blends. The bourbon resolution is the easy one to misplace: it came long after repeal, in 1964.',
     },
     {
       id: 'l2-five-centuries-q3',
@@ -168,12 +163,11 @@ Scotland's record runs from Friar John Cor's malt in 1494 through the first exci
       pairs: [
         { left: 'Immature Spirits Act (1915-16)', right: 'The 3-year minimum age for Scotch' },
         { left: 'Bottled-in-Bond Act (1897)', right: 'One season, one distillery, 4 years, 100 proof' },
-        { left: 'Taft Decision (1909)', right: 'Straight and blended whiskey as separate US types' },
         { left: 'Spirits Act (1860)', right: 'Blending whiskies from different distilleries in bond' },
         { left: 'Congressional resolution (1964)', right: 'Bourbon must be made in the United States' },
       ],
       explanation:
-        'Each modern rule has a historical source: a wartime law set the 3-year minimum, the 1897 Act defined bonded whiskey, Taft named straight and blended whiskey, the 1860 Act made blended Scotch practical, and the 1964 resolution made bourbon a distinctive product of the US.',
+        'Each modern rule has a historical source: a wartime law set the 3-year minimum, the 1897 Act defined bonded whiskey, the 1860 Act made blended Scotch practical, and the 1964 resolution made bourbon a distinctive product of the US. The two "in bond" laws are easy to swap: the 1860 Spirits Act is about blending in bond, while the 1897 Act is the US bonded-whiskey guarantee.',
     },
     {
       id: 'l2-five-centuries-q4',

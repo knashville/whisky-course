@@ -156,11 +156,10 @@ Scotch whisky is made in Scotland from water and malted barley (other whole cere
         { left: 'Malted barley only, pot stills, one distillery', right: 'Single Malt Scotch Whisky' },
         { left: 'Wheat and malted barley, column still, one distillery', right: 'Single Grain Scotch Whisky' },
         { left: 'Single malts from three distilleries, no grain', right: 'Blended Malt Scotch Whisky' },
-        { left: 'Single grains from two distilleries, no malt', right: 'Blended Grain Scotch Whisky' },
         { left: 'Malt and grain whiskies from many distilleries', right: 'Blended Scotch Whisky' },
       ],
       explanation:
-        '"Single" means one distillery and "blended" means more than one. Malt means malted barley only from pot stills; grain allows other cereals and usually column stills. Blended Scotch Whisky is the only category that combines malt with grain.',
+        '"Single" means one distillery and "blended" means more than one. Malt means malted barley only from pot stills; grain allows other cereals and usually column stills. The two blends are easy to confuse: Blended Malt holds malts only, and Blended Scotch Whisky is the only category that combines malt with grain.',
     },
     {
       id: 'l2-scotch-categories-places-q2',

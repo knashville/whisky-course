@@ -186,11 +186,10 @@ Irish whiskey is distilled and matured on the island of Ireland, north or south,
         'Canadian rye whisky: 95% corn and 5% rye, made and aged 3 years in small wood in Canada',
         'Irish whiskey: distilled in County Cork, matured 3 years in a warehouse in Wales',
         'Canadian whisky: made in Canada, aged 2 years in small wood',
-        'Whisky, for sale in the UK: sugar-cane spirit blended with 10% malt whisky',
       ],
       answer: [0, 2],
       explanation:
-        'Irish whiskey covers the whole island, north and south, and "Canadian rye whisky" needs no particular rye content. The others fail: under the JSLMA standard every drop must be made and aged in Japan, Irish maturation must happen on the island, Canadian whisky needs 3 years, and UK law requires whisky to be distilled from cereal grain.',
+        'Irish whiskey covers the whole island, north and south, and "Canadian rye whisky" needs no particular rye content, so a 95% corn mash is fine. The others fail: under the JSLMA standard every drop must be made and aged in Japan, so imported grain whisky rules out the name; Irish maturation must happen on the island; and Canadian whisky needs 3 years.',
     },
     {
       id: 'l2-irish-canadian-japanese-world-q3',
@@ -232,12 +231,12 @@ Irish whiskey is distilled and matured on the island of Ireland, north or south,
       id: 'l2-irish-canadian-japanese-world-q6',
       type: 'numeric',
       prompt:
-        'Under the 2014 Technical File, what is the largest amount of other cereals (such as oats or rye) a 1,000 kg grain bill for Pot Still Irish whiskey may contain, in kilograms?',
-      answer: 50,
+        'A distiller plans a 1,000 kg grain bill for Pot Still Irish whiskey. What is the smallest amount of unmalted barley it may contain, in kilograms?',
+      answer: 300,
       tolerance: 0,
       unit: 'kg',
       explanation:
-        'The 2014 file allows up to 5% other cereals in Pot Still whiskey: 1,000 × 0.05 = 50 kg. The rest must include at least 30% malted barley (300 kg) and at least 30% unmalted barley (300 kg).',
+        'Pot Still Irish whiskey needs at least 30% unmalted barley (and at least 30% malted barley): 1,000 × 0.30 = 300 kg. The raw barley is what gives the style its creamy spice and what separates it from Malt Irish whiskey, which is 100% malted barley, so the answer cannot be zero.',
     },
   ],
 };
