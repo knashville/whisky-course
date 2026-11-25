@@ -286,12 +286,16 @@ export default {
     {
       id: 'x1-23',
       lesson: 'l1-serve-store-responsibly',
-      type: 'numeric',
-      prompt: 'One US standard drink is 1.5 fl oz of 40% ABV spirit. A guest is served 1.5 fl oz of a 60% ABV cask strength whiskey. How many US standard drinks is that? Give your answer to one decimal place.',
-      answer: 1.5,
-      tolerance: 0.05,
-      unit: 'US standard drinks',
-      explanation: `Standard drinks count pure alcohol. The pour is the usual 1.5 fl oz measure, but the whiskey is 60 ÷ 40 = 1.5 times as strong, so it holds 1.5 US standard drinks (1.5 fl oz × 0.60 = 0.9 fl oz of alcohol, and 0.9 ÷ 0.6 = 1.5). Counting it as one drink because it fills a normal measure is the mistake to avoid. Check it with the Standard drinks tool.`,
+      type: 'single',
+      prompt: 'One US standard drink is 1.5 fl oz of 40% ABV spirit. A guest is served the same 1.5 fl oz measure of a 60% ABV cask strength whiskey. Compared with one standard drink, how much alcohol is in that glass?',
+      options: [
+        'More: about one and a half standard drinks, because the whiskey is stronger',
+        'Exactly one standard drink, because the pour is the standard size',
+        'Less than one standard drink, because cask strength whiskey is sipped slowly',
+        'Exactly two standard drinks, because cask strength always doubles the alcohol',
+      ],
+      answer: 0,
+      explanation: `Standard drinks count pure alcohol, not glasses. The pour is the usual size, but 60% ABV is one and a half times as strong as 40%, so the glass holds about one and a half standard drinks. Treating every standard measure as one drink is the mistake to avoid with cask strength whiskey. The Standard drinks tool gives an exact figure when you need one.`,
     },
     {
       id: 'x1-24',

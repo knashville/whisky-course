@@ -224,10 +224,10 @@ Barley's aleurone layer makes alpha-amylase, limit dextrinase and the cell-wall 
         `It would no longer be Scotch: only the grain's own enzymes may convert it`,
         `It is allowed if the enzyme is a natural preparation, as Irish rules permit`,
         `It is allowed for single grain Scotch whisky but forbidden for single malt`,
-        `It is allowed if the added enzyme makes up less than 2.5% of the mash`,
+        `It is allowed if the malt still supplies most of the enzyme activity`,
       ],
       answer: 0,
-      explanation: `Regulation 3 requires conversion "only by endogenous enzyme systems", the grain's own enzymes, for every category of Scotch, grain whisky included. The allowance for other natural enzymes belongs to the Irish Whiskey Technical File, and the 2.5% figure has nothing to do with enzymes.`,
+      explanation: `Regulation 3 requires conversion "only by endogenous enzyme systems", the grain's own enzymes, for every category of Scotch, grain whisky included. The Irish option is the tempting one, but the allowance for other natural enzymes belongs to the Irish Whiskey Technical File, not to Scotch. "Only" also leaves no room for a small share of added enzyme, however much of the work the malt does.`,
     },
   ],
 };

@@ -160,11 +160,10 @@ The industry flavor wheel has eight families: cereal, fruity, floral, peaty, fei
         { left: 'Manhattan', right: '2 oz rye, 1 oz sweet vermouth, 2 dashes aromatic bitters; stirred' },
         { left: 'Whiskey Sour', right: '2 oz whiskey, 3/4 oz lemon, 3/4 oz syrup, optional egg white; shaken' },
         { left: 'Old Fashioned', right: '2 oz whiskey, about 1/4 oz syrup, 2-3 dashes bitters; stirred over ice' },
-        { left: 'Sazerac', right: 'Rye, sugar, anise-led red bitters, absinthe rinse, lemon peel' },
         { left: 'Penicillin', right: 'Blended Scotch, lemon, honey-ginger syrup, peated Islay float' },
       ],
       explanation:
-        'Vermouth marks the Manhattan, lemon and syrup the Sour, and sugar plus bitters alone the Old Fashioned. The absinthe rinse is the Sazerac\'s signature, and the honey-ginger syrup with a smoky float is the Penicillin\'s.',
+        'Vermouth marks the Manhattan, lemon and syrup the Sour, and sugar plus bitters alone the Old Fashioned. The Sour and the Penicillin both use lemon, so look for the honey-ginger syrup and smoky float, which belong only to the Penicillin.',
     },
     {
       id: 'l2-flavor-and-serves-q4',

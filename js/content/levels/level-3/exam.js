@@ -7,18 +7,22 @@ export default {
     {
       id: 'x3-1',
       lesson: 'l3-malting-grain-chemistry',
-      type: 'numeric',
-      context: `**Maltings batch record**
+      type: 'single',
+      context: `**Maltings QC log, batch 88**
 
-- Barley received: 20.0 tonnes at 12% moisture
-- Steeped to 45% moisture, then germinated
-- Kilned to 4.5% moisture
-- Ignore any loss of dry matter.`,
-      prompt: `How many tonnes of water does the kiln drive off this batch? Round to one decimal place.`,
-      answer: 13.6,
-      tolerance: 0.1,
-      unit: 'tonnes',
-      explanation: `Work through the dry matter, which stays at 20.0 × 0.88 = 17.6 t. The green malt weighs 17.6 ÷ 0.55 = 32.0 t and the finished malt 17.6 ÷ 0.955 = 18.43 t, so the kiln removes 32.0 - 18.43 = 13.6 t of water. Multiplying 32.0 t by the 40.5-point drop in moisture gives 13.0 t, which is wrong because moisture is a share of the current weight, and that weight falls as the grain dries.`,
+- Barley intake: 12% moisture
+- Steep-out: 34% moisture after two days with air rests
+- Germination: 5 days; growth slow and patchy, many kernels still hard and glassy at the end
+- Kiln-out: 4.5% moisture`,
+      prompt: `Which reading best explains the poor modification?`,
+      options: [
+        `Steep-out at 34%, well short of the 42-46% the grain needs to germinate evenly`,
+        `Germination of 5 days, longer than the 2-3 days distilling malt needs`,
+        `Kiln-out at 4.5%, too dry for the enzymes to survive the kiln`,
+        `Barley intake at 12%, too dry for the grain to take up water in the steep`,
+      ],
+      answer: 0,
+      explanation: `Steeping must bring the grain to about 42-46% moisture before it can germinate evenly and modify. At 34% the embryo and aleurone are short of water, so growth is slow and patchy and the kernels stay hard. The other readings are all normal: germination usually takes 4-6 days, malt is kilned to about 4-5% moisture (and kilning comes after modification anyway), and barley usually arrives at about 12%.`,
     },
     {
       id: 'x3-2',
@@ -26,14 +30,13 @@ export default {
       type: 'order',
       prompt: `Put these events in order, from barley entering the steep to fermentable sugar in the mash tun, first to last.`,
       items: [
-        `The embryo takes up water and sends gibberellin signals to the aleurone layer`,
-        `The aleurone layer starts making starch-converting and cell-wall enzymes`,
-        `Cell walls and protein around the starch break down as the grain modifies`,
+        `Steeping wakes the embryo, which signals the aleurone layer to start work`,
+        `Aleurone enzymes break down cell walls and protein as the grain modifies`,
         `The kiln dries the grain, halting growth while keeping its enzymes`,
         `Hot mash water gelatinizes the starch granules`,
         `Alpha- and beta-amylase cut the gelatinized starch into maltose and other sugars`,
       ],
-      explanation: `Water wakes the embryo, and its hormone signal switches on enzyme production in the aleurone. Those enzymes modify the kernel during germination, and the kiln then stops growth while preserving them. In the mash, hot water gelatinizes the starch, and only then can the amylases reach it. A common slip is to place enzyme production in the mash tun: the enzymes are made or set free during malting and only put to work in the mash.`,
+      explanation: `Water wakes the embryo, and its signal switches on the aleurone, whose enzymes modify the kernel during germination. The kiln then stops growth while preserving those enzymes. In the mash, hot water gelatinizes the starch first, and only then can the amylases reach it. The tempting slips are to put the amylases to work before gelatinization, or to place enzyme production in the mash tun: the enzymes are made or set free during malting and only put to work in the mash.`,
     },
     {
       id: 'x3-3',
@@ -204,12 +207,12 @@ One batch of clear wort is split between two identical washbacks, pitched with t
       options: [
         `The bourbon fermenter holds the grain solids; the Scotch washback holds drained wort`,
         `The bourbon fermenter usually receives backset; nothing is added to acidify the Scotch wash`,
-        `Both reach a broadly similar strength, roughly 7-10% ABV`,
+        `The Scotch wash ends at about 7-9% ABV, the bourbon distiller's beer at about 8-10%`,
         `The Scotch wort was boiled first to stop its enzymes, as in brewing`,
         `Both traditions may add commercial enzymes to raise the yield`,
       ],
       answer: [0, 1, 2],
-      explanation: `American distillers ferment the whole mash, grain included, usually with backset, while Scotch distillers drain the wort off the grain and add nothing to acidify it. A wash of about 7-9% and a distiller's beer of about 8-10% are close in strength. Scotch wort is never boiled, so its enzymes keep working, and the Scotch Whisky Regulations 2009 allow only the malt's own enzymes, which rules out the last option.`,
+      explanation: `American distillers ferment the whole mash, grain included, usually with backset, while Scotch distillers drain the wort off the grain and add nothing to acidify it. The two end at similar strengths: a wash of about 7-9% and a distiller's beer of about 8-10%. The enzyme option is the tempting one, because many American distillers do add commercial enzymes, but the Scotch Whisky Regulations 2009 allow only the malt's own. Scotch wort is never boiled, so its enzymes keep working in the washback.`,
     },
     {
       id: 'x3-14',
@@ -251,7 +254,7 @@ One batch of clear wort is split between two identical washbacks, pitched with t
       id: 'x3-16',
       lesson: 'l3-pot-still-distillation',
       type: 'numeric',
-      prompt: `A spirit still is charged with 9,000 L of low wines at 22.0% ABV and 4,000 L from the feints receiver at 32.0% ABV. Ignoring volume contraction, what is the strength of the combined charge in % ABV? Round to one decimal place.`,
+      prompt: `A spirit still is charged with 9,000 L of low wines at 22.0% ABV and 4,000 L from the feints receiver at 32.0% ABV. Working in litres of pure alcohol and ignoring volume contraction, what is the strength of the combined charge in % ABV? Round to one decimal place.`,
       answer: 25.1,
       tolerance: 0.1,
       unit: '% ABV',
@@ -265,12 +268,11 @@ One batch of clear wort is split between two identical washbacks, pitched with t
       items: [
         `The charge boils in the pot`,
         `Vapor climbs the neck, where some condenses and runs back as reflux`,
-        `Vapor travels along the lyne arm`,
-        `The purifier condenses the heaviest vapor and returns it to the still`,
+        `On the lyne arm, the purifier condenses the heaviest vapor and returns it to the still`,
         `The shell-and-tube condenser turns the remaining vapor to liquid`,
         `The new make flows through the spirit safe to a receiver`,
       ],
-      explanation: `Vapor rises from the pot through the neck, where reflux begins, then crosses the lyne arm. The purifier sits on the lyne arm, before the condenser, which is why it can still send heavy vapor back to the still. Only after condensing does the new make reach the spirit safe, where the stillman tests it and switches it between the spirit and feints receivers.`,
+      explanation: `Vapor rises from the pot through the neck, where reflux begins, then crosses the lyne arm. The purifier sits on the lyne arm, before the condenser, which is why it can still send heavy vapor back to the still; placing it after the condenser is the tempting slip. Only after condensing does the new make reach the spirit safe, where the stillman tests it and switches it between the spirit and feints receivers.`,
     },
     {
       id: 'x3-18',
@@ -342,20 +344,22 @@ One batch of clear wort is split between two identical washbacks, pitched with t
     {
       id: 'x3-22',
       lesson: 'l3-column-hybrid-stills',
-      type: 'multi',
-      context: `**Thought experiment**
+      type: 'single',
+      context: `**Grain distillery shift report, Scotland**
 
-Distilleries in five places each collect a cereal spirit at **94.9% ABV (189.8 proof)**. Every other rule (grain, place, casks and aging) would be met.`,
-      prompt: `Under which rules could that spirit still become whisky? Select all that apply.`,
+- Coffey still, wheat and malted barley mash
+- Usual collection strength: 94.0% ABV
+- Last night: the rectifier ran hot and the receiver logged 94.9% ABV
+- Shift manager: "No harm done. Everything is reduced to 63.5% before filling anyway."`,
+      prompt: `Is the shift manager right about last night's spirit?`,
       options: [
-        `US federal rules (27 CFR 5.143)`,
-        `The Japanese JSLMA standard`,
-        `The Scotch Whisky Regulations 2009`,
-        `The Irish Whiskey Technical File`,
-        `EU rules (Regulation (EU) 2019/787)`,
+        `No: Scotch must be distilled below 94.8% ABV, and adding water later cannot change that`,
+        `Yes: the strength limit applies at filling, and 63.5% is well under it`,
+        `Yes: like US whisky, Scotch may be distilled at anything below 95% ABV`,
+        `No: Scotch grain whisky must be distilled at 80% ABV or less, as bourbon is`,
       ],
-      answer: [0, 1],
-      explanation: `US whisky must be distilled below 190 proof, and 189.8 is just under the line. The JSLMA standard requires distillation below 95% ABV, so 94.9% also passes. Scotland, Ireland and the EU all require less than 94.8% ABV, and 94.9% misses by a tenth of a point, exactly the kind of near-miss to watch for.`,
+      answer: 0,
+      explanation: `Scotch whisky must be distilled at less than 94.8% ABV (Scotch Whisky Regulations 2009), and distillation strength is fixed when the spirit leaves the still. Last night's spirit can never be Scotch whisky, however much water goes in before filling. The 95% option is tempting because that is the US limit (190 proof), which is why Scotch grain distilleries run at about 94% to stay safely under their own, lower line. The 80% limit belongs to bourbon and its relatives, not to Scotch grain.`,
     },
     {
       id: 'x3-23',
@@ -376,11 +380,16 @@ Distilleries in five places each collect a cereal spirit at **94.9% ABV (189.8 p
       id: 'x3-24',
       lesson: 'l3-column-hybrid-stills',
       type: 'numeric',
-      prompt: `A bourbon distillery needs 5,000 L of high wines at 67.5% ABV from one shift. Its beer still captures 98% of the alcohol in the beer, and the doubler loses none. How many litres of distiller's beer at 8.0% ABV must it feed? Round to the nearest 100 L.`,
-      answer: 43000,
-      tolerance: 100,
+      context: `**Beer still and doubler, day shift**
+
+- Distiller's beer fed: 40,000 L at 8.0% ABV
+- Beer still captures 98% of the beer's alcohol
+- Doubler loses no alcohol and delivers high wines at 70.0% ABV (140 proof)`,
+      prompt: `How many litres of high wines does the shift produce? Round to the nearest 10 L.`,
+      answer: 4480,
+      tolerance: 10,
       unit: 'L',
-      explanation: `Work backward in litres of pure alcohol. The high wines hold 5,000 × 0.675 = 3,375 LPA. Only 98% of the beer's alcohol is captured, so the beer must hold 3,375 ÷ 0.98 = 3,444 LPA, and at 8.0% ABV that is 3,444 ÷ 0.08 = 43,000 L to the nearest 100. Leaving out the capture rate (42,200 L) or multiplying by 0.98 instead of dividing (41,300 L) undercounts the beer.`,
+      explanation: `Work in litres of pure alcohol. The beer holds 40,000 × 0.080 = 3,200 LPA, and 98% of that is 3,136 LPA. The doubler raises the strength without adding alcohol, so 3,136 LPA at 70% ABV fills 3,136 ÷ 0.70 = 4,480 L of high wines. Leaving out the capture rate gives about 4,570 L, and stopping at 3,136 gives the pure alcohol rather than the volume of high wines.`,
     },
     {
       id: 'x3-25',
@@ -412,13 +421,13 @@ Distilleries in five places each collect a cereal spirit at **94.9% ABV (189.8 p
 
 - Barrel 1: distilled at 79% ABV, entered at 62% ABV
 - Barrel 2: distilled at 81% ABV, entered at 60% ABV
-- Barrel 3: distilled at 75% ABV, entered at 63% ABV
+- Barrel 3: distilled at 75% ABV, entered at 64% ABV
 - Barrel 4: distilled at 160 proof, entered at 125 proof
 - Barrel 5: distilled at 70% ABV, entered at 55% ABV`,
       prompt: `Which barrels can become bourbon? Select all that apply.`,
       options: ['Barrel 1', 'Barrel 2', 'Barrel 3', 'Barrel 4', 'Barrel 5'],
       answer: [0, 3, 4],
-      explanation: `US proof is twice the ABV, so convert first: barrel 1 is 158 and 124 proof, barrel 5 is 140 and 110, and barrel 4 sits exactly on both limits, which "160 proof or less" and "125 proof or less" allow. Barrel 2 was distilled at 162 proof, and adding water later cannot reopen a category closed at the still. Barrel 3 is the near-miss: its distillation proof is fine, but 63% ABV is 126 proof, one over the entry limit.`,
+      explanation: `US proof is twice the ABV, so convert first: barrel 1 is 158 and 124 proof, barrel 5 is 140 and 110, and barrel 4 sits exactly on both limits, which "160 proof or less" and "125 proof or less" allow. Barrel 2 was distilled at 162 proof, and adding water later cannot reopen a category closed at the still. Barrel 3 is the tempting one, because its distillation proof is fine, but 64% ABV is 128 proof, over the 125-proof entry limit.`,
     },
     {
       id: 'x3-28',
@@ -544,20 +553,19 @@ The distillery's new make is known for a delicate, floral, orchard-fruit charact
       pairs: [
         { left: 'Seasoning', right: 'Drying staves outdoors for months to years, or quickly in a kiln' },
         { left: 'Toasting', right: 'Slow heating that breaks wood polymers into sweet, vanilla and spice compounds' },
-        { left: 'Charring', right: 'Setting the inner surface alight to a numbered level' },
+        { left: 'Charring', right: 'Setting the inner surface alight, graded #1 to #4' },
         { left: 'Red layer', right: 'Toasted wood beneath the char, where wood sugars have caramelized' },
-        { left: 'Alligator char', right: 'The deep, cracked #4 char' },
         { left: 'Tyloses', right: 'Growths that block white oak\'s vessels so sawn staves hold liquid' },
       ],
-      explanation: `Seasoning comes first and dries the wood. Toasting and charring are the two heat treatments: toasting slowly cooks the surface, while charring sets it alight, and #4, the alligator char, is the deepest grade. The red layer is the toasted band under the char that the spirit moves into and out of, and tyloses belong to American white oak itself, the reason its staves can be sawn rather than split.`,
+      explanation: `Seasoning comes first and dries the wood. Toasting and charring are the two heat treatments, and they are the easiest pair to swap: toasting slowly cooks the surface, while charring sets it alight, with #4 (alligator char) the deepest grade. The red layer is the toasted band under the char that the spirit moves into and out of, and tyloses belong to American white oak itself, the reason its staves can be sawn rather than split.`,
     },
     {
       id: 'x3-36',
       lesson: 'l3-barrels-warehouses-bottling',
       type: 'truefalse',
-      prompt: `A blender who adds exactly the water that C1 × V1 = C2 × V2 predicts will end up slightly below the target strength, because ethanol and water contract when mixed.`,
-      answer: false,
-      explanation: `False. Contraction shrinks the volume while the alcohol stays the same, so the same litres of pure alcohol end up in slightly less liquid and the strength lands a little above the target. That is why real proofing needs slightly more water than C1V1 predicts, and why professionals work by weight with density tables. The direction is easy to flip: the same alcohol in less volume means a higher strength.`,
+      prompt: `Because ethanol and water contract when mixed, C1 × V1 = C2 × V2 slightly underestimates the water needed to bring whisky down to a target strength.`,
+      answer: true,
+      explanation: `True. Mixing shrinks the volume while the litres of pure alcohol stay the same, so adding exactly the formula's water leaves the whisky slightly above the target strength, and a little more water is needed: about 157 L rather than 152 L in the lesson's 500 L example. That is why professionals proof by weight with density tables. The tempting slip is to think contraction leaves the whisky too weak; the same alcohol in less volume means a higher strength.`,
     },
   ],
 };

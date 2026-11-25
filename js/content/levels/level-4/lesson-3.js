@@ -158,14 +158,13 @@ Irish whiskey (Technical File 2014) covers the whole island, allows other natura
       prompt: 'Match each regime to the rule that sets it apart.',
       pairs: [
         { left: 'Australia', right: 'At least 2 years in wood before release (Excise Act 1901, s 77FI)' },
-        { left: 'Ireland', right: 'Wooden casks of any species, 700 L or less, on the island' },
         { left: 'Canada', right: 'Caramel and flavouring permitted; "rye" sets no rye minimum' },
         { left: 'EU 2019/787', right: 'No sweetening or flavouring; no rule on where it matures' },
         { left: 'JSLMA standard', right: 'Distilled below 95% ABV and bottled in Japan' },
         { left: 'Japan\'s Liquor Tax Act', right: 'Blends with neutral spirit allowed; no Japanese origin needed' },
       ],
       explanation:
-        'Each regime has a signature rule: Australia\'s 2-year excise minimum, Ireland\'s any-wood casks, Canada\'s permitted flavouring and synonymous names, the EU\'s ban on sweetening with no place-of-maturation rule, the JSLMA\'s Japan-only production and bottling, and the tax law\'s tolerance of blends. The two Japanese entries are the classic trap.',
+        'Each regime has a signature rule: Australia\'s 2-year excise minimum, Canada\'s permitted flavouring and synonymous names, the EU\'s ban on sweetening with no place-of-maturation rule, the JSLMA\'s Japan-only production and bottling, and the tax law\'s tolerance of blends of any origin. The two Japanese entries are the classic trap: the voluntary JSLMA standard governs the words "Japanese whisky", while the tax law decides what counts as "whisky" at all.',
     },
     {
       id: 'l4-world-whisky-rules-q2',
@@ -227,19 +226,14 @@ Blended and bottled in Japan · 40% Alc./Vol. · 700 mL
     },
     {
       id: 'l4-world-whisky-rules-q6',
-      type: 'order',
-      prompt: 'Put these regulatory milestones in order, earliest first.',
-      items: [
-        'Irish Whiskey Act passed',
-        'Irish Whiskey Technical File submitted',
-        'EU spirit drinks Regulation 2019/787 adopted',
-        'JSLMA Japanese whisky standard takes effect',
-        'JSLMA transition for existing products ends',
-        'Canada publishes amendments moving its whisky standard into the Food Compositional Standards Document',
-        'Ireland consults on raising the Pot Still other-cereals cap',
-      ],
+      type: 'multi',
+      context: `**Export brief**
+An Australian distillery has a malt whisky that matured 2 years in oak casks and was lawfully released as whisky at home. Nothing has been added, and it is bottled at 46% ABV.`,
+      prompt: 'Under the rules in this lesson, in which markets may it be sold under the name "whisky"? Select all that apply.',
+      options: ['Australia', 'Japan', 'France', 'United Kingdom', 'Canada'],
+      answer: [0, 1],
       explanation:
-        'The order runs 1980 (the current Irish Whiskey Act), 2014 (Technical File), 2019 (EU 2019/787), April 2021 (JSLMA standard), March 2024 (JSLMA transition ends), December 2024 (Canada publishes SOR/2024-244) and 2026 (Irish consultation). Knowing the dates tells you which edition of a rule a source is quoting.',
+        'Australia\'s excise rule needs only 2 years in wood, and Japan\'s Liquor Tax Act sets no minimum age and no origin rule, so both accept it. France (as an EU market) and the UK require 3 years in wooden casks, and Canadian food law bars the sale of any whisky other than bourbon or Tennessee whisky unless it has aged at least 3 years in small wood. The 2-year minimum is the near miss: lawful at home, too young for most export markets.',
     },
   ],
 };

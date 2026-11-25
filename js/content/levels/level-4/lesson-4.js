@@ -174,15 +174,14 @@ Bottled by Cold Forge Spirits, Denver, Colorado`,
       type: 'match',
       prompt: 'Match each rye or bourbon style to its description.',
       pairs: [
-        { left: 'Monongahela rye', right: 'Western Pennsylvania tradition, remembered as bold and spicy' },
-        { left: 'Maryland rye', right: 'Softer, sweeter style, often with more corn' },
+        { left: 'Monongahela rye', right: 'A historic western Pennsylvania rye tradition' },
         { left: 'Empire Rye', right: 'At least 75% New York-grown rye from one New York distillery' },
         { left: 'Indiana-style rye', right: '95% rye and 5% malted barley' },
         { left: 'Wheated bourbon', right: 'Wheat replaces rye as the flavoring grain' },
         { left: 'Four-grain bourbon', right: 'Corn, rye, wheat and malted barley in one mash' },
       ],
       explanation:
-        'Monongahela and Maryland are historic regional styles; Empire Rye is a modern voluntary standard; the 95/5 recipe is the Lawrenceburg signature. Wheated and four-grain bourbons are mashbill choices within the same legal bourbon rules.',
+        'Monongahela is a historic regional style, Empire Rye is a modern voluntary New York standard, and the 95/5 recipe is the Lawrenceburg signature. Wheated and four-grain bourbons are mashbill choices within the same legal bourbon rules. The usual slip is swapping the two modern ryes: Empire Rye is defined by New York grain and one New York distillery, Indiana-style rye by its recipe.',
     },
     {
       id: 'l4-america-in-depth-q3',

@@ -168,7 +168,7 @@ American white oak gives vanilla and coconut and can be sawn because of its tylo
       answer: 660,
       tolerance: 1,
       unit: 'L',
-      explanation: `The final volume is 1,200 × 62 ÷ 40 = 1,860 L, so the water to add is 1,860 - 1,200 = 660 L. Because ethanol and water contract when mixed, the true amount is slightly larger, which is why blenders finish with density tables. Check it with the Adding water tool.`,
+      explanation: `The final volume is 1,200 × 62 ÷ 40 = 1,860 L, so the water to add is 1,860 - 1,200 = 660 L. Answering 1,860 is the usual slip: that is the finished volume, not the water. Because ethanol and water contract when mixed, the true amount of water is slightly larger, which is why blenders finish with density tables. Check it with the Adding water tool.`,
     },
     {
       id: 'l3-barrels-warehouses-bottling-q3',

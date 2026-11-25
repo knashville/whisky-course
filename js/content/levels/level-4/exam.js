@@ -203,9 +203,8 @@ Speyside Blended Malt Scotch Whisky
         { left: `Oak cask that held stout with raspberry purée added after fermentation`, right: `Excluded: fruit added to beer after fermentation` },
         { left: `Chestnut cask that held oloroso sherry`, right: `Excluded: the cask is not oak` },
         { left: `Oak pipe that held tawny port`, right: `Allowed: fortified wine with a traditional oak stage` },
-        { left: `Oak barrel that held unflavoured Caribbean rum`, right: `Allowed: a spirit with no additions, traditionally oak-aged` },
       ],
-      explanation: `The amendment allows oak casks that held wine, beer or spirits, then excludes stone-fruit products, beer with fruit, flavouring or sweetening added after fermentation, and spirits with fruit, flavouring or sweetening added after distillation. Raspberries are not stone fruit, so the stout fails on the post-fermentation addition. The chestnut cask fails before the amendment applies, because the regulations demand oak casks.`,
+      explanation: `The amendment allows oak casks that held wine, beer or spirits, then excludes stone-fruit products, beer with fruit, flavouring or sweetening added after fermentation, and spirits with fruit, flavouring or sweetening added after distillation. Raspberries are not stone fruit, so the stout fails on the post-fermentation addition, while the apricot brandy fails on its fruit. The chestnut cask fails before the amendment applies, because the regulations demand oak casks; tawny port is a fortified wine traditionally aged in oak, so its pipe is allowed.`,
     },
     {
       id: 'x4-13',
@@ -252,9 +251,8 @@ A distillery on Islay sends all of its new make by tanker to a bonded warehouse 
         { left: `Islands`, right: `An informal grouping inside the Highland region, with no protection` },
         { left: `Campbeltown`, right: `A protected locality` },
         { left: `Speyside`, right: `A protected region` },
-        { left: `Blended Grain Scotch Whisky`, right: `A category: single grains from more than one distillery` },
       ],
-      explanation: `"Pure malt" is banned outright (reg. 11), and the older term "vatted malt" is not one of the five category names, so "Blended Malt Scotch Whisky" replaces both. Islay and Campbeltown are the protected localities; Highland, Lowland and Speyside are the protected regions. "Islands" is the classic trap: it describes island distilleries inside the Highland region and has no legal status. Single Grain and Blended Grain are both categories, told apart by the number of distilleries.`,
+      explanation: `"Pure malt" is banned outright (reg. 11), and "Blended Malt Scotch Whisky" is the category name that replaces it. Islay and Campbeltown are the protected localities; Highland, Lowland and Speyside are the protected regions, so Speyside is the near miss for anyone who calls it a locality. "Islands" is the classic trap: it describes island distilleries inside the Highland region and has no legal status. Single Grain is a full category, covering one-distillery whisky that does not qualify as single malt.`,
     },
     {
       id: 'x4-17',
@@ -276,17 +274,18 @@ Islay Blended Malt Scotch Whisky · 10 Years Old · 46% Alc./Vol.
     {
       id: 'x4-18',
       lesson: 'l4-scotch-whisky-regulations',
-      type: 'order',
-      prompt: `Put these milestones in Scotch whisky law in order, earliest first.`,
-      items: [
-        `Scotch Whisky Act`,
-        `Scotch Whisky Order`,
-        `The Scotch Whisky Regulations 2009 come into force`,
-        `Single malt must be bottled in Scotland`,
-        `The Technical File is amended to spell out permitted casks`,
-        `Scotch is protected under the UK GI scheme after the Brexit transition`,
-      ],
-      explanation: `The Act dates from 1988 and the Order from 1990; both were replaced by SWR 2009, in force on 23 November 2009. The single-malt bottling rule took effect on 23 November 2012, the cask amendment came in June 2019, and the UK GI scheme for spirit drinks took over on 1 January 2021, when the Brexit transition ended. Knowing the dates tells you which rules an older source could have known.`,
+      type: 'multi',
+      context: `**Process review: a new distillery in Fife**
+- A: Wort is brewed at a sister brewery in Edinburgh and tankered to the distillery for fermentation.
+- B: A lactobacillus culture is pitched into the washbacks alongside the yeast.
+- C: Spirit is collected from the column at 94.5% ABV.
+- D: The first year of maturation takes place in 900-litre oak vats, the next three in barrels.
+- E: Whole grains of unmalted maize make up 80% of the mash, with malted barley the rest.
+- F: The whisky is reduced to exactly 40.0% ABV for bottling.`,
+      prompt: `Which practices would each stop the spirit from being Scotch Whisky? Select all that apply.`,
+      options: [`Practice A`, `Practice B`, `Practice C`, `Practice D`, `Practice E`, `Practice F`],
+      answer: [0, 1, 3],
+      explanation: `Reg. 3(1) requires the whole mash to be made at the distillery, fermentation only by adding yeast, and maturation only in oak casks of 700 L or less, so A, B and D each disqualify the spirit; the later 3 years in barrels cannot undo a year in 900 L vats, because the clause says "only". The others sit on the right side of a line: 94.5% ABV is under the 94.8% ceiling, whole grains of other cereals are allowed beside malted barley (the result is single grain), and 40.0% ABV meets the minimum exactly. The bacterial culture is the close call, because Canada allows yeast with other micro-organisms while Scotland allows yeast only.`,
     },
 
     // ---------- Lesson 3: Irish, Canadian, Japanese, EU and Australian Rules Compared ----------
@@ -314,9 +313,9 @@ Islay Blended Malt Scotch Whisky · 10 Years Old · 46% Alc./Vol.
         { left: `Canadian whisky`, right: `Caramel and flavouring` },
         { left: `US straight bourbon`, right: `Nothing at all` },
         { left: `US blended whisky`, right: `Coloring, flavoring and blending materials up to 2.5%` },
-        { left: `Whisky under Japan's Liquor Tax Act`, right: `Neutral spirit or shochu blended in` },
+        { left: `Whisky under Japan's Liquor Tax Act`, right: `Shochu or neutral spirit blended in, down to 10% whisky` },
       ],
-      explanation: `Scotch allows only water and plain caramel. Canada goes further and permits flavouring. US straight bourbon takes nothing but water, while blended whisky may take up to 2.5% of harmless coloring, flavoring and blending materials. Japan's tax law is the loosest, accepting blends with neutral spirit or shochu, and the voluntary JSLMA standard sets a higher bar for the words "Japanese whisky".`,
+      explanation: `Scotch allows only water and plain caramel. Canada goes further and permits flavouring. US straight bourbon takes nothing but water, while blended whisky may take up to 2.5% of harmless coloring, flavoring and blending materials. Japan's tax law is the loosest: shochu or neutral spirit may make up most of the bottle, with as little as 10% whisky, where a US blended whisky needs at least 20% straight whisky. The voluntary JSLMA standard sets a higher bar for the words "Japanese whisky".`,
     },
     {
       id: 'x4-21',
@@ -474,16 +473,18 @@ Bottled by Holloway & Finch Spirits Co., Louisville, KY`,
     {
       id: 'x4-31',
       lesson: 'l4-america-in-depth',
-      type: 'match',
-      prompt: `Match each warehouse setting to the maturation pattern it typically produces.`,
-      pairs: [
-        { left: `Pacific Northwest`, right: `Cool, damp air: slow, gentle maturation` },
-        { left: `Texas`, right: `Heat and big daily swings: fast extraction, heavy losses` },
-        { left: `Colorado`, right: `Altitude and dry air: high evaporation, proof can climb` },
-        { left: `Rickhouse ground floor, center`, right: `Steady and cool: small losses, proof holds or falls` },
-        { left: `Rickhouse top floor, by a window`, right: `Hottest and most exposed: the boldest, fastest-maturing barrels` },
+      type: 'single',
+      context: `**Blending room brief**
+One mashbill, filled at one entry proof into a seven-storey metal-clad rickhouse. After 6 years the top-floor barrels are dark, oaky and higher in proof; the ground-floor barrels are paler and gentler. The distillery does not rotate barrels.`,
+      prompt: `The distillery wants its flagship straight bourbon to taste the same every year. What is the standard way to achieve that?`,
+      options: [
+        `Mix barrels from several floors in planned proportions to hit the house profile.`,
+        `Bottle only top-floor barrels, because heat makes every barrel on that floor identical.`,
+        `Fill future barrels at a lower entry proof, which removes the effect of floor position.`,
+        `Add caramel to the paler ground-floor barrels so every batch matches in color.`,
       ],
-      explanation: `Warm, dry and variable settings speed extraction, raise losses and can push proof up, because water escapes faster than alcohol in dry air. Cool, humid settings slow everything and keep proof steady or let it fall. These are tendencies that vary by building and season.`,
+      answer: 0,
+      explanation: `Most producers blend across floors, mixing hot and cool barrels to a target profile, and that is how a flagship stays consistent without the labor of rotating barrels. Caramel is the tempting shortcut, but straight bourbon may contain nothing except water, so it would lose its class. Top-floor barrels vary with their distance from walls and windows, and entry proof does not change the temperature a barrel sits in.`,
     },
     {
       id: 'x4-32',
@@ -542,31 +543,29 @@ Distilled and bottled by Quillback Ridge Distilling Co., Asheville, NC`,
       id: 'x4-35',
       lesson: 'l4-producing-nations',
       type: 'numeric',
-      context: `**Warehouse comparison: two 250 L casks**
-- Cask A, in a hot warehouse, loses 12% of its remaining volume each year and is emptied after 4 years.
-- Cask B, in a cool Scottish warehouse, loses 2% of its remaining volume each year.`,
-      prompt: `After how many whole years has Cask B lost at least as large a share of its volume as Cask A lost in 4 years? You can test year by year with the Angel's share tool.`,
-      answer: 26,
-      tolerance: 0,
-      unit: 'years',
-      explanation: `Cask A keeps 0.88^4^ = 0.600 of its volume, so it loses 40.0%. Cask B keeps 0.98^25^ = 0.603 after 25 years (39.7% lost, just short) and 0.98^26^ = 0.591 after 26 years (40.9% lost), so 26 is the first whole year that matches. Scaling the rates in a straight line (12 ÷ 2 × 4 = 24 years) is the trap, because each year's loss comes off a smaller volume. The gap is why an age statement tells you less across climates.`,
+      context: `**Warehouse log, southern India**
+A 250 L cask loses 12% of its remaining volume each year. It is emptied after 4 years.`,
+      prompt: `How many litres has the cask lost by the time it is emptied? Round to the nearest litre. You can check your working with the Angel's share tool.`,
+      answer: 100,
+      tolerance: 1,
+      unit: 'L',
+      explanation: `Loss compounds: 250 × 0.88^4^ = 149.9 L remain, so about 100 L (40%) is gone. Taking a flat 30 L a year gives 120 L, the tempting error, because each year's 12% comes off a smaller volume. For comparison, a cask in a cool Scottish warehouse losing 2% a year still holds about 196 L after 12 years, so this 4-year-old cask has lost nearly twice as much as a 12-year-old Scotch cask. That gap is why an age statement tells you less across climates.`,
     },
     {
       id: 'x4-36',
       lesson: 'l4-producing-nations',
-      type: 'order',
-      prompt: `Put these distillery milestones in order, earliest first.`,
-      items: [
-        `Yamazaki distillery founded`,
-        `Yoichi distillery founded`,
-        `The new Midleton distillery opens`,
-        `Cooley distillery founded`,
-        `Penderyn first distills`,
-        `Kavalan produces its first spirit`,
-        `Chichibu begins distilling`,
-        `Brora resumes distilling`,
+      type: 'single',
+      context: `**Customer question at a whiskey shop**
+"This Irish brand opened its distillery four years ago, yet it already sells a 10-year-old single malt Irish whiskey. How is that possible?"`,
+      prompt: `Which answer is best supported?`,
+      options: [
+        `Many new Irish distilleries are too young to have mature stock, so they bottle whiskey bought from older distilleries while their own spirit ages.`,
+        `Irish rules let an age statement give the age of the oldest whiskey in the bottle, so one old cask can set the number.`,
+        `It could be Scotch malt bottled in Dublin, because the Irish whiskey GI turns on where the whiskey is bottled.`,
+        `Its small casks matured the spirit faster, and Irish rules let a label state the age the whiskey tastes.`,
       ],
-      explanation: `Yamazaki dates from 1923 and Yoichi from 1934. Irish Distillers opened the new Midleton in 1975, and Cooley challenged it from 1987. The new-world wave followed: Penderyn in 2000, Kavalan in 2006 and Chichibu in 2008. Brora, a ghost distillery of the whisky loch years, came back in 2021.`,
+      answer: 0,
+      explanation: `Ireland has gone from 4 operating distilleries in 2010 to about 50, and many are too young to have mature stock, so sourced whiskey is common in the category. An age statement always gives the youngest whiskey and counts real time in cask, however mature the spirit tastes. The Irish GI turns on distillation and maturation on the island, so Scotch bottled in Dublin is never Irish whiskey.`,
     },
     {
       id: 'x4-37',
@@ -594,7 +593,7 @@ Iodine, tar and wood smoke over brine and lemon; sweet malt underneath; no dried
       prompt: `Which statements are most likely true? Select all that apply.`,
       options: [
         `The standard bottling contains more grain whisky than malt whisky.`,
-        `Its grain whisky came from a large column-still grain distillery.`,
+        `The grain whisky in both blends came from large column-still grain distilleries.`,
         `Every drop in the 18-year-old has matured for at least 18 years.`,
         `To be called Blended Scotch Whisky, a blend must be at least half malt.`,
         `The no-age-statement bottling may contain whisky under 3 years old.`,
@@ -614,9 +613,8 @@ Iodine, tar and wood smoke over brine and lemon; sweet malt underneath; no dried
         { left: `Japan`, right: `Large producers rarely trade stock, so each makes many styles in-house` },
         { left: `Canada`, right: `Base and flavouring whiskies are made separately and blended after aging` },
         { left: `India`, right: `Much domestic "whisky" is molasses-based and fails UK, EU and US rules` },
-        { left: `Mexico`, right: `Heritage maize is nixtamalized before mashing` },
       ],
-      explanation: `Industry structure explains most of these: Scotland's grain giants feed its blends, Midleton dominated Ireland, and Japan's big two build blends from their own stocks. Canada's separate base and flavouring whiskies are a production method. India's molasses spirit and Mexico's nixtamalized corn show how raw materials define a style, and in India's case keep much of it from counting as whisky abroad.`,
+      explanation: `Industry structure explains most of these: Scotland's grain giants feed its blends, Midleton dominated Ireland, and Japan's big two build blends from their own stocks. Japan and Canada are the pair to separate: Japanese firms make many styles because they do not trade stock, while Canadian firms make a base and a flavouring whisky by design and blend them after aging. India shows how a raw material, molasses, keeps much of a market's "whisky" from counting as whisky abroad.`,
     },
     {
       id: 'x4-40',
@@ -650,13 +648,13 @@ Five-year-old malt from new, heavily charred 200 L casks: dark, tannic and dryin
       options: [
         `Japanese producers rarely trade casks with each other, so each makes many spirit styles in-house.`,
         `Demand in the 2010s outran mature stock, and some age-stated bottlings were withdrawn.`,
-        `Chita is Suntory's grain distillery.`,
-        `Yoichi makes its whisky in Coffey stills heated directly by coal.`,
-        `Nikka's Coffey stills now operate at Miyagikyo.`,
+        `Nikka's Coffey stills operate at Miyagikyo.`,
+        `Yoichi heats its stills with internal steam coils, like most modern distilleries.`,
+        `Suntory and Nikka each make all of their whisky at a single distillery.`,
         `Japan's Liquor Tax Act requires whisky sold in Japan to be distilled in Japan.`,
       ],
-      answer: [0, 1, 2, 4],
-      explanation: `Without a stock-trading culture, Suntory and Nikka each build blends from their own distilleries, which made the 2010s shortage hard to fix and cost several age statements; Chita is Suntory's grain distillery. Yoichi's coal fires its pot stills, and Nikka's Coffey stills work at Miyagikyo, where they moved in 1999. The tax law requires no Japanese origin at all.`,
+      answer: [0, 1, 2],
+      explanation: `Without a stock-trading culture, Suntory and Nikka each build blends from several distilleries of their own (Yamazaki, Hakushu and Chita; Yoichi and Miyagikyo), which made the 2010s shortage hard to fix and cost several age statements. Nikka's Coffey stills work at Miyagikyo, while Yoichi is one of the last distilleries to fire its stills directly with coal. The tax law requires no Japanese origin at all, which is why the voluntary JSLMA standard exists.`,
     },
   ],
 };

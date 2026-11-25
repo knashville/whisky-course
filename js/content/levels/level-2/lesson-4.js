@@ -178,11 +178,11 @@ Scotland's record runs from Friar John Cor's malt in 1494 through the first exci
         'Charred barrels were discovered when a cooperage caught fire',
         'St Patrick brought distilling to Ireland',
         'The Exchequer Rolls of 1494 record malt given to Friar John Cor to make aqua vitae',
-        'US National Prohibition began on 17 January 1920',
+        'Congress declared bourbon a distinctive product of the United States',
       ],
       answer: [0, 1, 2],
       explanation:
-        'The Craig, cooperage-fire and St Patrick stories have no contemporary documents behind them. The 1494 Exchequer Rolls entry is a real record, and the start date of Prohibition is fixed in law.',
+        'The Craig, cooperage-fire and St Patrick stories have no contemporary documents behind them; Craig was a real distiller, which makes his legend sound more solid than it is. The 1494 Exchequer Rolls entry is a real record, and the 1964 bourbon resolution is a documented act of Congress.',
     },
     {
       id: 'l2-five-centuries-q5',
