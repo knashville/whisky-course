@@ -245,7 +245,7 @@ Five lines proposed by a new supervisor, shown as the options below.`,
         { left: 'Irish Coffee', right: 'Hot drinks' },
         { left: 'Whisky and soda', right: 'Highballs' },
       ],
-      explanation: 'The Rob Roy is a Scotch Manhattan (whisky plus vermouth, stirred). The Gold Rush is a sour of bourbon, lemon and honey. A smash is a julep with citrus. Irish Coffee is a hot drink, and whisky and soda is the archetypal highball.',
+      explanation: 'The Rob Roy is a Scotch Manhattan (whisky plus vermouth, stirred). The Gold Rush is a sour of bourbon, lemon and honey. The Whiskey Smash also contains lemon, which tempts people to call it a sour, but its mint and crushed ice make it a julep with citrus. Irish Coffee is a hot drink, and whisky and soda is the archetypal highball.',
     },
   ],
 };

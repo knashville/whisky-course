@@ -312,3 +312,25 @@ test('markdown breaks mode keeps label lines apart', () => {
   const [joined] = parseMarkdown(label);
   assert.equal(joined.c.filter((n) => n.t === 'br').length, 0, 'prose still reflows by default');
 });
+
+test('partial credit: multi, match and order earn part marks, guessing does not pay', () => {
+  const m = { id: 'm', type: 'multi', options: ['a', 'b', 'c', 'd', 'e'], answer: [0, 1, 2] };
+  assert.equal(gradeQuestion(m, [0, 1, 2]).credit, 1);
+  assert.ok(Math.abs(gradeQuestion(m, [0, 1]).credit - 2 / 3) < 1e-9, 'two of three right, none wrong');
+  assert.ok(Math.abs(gradeQuestion(m, [0, 1, 2, 3]).credit - 2 / 3) < 1e-9, 'one wrong pick cancels one right pick');
+  assert.equal(gradeQuestion(m, [0, 1, 2, 3, 4]).credit, 1 / 3, 'ticking everything is penalized');
+  assert.equal(gradeQuestion(m, [3, 4]).credit, 0, 'never below zero');
+  const match = { id: 'x', type: 'match', pairs: [{ left: 'A', right: '1' }, { left: 'B', right: '2' }, { left: 'C', right: '3' }, { left: 'D', right: '4' }] };
+  assert.equal(gradeQuestion(match, [0, 1, 3, 2]).credit, 0.5);
+  assert.equal(gradeQuestion(match, [0, 1, 3, 2]).correct, false);
+  const order = { id: 'o', type: 'order', items: ['a', 'b', 'c', 'd', 'e'] };
+  assert.equal(gradeQuestion(order, [0, 1, 2, 3, 4]).credit, 1);
+  assert.ok(Math.abs(gradeQuestion(order, [1, 0, 2, 3, 4]).credit - 0.8) < 1e-9, 'one neighbor swap of five items keeps 80%');
+  assert.equal(gradeQuestion(order, [4, 3, 2, 1, 0]).credit, 0, 'fully reversed earns nothing');
+  assert.equal(gradeQuestion({ id: 's', type: 'single', options: ['a', 'b', 'c'], answer: 1 }, 2).credit, 0);
+  const qs = [m, match, { id: 't', type: 'truefalse', answer: true }];
+  const s = scoreAttempt(qs, { m: [0, 1, 2], x: [0, 1, 3, 2], t: false });
+  assert.equal(s.correct, 1);
+  assert.equal(s.points, 1.5);
+  assert.equal(s.percent, 50);
+});

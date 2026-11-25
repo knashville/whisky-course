@@ -52,7 +52,7 @@ Producers manage this in four ways. Some **rotate** barrels between floors, thou
       type: 'text',
       md: `### Indiana and the sourcing economy
 
-In **Lawrenceburg, Indiana**, a distillery that Seagram bought in **1933** became one of the largest **contract distilleries** in the country. When Seagram's drinks business was broken up in 2001 the plant went to Pernod Ricard, which sold it in 2007 to owners who ran it as Lawrenceburg Distillers Indiana (LDI); MGP Ingredients bought it in 2011 and now runs it as the Ross & Squibb Distillery. It makes whiskey to order and sells aged and new whiskey in bulk to many brands. Its Seagram-era recipe of **95% rye and 5% malted barley** defined a modern rye style.
+In **Lawrenceburg, Indiana**, a distillery that Seagram bought in **1933** became one of the largest **contract distilleries** in the country. When Seagram's drinks business was broken up in 2001 the plant went to Pernod Ricard, which sold it in 2007 to owners who ran it as Lawrenceburg Distillers Indiana (LDI); MGP Ingredients bought it in 2011; the site traded as the Ross & Squibb Distillery from 2021 and took back the MGP Distillery name in September 2026. It makes whiskey to order and sells aged and new whiskey in bulk to many brands. Its Seagram-era recipe of **95% rye and 5% malted barley** defined a modern rye style.
 
 **Non-distiller producers (NDPs)** sell whiskey they did not distill. They buy aged barrels, contract a distillery to make spirit to their recipe, or commission **private labels** for retailers. Many craft brands also sell **sourced whiskey** while their own stock matures.
 
@@ -174,15 +174,14 @@ Bottled by Cold Forge Spirits, Denver, Colorado`,
       type: 'match',
       prompt: 'Match each rye or bourbon style to its description.',
       pairs: [
-        { left: 'Monongahela rye', right: 'Western Pennsylvania tradition, remembered as bold and spicy' },
-        { left: 'Maryland rye', right: 'Softer, sweeter style, often with more corn' },
+        { left: 'Monongahela rye', right: 'A historic western Pennsylvania rye tradition' },
         { left: 'Empire Rye', right: 'At least 75% New York-grown rye from one New York distillery' },
         { left: 'Indiana-style rye', right: '95% rye and 5% malted barley' },
         { left: 'Wheated bourbon', right: 'Wheat replaces rye as the flavoring grain' },
         { left: 'Four-grain bourbon', right: 'Corn, rye, wheat and malted barley in one mash' },
       ],
       explanation:
-        'Monongahela and Maryland are historic regional styles; Empire Rye is a modern voluntary standard; the 95/5 recipe is the Lawrenceburg signature. Wheated and four-grain bourbons are mashbill choices within the same legal bourbon rules.',
+        'Monongahela is a historic regional style, Empire Rye is a modern voluntary New York standard, and the 95/5 recipe is the Lawrenceburg signature. Wheated and four-grain bourbons are mashbill choices within the same legal bourbon rules. The usual slip is swapping the two modern ryes: Empire Rye is defined by New York grain and one New York distillery, Indiana-style rye by its recipe.',
     },
     {
       id: 'l4-america-in-depth-q3',

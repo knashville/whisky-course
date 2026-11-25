@@ -53,7 +53,7 @@ Beneath the black char lies the **red layer**, a band of toasted wood where the 
 
 - **Scotch whisky:** oak casks of 700 L or less (Scotch Whisky Regulations 2009).
 - **Irish whiskey:** wooden casks of 700 L or less (Irish Whiskey Technical File).
-- **Canadian whisky:** aged in "small wood" of 700 L or less (Canadian whisky standard, moved from the Food and Drug Regulations into the Canadian Food Compositional Standards in December 2024).
+- **Canadian whisky:** aged in "small wood" of 700 L or less (Food and Drug Regulations, B.02.002 and B.02.023, as amended in December 2024).
 - **EU whisky:** wooden casks of 700 L or less (Regulation (EU) 2019/787).
 - **Japanese whisky:** wooden casks of 700 L or less (JSLMA standard, 2021).
 - **American Single Malt:** oak casks of 700 L or less (TTB standard effective 19 January 2025).
@@ -125,7 +125,7 @@ Most "sherry casks" in modern whisky never sat in a sherry solera. They are buil
         { title: 'Vat and reduce', md: `Casks are emptied and vatted together, then water brings the whisky down to bottling strength. Distillers use demineralized or reverse-osmosis water, because minerals in hard water can cause haze, and they usually reduce in stages over hours or days.` },
         { title: 'Calculate the water', md: `The simple formula is **C1 × V1 = C2 × V2**. To reduce 500 L at 60% ABV to 46%: V2 = 500 × 60 ÷ 46 = **652 L**, so add about **152 L** of water. Check it with the Adding water tool.` },
         { title: 'Correct for contraction', md: `Ethanol and water shrink slightly when mixed, so 500 L of whisky plus 152 L of water gives a little less than 652 L, at a strength a little above 46%. Real proofing therefore needs slightly more water: density tables put this example at roughly **157 L**, about 5 L more. This is why professionals proof by weight and density tables.` },
-        { title: 'Chill filtration (optional)', md: `Below about **46% ABV**, long-chain fatty-acid ethyl esters can drop out of solution as a haze when the whisky gets cold. Chill filtration cools the whisky, typically to somewhere between about 0 °C and -10 °C, and filters out these esters. Bottling at 46% or above without chill filtration is a common alternative. The 46% threshold is a rule of thumb.` },
+        { title: 'Chill filtration (optional)', md: `Below about **46% ABV**, long-chain fatty-acid ethyl esters can drop out of solution as a haze when the whisky gets cold. Chill filtration cools the whisky, commonly to around 0 °C, and filters out these esters. Temperatures vary by producer, from a few degrees above freezing down to about -10 °C. Bottling at 46% or above without chill filtration is a common alternative. The 46% threshold is a rule of thumb.` },
         { title: 'Coloring, where the law allows it', md: `Plain caramel (**E150a**) may be added to adjust color in Scotch (Scotch Whisky Regulations 2009), Irish whiskey (Irish Whiskey Technical File), Canadian whisky and Japanese whisky under the JSLMA standard. American Single Malt may also contain caramel color, which its label must disclose. Bourbon and straight whiskies may not contain added coloring: 27 CFR 5.143 does not permit coloring, flavoring or blending materials for these types.` },
         { title: 'Fill', md: `The whisky is bottled and labeled. Once it is in glass it stops maturing.` },
       ],
@@ -168,7 +168,7 @@ American white oak gives vanilla and coconut and can be sawn because of its tylo
       answer: 660,
       tolerance: 1,
       unit: 'L',
-      explanation: `The final volume is 1,200 × 62 ÷ 40 = 1,860 L, so the water to add is 1,860 - 1,200 = 660 L. Because ethanol and water contract when mixed, the true amount is slightly larger, which is why blenders finish with density tables. Check it with the Adding water tool.`,
+      explanation: `The final volume is 1,200 × 62 ÷ 40 = 1,860 L, so the water to add is 1,860 - 1,200 = 660 L. Answering 1,860 is the usual slip: that is the finished volume, not the water. Because ethanol and water contract when mixed, the true amount of water is slightly larger, which is why blenders finish with density tables. Check it with the Adding water tool.`,
     },
     {
       id: 'l3-barrels-warehouses-bottling-q3',

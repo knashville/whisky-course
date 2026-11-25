@@ -46,7 +46,7 @@ History also has a marketing problem. Founding legends sell bottles, and many ha
       type: 'callout',
       variant: 'history',
       title: 'History: where the 3-year rule came from',
-      md: `In the First World War, Chancellor of the Exchequer **David Lloyd George** wanted to curb drinking among war workers. The **Immature Spirits (Restriction) Act 1915** required spirits to rest in bond for at least **2 years** before sale, and in **1916** the minimum rose to **3 years**. Distillers had to hold stock longer, and young, raw spirit left the market.
+      md: `In the First World War, Chancellor of the Exchequer **David Lloyd George** wanted to curb drinking among war workers. The **Immature Spirits (Restriction) Act 1915** required spirits to rest in bond for at least **3 years** before sale. For a transitional year, spirit aged **2 years** could still be released on payment of extra duty, so the full 3-year rule took hold in **1916**. Distillers had to hold stock longer, and young, raw spirit left the market.
 
 That wartime rule is the origin of the 3-year minimum in Scotch. Ireland, then part of the UK, inherited it, and the same figure now appears in Canadian law, EU law and the Japanese industry standard.`,
     },
@@ -114,7 +114,7 @@ A test for any founding story: **what document from the time supports it?** The 
         { term: 'Malt Tax', definition: 'A tax on malted barley extended to Scotland in 1725. It caused riots and pushed much Highland distilling into illicit stills and smuggling.' },
         { term: 'Rectifier', definition: 'In 19th- and early 20th-century America, a firm that bought spirit and blended, flavored or redistilled it, often using neutral spirit, instead of distilling whiskey from grain.' },
         { term: 'Taft Decision', definition: 'President Taft\'s 1909 ruling that straight, blended and imitation whiskey could all be sold as whiskey if labeled honestly. It is the root of today\'s US straight and blended types.' },
-        { term: 'Immature Spirits Act', definition: 'The UK wartime law of 1915 that required spirits to rest in bond before sale: 2 years at first, raised to 3 years in 1916. It is the origin of the 3-year minimum for Scotch.' },
+        { term: 'Immature Spirits Act', definition: 'The UK wartime law of 1915 that required spirits to rest in bond for at least 3 years before sale, after a one-year transition in which 2-year-old spirit could be released on payment of extra duty. It is the origin of the 3-year minimum for Scotch.' },
         { term: 'Pattison crash', definition: 'The 1898 collapse of the Leith blenders Pattisons Ltd, which shattered confidence in the Scotch trade and began years of slump.' },
         { term: 'Whisky loch', definition: 'The huge surplus of unsold Scotch in the early 1980s, which led to a wave of distillery closures in 1983-85.' },
         { term: 'Medicinal whiskey', definition: 'Whiskey sold on a doctor\'s prescription during US Prohibition (1920-1933) by a handful of licensed companies.' },
@@ -134,15 +134,13 @@ Scotland's record runs from Friar John Cor's malt in 1494 through the first exci
       prompt: 'Put these Scottish milestones in order, first to last.',
       items: [
         'The Exchequer Rolls record malt for Friar John Cor to make aqua vitae',
-        'The Scottish Parliament levies its first excise duty on spirits',
         'The Malt Tax sets off riots in Glasgow',
         'The Excise Act makes licensed distilling worthwhile',
         'Aeneas Coffey patents his column still',
         'The Spirits Act allows blending in bond',
-        'The Pattison crash shakes the whisky trade',
       ],
       explanation:
-        'The dates are 1494, 1644, 1725, 1823, 1830, 1860 and 1898. Notice the chain: taxes drove distilling underground, the 1823 Act brought it back into the open, and the Coffey still plus blending in bond created blended Scotch.',
+        'The dates are 1494, 1725, 1823, 1830 and 1860. Follow the chain: the Malt Tax drove distilling underground, the 1823 Act brought it back into the open, Coffey\'s still then made cheap grain whisky, and blending in bond turned that grain whisky into blended Scotch. Putting blending before the Coffey still breaks the chain, because blends needed the grain whisky first.',
     },
     {
       id: 'l2-five-centuries-q2',
@@ -150,16 +148,13 @@ Scotland's record runs from Friar John Cor's malt in 1494 through the first exci
       prompt: 'Put these American milestones in order, first to last.',
       items: [
         'The first federal excise tax on whiskey',
-        'The Whiskey Rebellion',
         'The Bottled-in-Bond Act',
-        'The Pure Food and Drug Act',
         'The Taft Decision',
         'National Prohibition begins',
-        'The Federal Alcohol Administration Act',
         'Congress names bourbon a distinctive product of the United States',
       ],
       explanation:
-        'The dates are 1791, 1794, 1897, 1906, 1909, 1920, 1935 and 1964. Bottled-in-bond came before the food law, and the Taft Decision settled the fight that the 1906 Act started.',
+        'The dates are 1791, 1897, 1909, 1920 and 1964. Bottled-in-bond (1897) was the first federal guarantee of unadulterated whiskey, and the Taft Decision (1909) came a decade later to settle the fight over blends. The bourbon resolution is the easy one to misplace: it came long after repeal, in 1964.',
     },
     {
       id: 'l2-five-centuries-q3',
@@ -168,12 +163,11 @@ Scotland's record runs from Friar John Cor's malt in 1494 through the first exci
       pairs: [
         { left: 'Immature Spirits Act (1915-16)', right: 'The 3-year minimum age for Scotch' },
         { left: 'Bottled-in-Bond Act (1897)', right: 'One season, one distillery, 4 years, 100 proof' },
-        { left: 'Taft Decision (1909)', right: 'Straight and blended whiskey as separate US types' },
         { left: 'Spirits Act (1860)', right: 'Blending whiskies from different distilleries in bond' },
         { left: 'Congressional resolution (1964)', right: 'Bourbon must be made in the United States' },
       ],
       explanation:
-        'Each modern rule has a historical source: a wartime law set the 3-year minimum, the 1897 Act defined bonded whiskey, Taft named straight and blended whiskey, the 1860 Act made blended Scotch practical, and the 1964 resolution made bourbon a distinctive product of the US.',
+        'Each modern rule has a historical source: a wartime law set the 3-year minimum, the 1897 Act defined bonded whiskey, the 1860 Act made blended Scotch practical, and the 1964 resolution made bourbon a distinctive product of the US. The two "in bond" laws are easy to swap: the 1860 Spirits Act is about blending in bond, while the 1897 Act is the US bonded-whiskey guarantee.',
     },
     {
       id: 'l2-five-centuries-q4',
@@ -184,11 +178,11 @@ Scotland's record runs from Friar John Cor's malt in 1494 through the first exci
         'Charred barrels were discovered when a cooperage caught fire',
         'St Patrick brought distilling to Ireland',
         'The Exchequer Rolls of 1494 record malt given to Friar John Cor to make aqua vitae',
-        'US National Prohibition began on 17 January 1920',
+        'Congress declared bourbon a distinctive product of the United States',
       ],
       answer: [0, 1, 2],
       explanation:
-        'The Craig, cooperage-fire and St Patrick stories have no contemporary documents behind them. The 1494 Exchequer Rolls entry is a real record, and the start date of Prohibition is fixed in law.',
+        'The Craig, cooperage-fire and St Patrick stories have no contemporary documents behind them; Craig was a real distiller, which makes his legend sound more solid than it is. The 1494 Exchequer Rolls entry is a real record, and the 1964 bourbon resolution is a documented act of Congress.',
     },
     {
       id: 'l2-five-centuries-q5',

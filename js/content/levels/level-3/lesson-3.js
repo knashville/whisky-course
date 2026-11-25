@@ -197,9 +197,9 @@ A pot still works in batches. The wash still turns a 7-9% wash into low wines of
     {
       id: 'l3-pot-still-distillation-q6',
       type: 'truefalse',
-      prompt: `Springbank's "2.5 times" distillation means every drop of its flagship spirit passes through three distillations.`,
+      prompt: `A spirit run that collects 64% of the charge's pure alcohol as heart has lost the other 36% of its alcohol.`,
       answer: false,
-      explanation: `Only part of the low wines goes through a third distillation; the rest is distilled twice. The blend of the two streams gives a spirit between a double- and a triple-distilled style, which is where the "2.5" comes from.`,
+      explanation: `False. Recovery measures how much of the charge's alcohol reached the spirit receiver on that run. Nearly all the rest sits in the foreshots and feints, which go back into the next charge, so only a small share is truly lost. Reading a low recovery as waste is the tempting slip: a narrow heart lowers recovery per run but keeps the extra alcohol in circulation.`,
     },
   ],
 };

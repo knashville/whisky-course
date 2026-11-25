@@ -170,16 +170,14 @@ Matured 8 years, finished 9 months in ex-peach-brandy casks
       type: 'match',
       prompt: 'Match each rule to its place in SWR 2009.',
       pairs: [
-        { left: 'Definitions of the five categories', right: 'Regulation 3(2)' },
         { left: 'Single malt may leave Scotland only in a retail-labelled bottle', right: 'Regulation 7' },
         { left: 'One category name must appear as the sales description', right: 'Regulation 8' },
         { left: 'Distillery names only for whisky wholly distilled there', right: 'Regulation 9' },
-        { left: 'Locality and region names', right: 'Regulation 10' },
-        { left: 'Ban on "pure malt"', right: 'Regulation 11' },
+        { left: 'Locality and region names only for whisky wholly distilled there', right: 'Regulation 10' },
         { left: 'Age and year-of-distillation statements', right: 'Regulation 12' },
       ],
       explanation:
-        'Reg. 3 defines Scotch and its categories, reg. 7 governs movement out of Scotland, reg. 8 makes the category compulsory, regs 9 and 10 protect distillery and place names, reg. 11 bans "pure malt", and reg. 12 controls ages and vintages. Citing the right regulation is the first step of any label review.',
+        'Reg. 7 governs single malt leaving Scotland, reg. 8 makes a category name compulsory, reg. 9 protects distillery names, reg. 10 protects place names and reg. 12 controls ages and vintages. Regs 9 and 10 are the pair people swap: both use the "wholly distilled" test, but 9 covers a distillery and 10 a locality or region. Citing the right regulation is the first step of any label review.',
     },
     {
       id: 'l4-scotch-whisky-regulations-q3',

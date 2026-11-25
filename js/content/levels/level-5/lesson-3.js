@@ -19,7 +19,7 @@ This lesson works through the wood from the cell wall out: its polymers and extr
         ['Cellulose', 'About 40-45%', 'Long glucose chains, the structural fiber', 'Little flavor directly; it stays largely intact'],
         ['Hemicellulose', 'About 20-25%', 'Shorter, branched sugar polymers', 'Wood sugars; on heating, furans and caramel-like compounds'],
         ['Lignin', 'About 25-30%', 'A phenolic polymer that binds the fibers', 'Vanillin, syringaldehyde and smoky or spicy phenols'],
-        ['Extractives', 'Roughly 5-10%', 'Small molecules: ellagitannins, lactones, phenolic acids', 'Tannin, coconut and wood-spice notes, oxidation catalysts'],
+        ['Extractives', 'Roughly 5-10%, more in some European oak','Small molecules: ellagitannins, lactones, phenolic acids', 'Tannin, coconut and wood-spice notes, oxidation catalysts'],
       ],
     },
     {
@@ -40,7 +40,7 @@ Whisky lactone occurs in oak as two isomers, **cis** and **trans** (the molecule
 
 **Seasoning.** Staves are stacked outdoors to dry, at the top end for about **18-36 months**, though many staves get less. Rain leaches out some of the harsher, bitter tannins, and fungi and enzymes in the weathering wood change its extractives. Kiln drying removes water much faster but skips that biological stage, so a kiln-dried stave can give a more bitter, raw-wood result.
 
-**Toasting** heats the inside of the cask, roughly **150-230 °C** at the wood surface depending on the cooperage. Each polymer breaks down differently:
+**Toasting** heats the inside of the cask, roughly **120-230 °C** at the wood surface depending on the cooperage. Each polymer breaks down differently:
 
 - **Hemicellulose** sugars degrade to **furfural** (from five-carbon sugars), **5-methylfurfural**, **5-hydroxymethylfurfural** (5-HMF, from six-carbon sugars), and the caramel-smelling **maltol** and **cyclotene**.
 - **Lignin** breaks into **coniferaldehyde**, which goes on to **vanillin**, and **sinapaldehyde**, which goes on to **syringaldehyde**. Heavy toast also releases the smoky and spicy phenols **guaiacol**, **4-methylguaiacol** and **eugenol** (clove).
@@ -94,7 +94,7 @@ The strength at filling decides which extractives dissolve best. A **lower** str
       type: 'callout',
       variant: 'law',
       title: 'Entry strength: law and custom',
-      md: `For bourbon, rye, wheat, malt and rye malt whisky, and for corn whisky that is stored in oak, US law caps the strength at which spirit goes into the barrel at **125 proof (62.5% ABV)** (27 CFR 5.143). Other US types, such as light whisky, have no entry-proof limit. The Scotch Whisky Regulations 2009 set no filling strength; **63.5% ABV** is a common industry choice, and some distilleries fill higher or lower.`,
+      md: `For bourbon, rye, wheat, malt and rye malt whisky, and for corn whisky that is stored in oak, US law caps the strength at which spirit goes into the barrel at **125 proof (62.5% ABV)** (27 CFR 5.143). Some other US types, such as light whisky, have no entry-proof limit. The Scotch Whisky Regulations 2009 set no filling strength; **63.5% ABV** is a common industry choice, and some distilleries fill higher or lower.`,
     },
     {
       type: 'text',
@@ -146,7 +146,7 @@ Tasting is optional: four 10 mL pours hold about one US standard drink, so sip s
       type: 'text',
       md: `### Recap
 
-Oak is roughly 40-45% cellulose, 20-25% hemicellulose, 25-30% lignin and up to about 10% extractives. American white oak is lactone-rich (cis-lactone, coconut); *Q. robur* is ellagitannin-rich; *Q. petraea* is finer and more aromatic. Seasoning leaches tannin and lets fungi work; toasting turns hemicellulose into furans and caramel compounds and lignin into vanillin, syringaldehyde and smoky phenols, while lactones peak at light-to-medium toast. Char adsorbs sulfur. Maturation is additive, subtractive and interactive, and the oxidation chain runs from phenolics and peroxide to acetaldehyde, acetic acid and ethyl acetate. Lower entry strength favors water-soluble extractives and higher strength ethanol-soluble ones, within the 125-proof cap that US law sets for bourbon, rye and similar types. SA/V scales as V^-1/3^, so a 50 L cask has about 1.59 times the wood contact per liter of a 200 L barrel.`,
+Oak is roughly 40-45% cellulose, 20-25% hemicellulose, 25-30% lignin and roughly 5-10% extractives, more in some European oak. American white oak is lactone-rich (cis-lactone, coconut); *Q. robur* is ellagitannin-rich; *Q. petraea* is finer and more aromatic. Seasoning leaches tannin and lets fungi work; toasting turns hemicellulose into furans and caramel compounds and lignin into vanillin, syringaldehyde and smoky phenols, while lactones peak at light-to-medium toast. Char adsorbs sulfur. Maturation is additive, subtractive and interactive, and the oxidation chain runs from phenolics and peroxide to acetaldehyde, acetic acid and ethyl acetate. Lower entry strength favors water-soluble extractives and higher strength ethanol-soluble ones, within the 125-proof cap that US law sets for bourbon, rye and similar types. SA/V scales as V^-1/3^, so a 50 L cask has about 1.59 times the wood contact per liter of a 200 L barrel.`,
     },
   ],
   quiz: [
@@ -172,7 +172,7 @@ Proposed small cask: 25 L, same shape as the distillery’s standard 200 L barre
         { left: 'Syringaldehyde', right: 'Lignin, via sinapaldehyde' },
         { left: 'Furfural and 5-HMF', right: 'Hemicellulose sugars broken down by toasting' },
       ],
-      explanation: 'American white oak is the lactone-rich species, and European Q. robur the ellagitannin-rich one. Lignin yields coniferaldehyde (then vanillin) and sinapaldehyde (then syringaldehyde), while the furans come from toasted hemicellulose sugars.',
+      explanation: 'American white oak is the lactone-rich species, and European Q. robur the ellagitannin-rich one. The furans come from toasted hemicellulose sugars. Vanillin and syringaldehyde are the easy pair to swap, because both come from lignin: vanillin forms via coniferaldehyde, and syringaldehyde via sinapaldehyde.',
     },
     {
       id: 'l5-wood-chemistry-q3',
@@ -234,7 +234,7 @@ Acetaldehyde, acetic acid and ethyl acetate are all higher at 12 years. The spir
         'Acetaldehyde oxidizes to acetic acid',
         'Acetic acid esterifies with ethanol to form ethyl acetate',
       ],
-      explanation: 'Oxygen entry starts the chain, oxidizing phenolics produce peroxide, and metal-catalyzed peroxide oxidizes ethanol to acetaldehyde. Further oxidation gives acetic acid, which slowly esterifies to ethyl acetate, so both rise with age.',
+      explanation: 'Oxygen entry starts the chain, oxidizing phenolics produce peroxide, and metal-catalyzed peroxide oxidizes ethanol to acetaldehyde. Further oxidation gives acetic acid, which slowly esterifies to ethyl acetate, so both rise with age. The usual slip is to put acetaldehyde straight after oxygen entry: in the cask, ethanol is oxidized by the peroxide that the oxidizing phenolics release, so the phenolic step comes first.',
     },
   ],
 };

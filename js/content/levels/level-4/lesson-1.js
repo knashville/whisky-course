@@ -86,7 +86,7 @@ Neutral spirits, flavoring and blending materials are not allowed. **Caramel col
       variant: 'law',
       title: 'Additives: who may add what (27 CFR 5.143 and 5.155)',
       md: `- **Nothing at all:** bourbon and every straight whisky. Table 1 to 5.143 allows them no coloring, flavoring or blending materials, so even caramel is out.
-- **Up to 2.5% by volume:** other whiskies, such as non-straight rye, blended whisky and spirit whisky, may contain "harmless coloring, flavoring and blending materials": caramel, sugar, fruit juice, wine, or straight malt or straight rye malt whisky. If these total more than 2.5% of the finished product, the addition alters the class or type (**5.155**).
+- **Up to 2.5% by volume:** other whiskies, such as blended whisky and spirit whisky, may contain "harmless coloring, flavoring and blending materials": caramel, sugar, fruit juice, wine, or straight malt or straight rye malt whisky. If these total more than 2.5% of the finished product, the addition alters the class or type (**5.155**).
 - **American single malt:** caramel color only, disclosed on the label (the December 2024 final rule).
 - A product made with flavoring or blending materials generally needs **formula approval** from TTB before its label can be approved. TTB lists some exceptions.`,
     },
@@ -184,14 +184,14 @@ Bottled in Tennessee by a Tennessee company; nothing added`,
       options: [
         'It may be labeled "straight bourbon whisky".',
         'An age statement is mandatory.',
-        'A statement such as "Distilled in Kentucky" is mandatory.',
+        'The label must name Kentucky as the state of distillation.',
         'Reduced to exactly 100 proof, it could say "bottled-in-bond".',
         'Up to 2.5% caramel could be added without changing its class.',
         '"Tennessee straight bourbon whisky" would be an accurate designation.',
       ],
       answer: [0, 1, 2],
       explanation:
-        'It meets every bourbon rule plus 2 years in new charred oak, so it is straight bourbon. At 3 years it needs an age statement (5.74), and because the address is in Tennessee it must name Kentucky as the state of distillation (5.66(f)). Bonding needs 4 years whatever the proof, bourbon takes no caramel, and a state name in front of the class requires the whisky to have been distilled in that state.',
+        'It meets every bourbon rule plus 2 years in new charred oak, so it is straight bourbon. At 3 years it needs an age statement (5.74), and because the address is in Tennessee the label must name Kentucky as the state of distillation (5.66(f)). Bonding is the tempting near miss: it needs 4 years whatever the proof. Bourbon takes no caramel, and a state name in front of the class requires the whisky to have been distilled in that state, so "Tennessee" is out.',
     },
     {
       id: 'l4-us-federal-law-q2',
@@ -216,10 +216,9 @@ Bottled in Tennessee by a Tennessee company; nothing added`,
         { left: 'Blended whisky', right: 'At least 20% straight whisky on a proof-gallon basis' },
         { left: 'Whisky distilled from bourbon mash', right: 'At least 51% corn, 160 proof or less, stored in used oak' },
         { left: 'American single malt whisky', right: '100% malted barley from one US distillery; oak of 700 L or less' },
-        { left: 'Corn whisky', right: 'At least 80% corn; if stored, used or uncharred new oak' },
       ],
       explanation:
-        'Each type turns on one variable: distillation proof (light), proof-gallon share (spirit and blended), container (bourbon mash in used oak, corn whisky), or grain and site (American single malt). The 20% line separates blended whisky from spirit whisky and from blended light whisky.',
+        'Each type turns on one variable: distillation proof (light whisky), proof-gallon share (spirit and blended whisky), container (bourbon mash in used oak) or grain and site (American single malt). Spirit whisky and blended whisky are the pair to watch: the 20% straight line on a proof-gallon basis separates them, so 19.9% is spirit whisky and 20% is blended whisky.',
     },
     {
       id: 'l4-us-federal-law-q4',

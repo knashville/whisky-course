@@ -157,12 +157,16 @@ Separate the three questions: is there a difference (discrimination), what is it
       type: 'numeric',
       context: `**Panel plan**
 Triangle test, new yeast strain vs current strain, 24 assessors.
-Analysis: exact one-tailed binomial, chance 1/3, α = 0.05.`,
-      prompt: 'What is the minimum number of correct answers needed to conclude that the two new makes differ?',
+Probability of at least k correct by guessing alone (exact binomial, chance 1/3):
+- k = 11: 0.140
+- k = 12: 0.068
+- k = 13: 0.028
+- k = 14: 0.010`,
+      prompt: 'At α = 0.05 (one-tailed), what is the minimum number of correct answers needed to conclude that the two new makes differ?',
       answer: 13,
       tolerance: 0,
       unit: 'correct answers',
-      explanation: 'With 24 assessors guessing at 1/3, the probability of 13 or more correct is about 0.028, below 0.05, while 12 or more has a probability of about 0.068. So 13 is the critical value.',
+      explanation: 'The critical value is the smallest k for which that many or more correct by guessing has a probability of 0.05 or less. For 13 it is 0.028, so 13 is the critical value. 12 is the tempting answer because 0.068 is close to 0.05, but it is above the limit, and 14 also passes but is not the minimum. Check it with the Triangle test tool.',
     },
     {
       id: 'l5-sensory-methods-q2',
@@ -226,10 +230,16 @@ Six cask samples, labeled A to F, served in the same order to every assessor, in
     },
     {
       id: 'l5-sensory-methods-q6',
-      type: 'order',
-      prompt: 'Put the steps of the deductive grid in the order this lesson uses, first to last.',
-      items: ['Grain base', 'Peat', 'New or used oak', 'Cask type', 'Age band', 'Proof band', 'Origin'],
-      explanation: 'The grid works from the raw material outward: grain, then peat, then the oak (new or used, then cask type), then age and strength, and only then a conclusion about origin. Leaving origin to last stops an early guess from biasing every later step.',
+      type: 'match',
+      prompt: 'Match each clue in a blind glass to the production choice the deductive grid links it to.',
+      pairs: [
+        { left: 'Meaty, cooked-vegetable sulfur', right: 'Worm tubs or low copper contact' },
+        { left: 'Banana and pear', right: 'An estery fermentation' },
+        { left: 'Iodine, tar and medicine', right: 'Peated malt' },
+        { left: 'Coconut', right: 'American oak' },
+        { left: 'Dried fruit and walnut with tannic grip', right: 'An oloroso-seasoned European oak cask' },
+      ],
+      explanation: 'Each clue traces to a compound and its origin: sulfides survive when copper contact is low, isoamyl acetate and other fruity esters come from the fermentation, and cresols and phenol come from peat smoke. Coconut and dried fruit are the easy pair to swap because both come from the cask. Coconut is whisky lactone from American oak, while dried fruit and walnut come from wine soaked into the staves of a sherry-seasoned European oak cask, whose ellagitannins give the grip.',
     },
   ],
 };

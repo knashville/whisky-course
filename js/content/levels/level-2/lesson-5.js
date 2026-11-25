@@ -84,7 +84,7 @@ Sourcing is legal, common and often excellent. It only becomes a problem when a 
         {
           heading: 'Voluntary claims that must be truthful',
           points: [
-            'Cask strength or barrel proof: bottled at or very close to the strength it had in the cask',
+            'Cask strength or barrel proof: bottled no more than 2 proof below its strength when dumped from the cask (27 CFR 5.87)',
             'Non-chill filtered: not chilled and filtered before bottling',
             'Natural color: no caramel added',
           ],
@@ -200,11 +200,10 @@ Every US whiskey label needs a brand name, class and type, alcohol content (proo
         'The Government Warning',
         'Proof',
         'An age statement on a 6-year-old bourbon',
-        'The COLA approval number',
       ],
       answer: [0, 1, 2],
       explanation:
-        'Alcohol content by volume, net contents and the Government Warning are mandatory on every label. Proof is optional, an age statement is required only for whisky under 4 years old, and the COLA number is kept in TTB\'s registry, not printed on the bottle.',
+        'Alcohol content by volume, net contents and the Government Warning are mandatory on every label. Proof is the tempting pick because most US labels show it, but it is optional. An age statement is required only for whisky under 4 years old, so a 6-year-old bourbon need not carry one.',
     },
     {
       id: 'l2-reading-a-label-q3',
@@ -214,11 +213,10 @@ Every US whiskey label needs a brand name, class and type, alcohol content (proo
         { left: '"Distilled by"', right: 'The company named distilled the whiskey itself' },
         { left: '"Bottled by"', right: 'Names the bottler, who may not have distilled it' },
         { left: '"Distilled in Indiana"', right: 'The state of distillation differs from the address state' },
-        { left: '"Contains sulfites"', right: 'Sulfites are present at 10 ppm or more' },
         { left: '"Aged 2 Years"', right: 'A mandatory statement for whisky under 4 years old' },
       ],
       explanation:
-        '"Distilled by" is the only phrase that names the distiller; "bottled by" often marks a non-distiller producer. A state-of-distillation line appears when that state differs from the address, sulfites must be declared at 10 ppm or more, and whisky under 4 years must state its age.',
+        '"Distilled by" is the only phrase that names the distiller; "bottled by" names the bottler and often marks a non-distiller producer, so do not read it as proof of distilling. A state-of-distillation line appears when that state differs from the address, and whisky under 4 years must state its age.',
     },
     {
       id: 'l2-reading-a-label-q4',

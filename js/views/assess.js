@@ -37,7 +37,7 @@ export function renderQuiz(ctx, lessonId) {
 
     const q = s.questions[s.idx];
     const checked = s.checked[q.id];
-    root.append(dots(s.questions.map((qq, i) => ({ state: s.checked[qq.id] ? (s.checked[qq.id].correct ? 'ok' : 'miss') : i === s.idx ? 'current' : '' }))));
+    root.append(dots(s.questions.map((qq, i) => ({ state: s.checked[qq.id] ? (s.checked[qq.id].correct ? 'ok' : s.checked[qq.id].credit > 0 ? 'part' : 'miss') : i === s.idx ? 'current' : '' }))));
     const checkBtn = button('Check answer', () => {
       s.checked[q.id] = gradeQuestion(q, s.responses[q.id]);
       draw();
@@ -92,14 +92,14 @@ function finishQuiz(ctx, s, lesson, passPct) {
 }
 
 function quizResults(ctx, s, level, lesson, passPct, retake) {
-  const { correct, total, percent } = s.score;
+  const { correct, points, total, percent } = s.score;
   const passed = isPass(percent, passPct);
   const next = level.lessons[level.lessons.findIndex((l) => l.id === lesson.id) + 1];
   const st = levelStats(level, ctx.progress);
   return h(
     'section',
     { class: ['result-card', passed ? 'is-pass' : 'is-fail'] },
-    h('p', { class: 'result-score' }, h('span', { class: 'result-pct' }, `${Math.round(percent)}%`), h('span', null, `${correct} of ${total} correct`)),
+    h('p', { class: 'result-score' }, h('span', { class: 'result-pct' }, `${Math.round(percent)}%`), h('span', null, scoreLine(correct, points, total))),
     h('p', { class: 'result-verdict' }, passed ? 'Passed. This barrel is full.' : `Not yet. You need ${passPct}% to pass; review the lesson and try again.`),
     h(
       'div',
@@ -111,6 +111,11 @@ function quizResults(ctx, s, level, lesson, passPct, retake) {
       h('a', { class: 'btn btn-ghost', href: `#level-${level.number}` }, 'Level overview'),
     ),
   );
+}
+
+function scoreLine(correct, points, total) {
+  const pts = Number.isInteger(points) ? String(points) : points.toFixed(1);
+  return points === correct ? `${correct} of ${total} correct` : `${pts} of ${total} points · ${correct} fully correct`;
 }
 
 function dots(items) {
@@ -159,7 +164,7 @@ function examIntro(ctx, level, root) {
         'ul',
         { class: 'rules' },
         h('li', null, `${exam.draw} questions drawn at random from a pool of ${exam.questions.length}, spread across every lesson.`),
-        h('li', null, `Pass mark: ${exam.passPercent}%. Each question is all or nothing; "select all" and ordering questions must be completely right.`),
+        h('li', null, `Pass mark: ${exam.passPercent}%. Single choice, true/false and number questions are all or nothing. "Select all", matching and ordering questions earn partial credit, and in "select all" each wrong pick cancels a right one.`),
         h('li', null, exam.timeLimitMinutes ? `Time limit: ${exam.timeLimitMinutes} minutes. The exam submits itself when time runs out.` : 'No time limit.'),
         h('li', null, 'No feedback until you submit. You can move between questions and flag any to revisit.'),
         h('li', null, 'Every attempt draws a fresh set of questions.'),
@@ -340,7 +345,7 @@ function submitExam(ctx, level, s, timedOut) {
 }
 
 function examResults(ctx, level, s, root) {
-  const { correct, total, percent, results } = s.score;
+  const { correct, points, total, percent, results } = s.score;
   const passed = isPass(percent, level.exam.passPercent);
   const next = ctx.index.levels.get(level.number + 1);
 
@@ -350,7 +355,7 @@ function examResults(ctx, level, s, root) {
     const key = q.lesson || '_';
     const row = byLesson.get(key) || { right: 0, total: 0 };
     row.total += 1;
-    if (results[i].correct) row.right += 1;
+    row.right += results[i].credit;
     byLesson.set(key, row);
   });
   const breakdown = [...byLesson.entries()]
@@ -374,7 +379,7 @@ function examResults(ctx, level, s, root) {
       'section',
       { class: ['result-card', passed ? 'is-pass' : 'is-fail'] },
       passed ? h('div', { class: 'exam-stamp big', 'aria-hidden': 'true' }, 'Bonded') : null,
-      h('p', { class: 'result-score' }, h('span', { class: 'result-pct' }, `${Math.round(percent)}%`), h('span', null, `${correct} of ${total} correct · pass mark ${level.exam.passPercent}% · ${formatDuration(s.seconds)}`)),
+      h('p', { class: 'result-score' }, h('span', { class: 'result-pct' }, `${Math.round(percent)}%`), h('span', null, `${scoreLine(correct, points, total)} · pass mark ${level.exam.passPercent}% · ${formatDuration(s.seconds)}`)),
       s.timedOut ? h('p', { class: 'warn-note' }, 'Time ran out, so the exam was submitted automatically.') : null,
       h(
         'p',
@@ -410,7 +415,7 @@ function examResults(ctx, level, s, root) {
                 'li',
                 { class: b.right === b.total ? 'is-strong' : b.right / b.total < 0.6 ? 'is-weak' : '' },
                 h('a', { href: `#lesson-${b.lesson.id}` }, md1(b.lesson.title)),
-                h('span', { class: 'tabular' }, `${b.right}/${b.total}`),
+                h('span', { class: 'tabular' }, `${Number.isInteger(b.right) ? b.right : b.right.toFixed(1)}/${b.total}`),
               ),
             ),
           ),

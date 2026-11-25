@@ -47,7 +47,7 @@ Read the bourbon row as six separate rules:
 5. **Bottled at 80 proof or more.**
 6. **Nothing added but water.** Bourbon may not contain added coloring, flavoring or blending materials. Its color and flavor come from grain, yeast, distillation and wood.
 
-Rye, wheat, malt and rye malt whisky follow exactly the same pattern, with the named grain at 51% or more.`,
+Rye, wheat, malt and rye malt whisky follow the same numbers, with the named grain at 51% or more. Rule 6 is the one difference: unless they are straight, these four may contain harmless coloring, flavoring or blending materials up to 2.5% of the finished product. Bourbon may not, straight or not.`,
     },
     {
       type: 'callout',
@@ -207,10 +207,10 @@ American whiskey is distilled below 190 proof, stored in oak (corn whisky except
       type: 'multi',
       context: `**SPEC SHEET: LOT 7**  \nMash: 75% corn, 13% rye, 12% malted barley  \nDistilled at 135 proof by one distiller at one distillery in Kentucky, February to May 2020  \nEntered new charred oak at 120 proof  \nAged 5 years in a federally bonded warehouse  \nBottled at 100 proof, nothing added but water`,
       prompt: 'Select every designation Lot 7 qualifies for.',
-      options: ['Bourbon whisky', 'Straight bourbon whisky', 'Bottled-in-bond', 'Corn whisky', 'Rye whisky', 'Blended bourbon whisky'],
+      options: ['Bourbon whisky', 'Straight bourbon whisky', 'Bottled-in-bond', 'Corn whisky', 'Rye whisky'],
       answer: [0, 1, 2],
       explanation:
-        'At 75% corn, with 135 and 120 proof inside the 160 and 125 limits and new charred oak, it is bourbon, and 5 years makes it straight. One season (February-May sits inside January-June), one distiller, one distillery, at least 4 years in bond and exactly 100 proof add bottled-in-bond. Corn whisky needs 80% corn and used or uncharred oak, rye needs 51% rye, and a blended bourbon mixes straight bourbon with other spirits.',
+        'At 75% corn, with 135 and 120 proof inside the 160 and 125 limits and new charred oak, it is bourbon, and 5 years makes it straight. One season (February-May sits inside January-June), one distiller, one distillery, at least 4 years in bond and exactly 100 proof add bottled-in-bond. Corn whisky is the tempting extra, but it needs 80% corn and used or uncharred oak, and rye whisky needs 51% rye.',
     },
     {
       id: 'l2-american-whiskey-q2',
@@ -229,13 +229,12 @@ American whiskey is distilled below 190 proof, stored in oak (corn whisky except
       prompt: 'Match each recipe and process to the US designation it fits best.',
       pairs: [
         { left: '85% corn, stored 2 years in used oak barrels', right: 'Corn whisky' },
-        { left: '55% wheat, distilled at 160 proof, new charred oak', right: 'Wheat whisky' },
         { left: '60% malted barley, 40% corn, new charred oak', right: 'Malt whisky' },
         { left: '100% malted barley, one US distillery, used 500 L oak casks', right: 'American Single Malt Whisky' },
         { left: '70% corn, made and aged in Tennessee, maple-charcoal filtered, new charred oak', right: 'Tennessee whiskey' },
       ],
       explanation:
-        'Corn whisky needs 80% corn and used or uncharred oak, so 85% corn in used barrels fits. Wheat and malt whisky need 51% of their grain in new charred oak. A 100% malt spirit from one distillery in used 500 L casks fails the new charred oak rule for malt whisky but meets American Single Malt. Maple-charcoal filtering and Tennessee origin are the Tennessee whiskey extras.',
+        'Corn whisky needs 80% corn and used or uncharred oak, so 85% corn in used barrels fits. Malt whisky needs 51% malted barley in new charred oak. The two malt cards are easy to swap: the 100% malt spirit in used 500 L casks fails the new charred oak rule for malt whisky but meets American Single Malt, which allows used casks of 700 L or less. Maple-charcoal filtering and Tennessee origin are the Tennessee whiskey extras.',
     },
     {
       id: 'l2-american-whiskey-q4',

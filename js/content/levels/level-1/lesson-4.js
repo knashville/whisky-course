@@ -169,10 +169,9 @@ Use a nosing glass for study and a rocks glass for ice and cocktails. Follow the
         { left: 'Nose', right: 'The aroma, smelled before sipping' },
         { left: 'Palate', right: 'Flavor and texture while the whiskey is in your mouth' },
         { left: 'Finish', right: 'What lingers after you swallow or spit' },
-        { left: 'Tears', right: 'Droplets that run down the inside of the glass' },
         { left: 'Astringency', right: 'A drying, gripping feel, often from oak tannin' },
       ],
-      explanation: 'Nose, palate and finish follow the whiskey from glass to mouth to aftertaste. Tears are a visual effect of evaporating alcohol, and astringency is a touch sensation from tannin.',
+      explanation: 'Nose, palate and finish follow the whiskey from glass to mouth to aftertaste. Astringency is easy to file under palate because you notice it while the whiskey is in your mouth, but it is a touch sensation from tannin, felt by nerves rather than tasted.',
     },
     {
       id: 'l1-how-to-taste-q4',

@@ -15,10 +15,10 @@ The rules in Lessons 2 and 3 set the outer limits of each national whisky. Insid
       type: 'text',
       md: `### Scotland
 
-The Scotch Whisky Association counted **151 operating distilleries** in May 2024, so "about 150" is a safe round figure. Most are malt distilleries, but a handful of very large **grain distilleries**, such as **Cameronbridge** in Fife, **Girvan** in Ayrshire and **North British** in Edinburgh, make the column-still spirit that fills most blends.
+The Scotch Whisky Association counted **154 operating distilleries** in May 2026, so "about 150" is a safe round figure. Most are malt distilleries, but a handful of very large **grain distilleries**, such as **Cameronbridge** in Fife, **Girvan** in Ayrshire and **North British** in Edinburgh, make the column-still spirit that fills most blends.
 
 - **Islay** has **11 working distilleries**: Port Ellen reopened in March 2024, and Laggan Bay filled its first cask in April 2026. Another, Portintruan, was under construction in 2026.
-- **Campbeltown** has **3**: Springbank, Glen Scotia and Glengyle. New projects were being built in 2026; check whether any has started distilling.
+- **Campbeltown** has had **3** for years: Springbank, Glen Scotia and Glengyle. New projects, such as Witchburn, were nearly complete in 2026; check whether any has started distilling.
 
 **Blend economics.** Grain whisky is cheaper to make and usually forms the **majority** of a standard blended Scotch; producers rarely publish recipes. A higher share of malt, and older malt, both signal and drive a higher price, which is why deluxe blends advertise their malt content and age.`,
     },
@@ -115,7 +115,7 @@ Work through four cues in order: **peat** (smoke, iodine, tar), **cereal and tex
       type: 'text',
       md: `### Recap
 
-Scotland has about 150 distilleries, with 11 working on Islay and 3 in Campbeltown; a few huge grain distilleries supply blends, in which grain is usually the majority and malt content drives price. The whisky loch closed Brora and Port Ellen in 1983; both are back (2021, 2024). Midleton dominated Ireland, Cooley broke the pattern, and about 50 distilleries now operate. Suntory and Nikka make many styles in-house, and the 2010s shortage cost them age statements. Canada blends separately aged base and flavouring whiskies, mostly for the US. In hot climates, casks work fast and lose fast, so age statements tell you less.`,
+Scotland has about 150 distilleries, with 11 working on Islay and, for years, 3 in Campbeltown; a few huge grain distilleries supply blends, in which grain is usually the majority and malt content drives price. The whisky loch closed Brora and Port Ellen in 1983; both are back (2021, 2024). Midleton dominated Ireland, Cooley broke the pattern, and about 50 distilleries now operate. Suntory and Nikka make many styles in-house, and the 2010s shortage cost them age statements. Canada blends separately aged base and flavouring whiskies, mostly for the US. In hot climates, casks work fast and lose fast, so age statements tell you less.`,
     },
   ],
   quiz: [
@@ -125,14 +125,13 @@ Scotland has about 150 distilleries, with 11 working on Islay and 3 in Campbelto
       prompt: 'Match each distillery to the fact that identifies it.',
       pairs: [
         { left: 'Yoichi', right: 'Stills heated directly with coal' },
-        { left: 'Miyagikyo', right: 'Coffey stills moved there in 1999' },
+        { left: 'Miyagikyo', right: 'Home of Nikka\'s Coffey stills' },
         { left: 'Midleton', right: 'Home of single pot still brands such as Redbreast and Green Spot' },
         { left: 'Cooley', right: 'Double distillation and peated malt in Ireland' },
-        { left: 'Kavalan', right: 'Subtropical Taiwan, distilling since 2006' },
-        { left: 'Penderyn', right: 'Wales, first distilled in 2000' },
+        { left: 'Kavalan', right: 'Taiwan\'s pioneer, maturing fast in subtropical heat' },
       ],
       explanation:
-        'Yoichi\'s coal-fired stills and Miyagikyo\'s Coffey stills are Nikka\'s two signatures. Midleton makes the best-known single pot still whiskeys, Cooley stands out for double distillation and peat, Kavalan pioneered Taiwanese whisky, and Penderyn revived Welsh distilling.',
+        'Yoichi\'s coal-fired stills and Miyagikyo\'s Coffey stills are Nikka\'s two signatures, and they are easy to swap: the coal heats Yoichi\'s pot stills, while the Coffey stills work at Miyagikyo. Midleton makes the best-known single pot still whiskeys, Cooley stands out in Ireland for double distillation and peat, and Kavalan showed how fast casks work in Taiwan\'s heat.',
     },
     {
       id: 'l4-producing-nations-q2',
@@ -175,16 +174,15 @@ A 200-litre cask loses 10% of its remaining volume each year.`,
       type: 'multi',
       prompt: 'Which statements about the whisky loch and Scotland\'s ghost distilleries are correct? Select all that apply.',
       options: [
-        'Distillery closures clustered in 1983 and 1985.',
-        'Brora resumed distilling in 2021.',
-        'Port Ellen reopened in 2024.',
-        'The closures followed a shortage of mature stock.',
-        'A ghost distillery has no casks left to bottle.',
-        'Campbeltown has more than ten working distilleries.',
+        'Hard expansion in the 1970s met falling demand in the early 1980s, leaving a surplus of maturing stock.',
+        'Brora and Port Ellen closed in the whisky loch years and have since been brought back into production.',
+        'Casks from a ghost distillery can still be bottled after the distillery has closed.',
+        'The closures were a response to a shortage of mature whisky.',
+        'A reopened distillery can relieve a shortage of 12-year-old stock within a year or two.',
       ],
       answer: [0, 1, 2],
       explanation:
-        'Overproduction in the 1970s and falling demand in the early 1980s created a surplus, and DCL closures followed in 1983 and 1985. Brora returned in 2021 and Port Ellen in 2024. A ghost distillery is defined by its surviving casks, and Campbeltown has 3 working distilleries.',
+        'Expansion in the 1970s and falling demand in the early 1980s created the surplus known as the whisky loch, and DCL closed or mothballed many distilleries in 1983 and 1985, Brora and Port Ellen among them. Diageo brought Brora back in 2021 and Port Ellen in 2024, and a ghost distillery is defined by the casks that outlive it. The "shortage" option reverses the cause, and no reopening fixes an aged-stock shortage quickly: whisky made today meets demand a decade or more later.',
     },
     {
       id: 'l4-producing-nations-q6',
